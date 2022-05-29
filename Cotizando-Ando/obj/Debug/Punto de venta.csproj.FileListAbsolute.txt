@@ -1,0 +1,323 @@
+G:\Punto de Venta\Punto de venta\obj\Debug\Punto_de_venta.Inicio.Login.resources
+G:\Punto de Venta\Punto de venta\obj\Debug\Punto_de_venta.Properties.Resources.resources
+G:\Punto de Venta\Punto de venta\obj\Debug\Punto de venta.csproj.GenerateResource.cache
+G:\Punto de Venta\Punto de venta\obj\Debug\Punto de venta.csproj.CoreCompileInputs.cache
+G:\Punto de Venta\Punto de venta\bin\Debug\Punto de venta.exe.config
+G:\Punto de Venta\Punto de venta\bin\Debug\Punto de venta.exe
+G:\Punto de Venta\Punto de venta\bin\Debug\Punto de venta.pdb
+G:\Punto de Venta\Punto de venta\obj\Debug\Punto de venta.exe
+G:\Punto de Venta\Punto de venta\obj\Debug\Punto de venta.pdb
+G:\Punto de Venta\Punto de venta\obj\Debug\Punto_de_venta.Menú.Menu_estilo_1.resources
+G:\Punto de Venta\Punto de venta\obj\Debug\Punto_de_venta.Inventario.Inventario.resources
+G:\Punto de Venta\Punto de venta\bin\Debug\EntityFramework.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\EntityFramework.xml
+G:\Punto de Venta\Punto de venta\obj\Debug\Punto de venta.csproj.CopyComplete
+G:\Punto de Venta\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Usuarios.resources
+G:\Punto de Venta\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Plantilla.resources
+G:\Punto de Venta\Punto de venta\obj\Debug\Punto_de_venta.Inicio.Inicio.resources
+G:\Punto de Venta\Punto de venta\obj\Debug\Punto_de_venta.Inventario.InventarioCompleto.resources
+G:\Punto de Venta\Punto de venta\bin\Debug\System.Configuration.ConfigurationManager.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\System.Security.AccessControl.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\System.Security.Permissions.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\System.Security.Principal.Windows.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\System.Configuration.ConfigurationManager.xml
+G:\Punto de Venta\Punto de venta\bin\Debug\System.Security.AccessControl.xml
+G:\Punto de Venta\Punto de venta\bin\Debug\System.Security.Permissions.xml
+G:\Punto de Venta\Punto de venta\bin\Debug\System.Security.Principal.Windows.xml
+G:\Punto de Venta\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Productos.resources
+G:\Punto de Venta\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Estantes.resources
+G:\Punto de Venta\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Categoria.resources
+G:\Punto de Venta\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Proveedor.resources
+G:\Punto de Venta\Punto de venta\obj\Debug\Punto_de_venta.Ventas.Formulario_Ventas.resources
+G:\Punto de Venta\Punto de venta\bin\Debug\Microsoft.ReportViewer.Common.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\Microsoft.ReportViewer.Design.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\Microsoft.SqlServer.Types.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\EnvDTE.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\stdole.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\Microsoft.MSXML.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Punto de Venta\Punto de venta\obj\Debug\Punto_de_venta.Compras.Formulario_Compras.resources
+G:\Punto de Venta\Punto de venta\obj\Debug\Punto_de_venta.Ventas.Formulario_Cancelar_Factura.resources
+G:\Punto de Venta\Punto de venta\bin\Debug\AxShockwaveFlashObjects.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\CrystalDecisions.ReportSource.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\CrystalDecisions.Shared.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\CrystalDecisions.Windows.Forms.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\ShockwaveFlashObjects.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+G:\Punto de Venta\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+G:\Punto de Venta\Punto de venta\obj\Debug\Punto de venta.csproj.AssemblyReference.cache
+G:\Punto de Venta\Punto de venta\bin\Debug\Reporteria.exe
+G:\Punto de Venta\Punto de venta\bin\Debug\Reporteria.pdb
+G:\Punto de Venta\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Usuarios_2_0.resources
+G:\Punto de Venta\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Perfiles.resources
+G:\Punto de Venta\Punto de venta\obj\Debug\Punto_de_venta.Menú.Menu_estilo_2.resources
+G:\Cotizando\Punto de venta\bin\Debug\Punto de venta.exe.config
+G:\Cotizando\Punto de venta\bin\Debug\Punto de venta.exe
+G:\Cotizando\Punto de venta\bin\Debug\Punto de venta.pdb
+G:\Cotizando\Punto de venta\bin\Debug\EntityFramework.dll
+G:\Cotizando\Punto de venta\bin\Debug\Microsoft.ReportViewer.Common.dll
+G:\Cotizando\Punto de venta\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+G:\Cotizando\Punto de venta\bin\Debug\Microsoft.ReportViewer.Design.dll
+G:\Cotizando\Punto de venta\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+G:\Cotizando\Punto de venta\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+G:\Cotizando\Punto de venta\bin\Debug\Microsoft.SqlServer.Types.dll
+G:\Cotizando\Punto de venta\bin\Debug\System.Configuration.ConfigurationManager.dll
+G:\Cotizando\Punto de venta\bin\Debug\System.Security.AccessControl.dll
+G:\Cotizando\Punto de venta\bin\Debug\System.Security.Permissions.dll
+G:\Cotizando\Punto de venta\bin\Debug\System.Security.Principal.Windows.dll
+G:\Cotizando\Punto de venta\bin\Debug\ShockwaveFlashObjects.dll
+G:\Cotizando\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+G:\Cotizando\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+G:\Cotizando\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+G:\Cotizando\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+G:\Cotizando\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+G:\Cotizando\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+G:\Cotizando\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+G:\Cotizando\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+G:\Cotizando\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+G:\Cotizando\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+G:\Cotizando\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+G:\Cotizando\Punto de venta\bin\Debug\EnvDTE.dll
+G:\Cotizando\Punto de venta\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+G:\Cotizando\Punto de venta\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+G:\Cotizando\Punto de venta\bin\Debug\stdole.dll
+G:\Cotizando\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+G:\Cotizando\Punto de venta\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+G:\Cotizando\Punto de venta\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+G:\Cotizando\Punto de venta\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+G:\Cotizando\Punto de venta\bin\Debug\Microsoft.MSXML.dll
+G:\Cotizando\Punto de venta\bin\Debug\EntityFramework.xml
+G:\Cotizando\Punto de venta\bin\Debug\System.Configuration.ConfigurationManager.xml
+G:\Cotizando\Punto de venta\bin\Debug\System.Security.AccessControl.xml
+G:\Cotizando\Punto de venta\bin\Debug\System.Security.Permissions.xml
+G:\Cotizando\Punto de venta\bin\Debug\System.Security.Principal.Windows.xml
+G:\Cotizando\Punto de venta\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Cotizando\Punto de venta\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Cotizando\Punto de venta\obj\Debug\Punto de venta.csproj.AssemblyReference.cache
+G:\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Compras.Formulario_Compras.resources
+G:\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Inicio.Inicio.resources
+G:\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Inicio.Login.resources
+G:\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Inventario.Inventario.resources
+G:\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Inventario.InventarioCompleto.resources
+G:\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.Form1.resources
+G:\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.FormCondicional.resources
+G:\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Categoria.resources
+G:\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Estantes.resources
+G:\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Perfiles.resources
+G:\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Productos.resources
+G:\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Plantilla.resources
+G:\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Proveedor.resources
+G:\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Usuarios.resources
+G:\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Usuarios_2_0.resources
+G:\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Menú.Menu_estilo_1.resources
+G:\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Menú.Menu_estilo_2.resources
+G:\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Properties.Resources.resources
+G:\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Ventas.Formulario_Cancelar_Factura.resources
+G:\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Ventas.Formulario_Ventas.resources
+G:\Cotizando\Punto de venta\obj\Debug\Punto de venta.csproj.GenerateResource.cache
+G:\Cotizando\Punto de venta\obj\Debug\Punto de venta.csproj.CoreCompileInputs.cache
+G:\Cotizando\Punto de venta\obj\Debug\Punto de venta.csproj.CopyComplete
+G:\Cotizando\Punto de venta\obj\Debug\Punto de venta.exe
+G:\Cotizando\Punto de venta\obj\Debug\Punto de venta.pdb
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\Punto de venta.exe.config
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\Punto de venta.exe
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\Punto de venta.pdb
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\EntityFramework.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\Microsoft.ReportViewer.Common.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\Microsoft.ReportViewer.Design.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\Microsoft.SqlServer.Types.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\System.Configuration.ConfigurationManager.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\System.Security.AccessControl.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\System.Security.Permissions.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\System.Security.Principal.Windows.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\ShockwaveFlashObjects.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\EnvDTE.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\stdole.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\Microsoft.MSXML.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\EntityFramework.xml
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\System.Configuration.ConfigurationManager.xml
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\System.Security.AccessControl.xml
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\System.Security.Permissions.xml
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\System.Security.Principal.Windows.xml
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Debug\Punto de venta.csproj.AssemblyReference.cache
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Compras.Formulario_Compras.resources
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Inicio.Inicio.resources
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Inicio.Login.resources
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Inventario.Inventario.resources
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Inventario.InventarioCompleto.resources
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.Form1.resources
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.FormCondicional.resources
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Categoria.resources
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Estantes.resources
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Perfiles.resources
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Productos.resources
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Plantilla.resources
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Proveedor.resources
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Usuarios.resources
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Usuarios_2_0.resources
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Menú.Menu_estilo_1.resources
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Menú.Menu_estilo_2.resources
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Properties.Resources.resources
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Ventas.Formulario_Cancelar_Factura.resources
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Debug\Punto_de_venta.Ventas.Formulario_Ventas.resources
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Debug\Punto de venta.csproj.GenerateResource.cache
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Debug\Punto de venta.csproj.CoreCompileInputs.cache
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Debug\Punto de venta.csproj.CopyComplete
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Debug\Punto de venta.exe
+H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Debug\Punto de venta.pdb

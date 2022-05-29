@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a6a4c234f4cc4c58a0f95ebc3d664ed6" Name="Diagram1" ZoomLevel="83">
+        <EntityTypeShape EntityType="BPBModel.Compra" Width="1.5" PointX="5.25" PointY="6" />
+        <EntityTypeShape EntityType="BPBModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="1.375" />
+        <EntityTypeShape EntityType="BPBModel.Categoria" Width="1.5" PointX="0.75" PointY="3.25" />
+        <EntityTypeShape EntityType="BPBModel.Estante" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="BPBModel.Producto" Width="1.5" PointX="3" PointY="2.375" />
+        <EntityTypeShape EntityType="BPBModel.Proveedor" Width="1.5" PointX="0.75" PointY="6.25" />
+        <EntityTypeShape EntityType="BPBModel.DetalleVentas" Width="1.5" PointX="5.25" PointY="3.125" />
+        <EntityTypeShape EntityType="BPBModel.Estado" Width="1.5" PointX="0.75" PointY="10.25" />
+        <EntityTypeShape EntityType="BPBModel.Venta" Width="1.5" PointX="3" PointY="9.5" />
+        <EntityTypeShape EntityType="BPBModel.Facturas" Width="1.5" PointX="7.375" PointY="6.75" />
+        <EntityTypeShape EntityType="BPBModel.Imprimir_Facturas" Width="1.5" PointX="9.75" PointY="1.375" />
+        <EntityTypeShape EntityType="BPBModel.Vista1" Width="1.5" PointX="9.375" PointY="6.75" />
+        <AssociationConnector Association="BPBModel.FK_Compras_Compra_Es_Un_Productos_Producto" />
+        <AssociationConnector Association="BPBModel.FK_Productos_Producto_Tiene_una_Productos_Categoria" />
+        <AssociationConnector Association="BPBModel.FK_Producto_Producto_Pertenece_Producto_Estante" />
+        <AssociationConnector Association="BPBModel.FK_Productos_Producto_Tiene_un_Productos_Proveedor" />
+        <AssociationConnector Association="BPBModel.FK_Ventas_DetalleVentas_Contiene_Productos_Producto" />
+        <AssociationConnector Association="BPBModel.FK_Ventas_DetalleVentas_Pertenece_Ventas_Ventas" />
+        <AssociationConnector Association="BPBModel.FK_Ventas_Ventas_Pertenece_Ventas_Estado" />
+        <EntityTypeShape EntityType="BPBModel.VistaProductoMasVendido" Width="1.5" PointX="5.375" PointY="9.75" />
+        <EntityTypeShape EntityType="BPBModel.VistaVentasPorMes" Width="1.5" PointX="7.375" PointY="10.75" />
+        <EntityTypeShape EntityType="BPBModel.ModuloPrincipal" Width="1.5" PointX="6" PointY="18.5" />
+        <EntityTypeShape EntityType="BPBModel.Modulos" Width="1.5" PointX="0.75" PointY="14.125" />
+        <EntityTypeShape EntityType="BPBModel.Perfiles" Width="1.5" PointX="3" PointY="14.25" />
+        <EntityTypeShape EntityType="BPBModel.PerfilModulo" Width="1.5" PointX="8.25" PointY="14.375" />
+        <EntityTypeShape EntityType="BPBModel.Usuario" Width="1.5" PointX="5.25" PointY="13.5" />
+        <AssociationConnector Association="BPBModel.FK_Modulos_ModuloPrincipal" />
+        <AssociationConnector Association="BPBModel.FK_PerfilModulo_Modulos" />
+        <AssociationConnector Association="BPBModel.FK_PerfilModulo_Perfiles" />
+        <AssociationConnector Association="BPBModel.FK_Usuario_Perfiles" />
+        <AssociationConnector Association="BPBModel.FK_Estado_Usuario" />
+        <AssociationConnector Association="BPBModel.PerfilesModulos" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
