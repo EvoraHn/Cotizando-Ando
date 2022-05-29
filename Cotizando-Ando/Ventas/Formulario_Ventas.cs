@@ -113,8 +113,8 @@ namespace Punto_de_venta.Ventas
         }
         private void LimpiarTodo()
         {
-            txtId.Text = txtProducto.Text=txtCAI.Text = txtCliente.Text = txtRTN.Text =
-            txtDescuentos.Text = txtFechaLimite.Text = txtImporteExento.Text = txtImporteExonerado.Text
+            txtId.Text = txtCliente.Text = txtRTN.Text =
+            txtDescuentos.Text = txtImporteExento.Text = txtImporteExonerado.Text
             =txtISV15.Text =txtISV18.Text = txtIG18.Text = txtIG15.Text = txtTotal.Text =
             txtSubtotal.Text=txtBuscar.Text= string.Empty;
             txtDescuentos.Text = "0";
@@ -659,6 +659,16 @@ namespace Punto_de_venta.Ventas
         {
             Punto_de_venta.Ventas.Formulario_Cancelar_Factura frm = new Punto_de_venta.Ventas.Formulario_Cancelar_Factura();
             frm.Show();
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSubtotal_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -404,3 +404,96 @@ H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Release\Punt
 H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Release\Punto de venta.csproj.CopyComplete
 H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Release\Punto de venta.exe
 H:\Backup 2022\Programa nuevo 28052022\Cotizando\Punto de venta\obj\Release\Punto de venta.pdb
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\Punto de venta.exe.config
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\Punto de venta.exe
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\Punto de venta.pdb
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\EntityFramework.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\Microsoft.ReportViewer.Common.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\Microsoft.ReportViewer.Design.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\Microsoft.ReportViewer.WinForms.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\Microsoft.SqlServer.Types.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\System.Configuration.ConfigurationManager.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\System.Security.AccessControl.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\System.Security.Permissions.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\System.Security.Principal.Windows.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\EnvDTE.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\stdole.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\Microsoft.MSXML.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\EntityFramework.xml
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\System.Configuration.ConfigurationManager.xml
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\System.Security.AccessControl.xml
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\System.Security.Permissions.xml
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\System.Security.Principal.Windows.xml
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto de venta.csproj.AssemblyReference.cache
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto_de_venta.Compras.Formulario_Compras.resources
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto_de_venta.Inicio.Inicio.resources
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto_de_venta.Inicio.Login.resources
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto_de_venta.Inventario.Inventario.resources
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto_de_venta.Inventario.InventarioCompleto.resources
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto_de_venta.Mantenimientos.Form1.resources
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto_de_venta.Mantenimientos.FormCondicional.resources
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto_de_venta.Mantenimientos.Mantenimiento_Categoria.resources
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto_de_venta.Mantenimientos.Mantenimiento_Estantes.resources
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto_de_venta.Mantenimientos.Mantenimiento_Perfiles.resources
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto_de_venta.Mantenimientos.Mantenimiento_Productos.resources
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto_de_venta.Mantenimientos.Mantenimiento_Plantilla.resources
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto_de_venta.Mantenimientos.Mantenimiento_Proveedor.resources
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto_de_venta.Mantenimientos.Mantenimiento_Usuarios.resources
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto_de_venta.Mantenimientos.Mantenimiento_Usuarios_2_0.resources
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto_de_venta.Menú.Menu_estilo_1.resources
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto_de_venta.Menú.Menu_estilo_2.resources
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto_de_venta.Properties.Resources.resources
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto_de_venta.Ventas.Formulario_Cancelar_Factura.resources
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto_de_venta.Ventas.Formulario_Ventas.resources
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto de venta.csproj.GenerateResource.cache
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto de venta.csproj.CoreCompileInputs.cache
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto de venta.csproj.CopyComplete
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto de venta.exe
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto de venta.pdb

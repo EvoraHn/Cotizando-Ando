@@ -29,8 +29,9 @@ namespace Punto_de_venta.Mantenimientos
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
@@ -188,7 +189,6 @@ namespace Punto_de_venta.Mantenimientos
             // 
             this.dgProductos.AllowUserToAddRows = false;
             this.dgProductos.AllowUserToOrderColumns = true;
-            this.dgProductos.AllowUserToResizeColumns = false;
             this.dgProductos.AllowUserToResizeRows = false;
             this.dgProductos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -196,31 +196,40 @@ namespace Punto_de_venta.Mantenimientos
             this.dgProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgProductos.BackgroundColor = System.Drawing.Color.White;
             this.dgProductos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgProductos.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dgProductos.ColumnHeadersVisible = false;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgProductos.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgProductos.Location = new System.Drawing.Point(525, 71);
             this.dgProductos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgProductos.Name = "dgProductos";
             this.dgProductos.ReadOnly = true;
             this.dgProductos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgProductos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgProductos.RowHeadersVisible = false;
             this.dgProductos.RowHeadersWidth = 31;
-            this.dgProductos.RowTemplate.Height = 24;
+            this.dgProductos.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgProductos.RowTemplate.Height = 20;
             this.dgProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgProductos.Size = new System.Drawing.Size(1115, 955);
             this.dgProductos.TabIndex = 16;
@@ -320,7 +329,7 @@ namespace Punto_de_venta.Mantenimientos
             // TxtFamiliar
             // 
             this.TxtFamiliar.Location = new System.Drawing.Point(277, 663);
-            this.TxtFamiliar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtFamiliar.Margin = new System.Windows.Forms.Padding(4);
             this.TxtFamiliar.Mask = "0000-0000";
             this.TxtFamiliar.Name = "TxtFamiliar";
             this.TxtFamiliar.Size = new System.Drawing.Size(219, 34);
@@ -329,7 +338,7 @@ namespace Punto_de_venta.Mantenimientos
             // txtCelular
             // 
             this.txtCelular.Location = new System.Drawing.Point(27, 663);
-            this.txtCelular.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCelular.Margin = new System.Windows.Forms.Padding(4);
             this.txtCelular.Mask = "0000-0000";
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Size = new System.Drawing.Size(223, 34);
@@ -338,7 +347,7 @@ namespace Punto_de_venta.Mantenimientos
             // txtIdentidad
             // 
             this.txtIdentidad.Location = new System.Drawing.Point(27, 405);
-            this.txtIdentidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIdentidad.Margin = new System.Windows.Forms.Padding(4);
             this.txtIdentidad.Mask = "0000-0000-00000";
             this.txtIdentidad.Name = "txtIdentidad";
             this.txtIdentidad.Size = new System.Drawing.Size(227, 34);
