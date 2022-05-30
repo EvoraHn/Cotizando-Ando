@@ -38,14 +38,14 @@ namespace Punto_de_venta.Inicio
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.lblDía = new System.Windows.Forms.Label();
             this.lblFechaCompleta = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.bPBEntities1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -132,10 +132,10 @@ namespace Punto_de_venta.Inicio
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Punto_de_venta.Properties.Resources.Contacto_WhatsApp;
-            this.pictureBox1.Location = new System.Drawing.Point(585, 382);
+            this.pictureBox1.Location = new System.Drawing.Point(16, 514);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(396, 403);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.Size = new System.Drawing.Size(200, 167);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 37;
             this.pictureBox1.TabStop = false;
             // 
@@ -154,14 +154,47 @@ namespace Punto_de_venta.Inicio
             this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label6.Location = new System.Drawing.Point(24, 278);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(171, 29);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "Versión 2.0.1.0";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label4.Location = new System.Drawing.Point(24, 159);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(421, 29);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "Bienvenido al sistema de cotizaciones\r\n";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label3.Location = new System.Drawing.Point(5, 188);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(690, 91);
+            this.label3.TabIndex = 30;
+            this.label3.Text = "BPB Technologies";
+            // 
             // lblDía
             // 
-            this.lblDía.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDía.AutoSize = true;
             this.lblDía.BackColor = System.Drawing.Color.Transparent;
             this.lblDía.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDía.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblDía.Location = new System.Drawing.Point(1003, 150);
+            this.lblDía.Location = new System.Drawing.Point(22, 324);
             this.lblDía.Name = "lblDía";
             this.lblDía.Size = new System.Drawing.Size(324, 38);
             this.lblDía.TabIndex = 30;
@@ -169,12 +202,11 @@ namespace Punto_de_venta.Inicio
             // 
             // lblFechaCompleta
             // 
-            this.lblFechaCompleta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFechaCompleta.AutoSize = true;
             this.lblFechaCompleta.BackColor = System.Drawing.Color.Transparent;
             this.lblFechaCompleta.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechaCompleta.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblFechaCompleta.Location = new System.Drawing.Point(1003, 279);
+            this.lblFechaCompleta.Location = new System.Drawing.Point(22, 473);
             this.lblFechaCompleta.Name = "lblFechaCompleta";
             this.lblFechaCompleta.Size = new System.Drawing.Size(153, 38);
             this.lblFechaCompleta.TabIndex = 30;
@@ -182,12 +214,11 @@ namespace Punto_de_venta.Inicio
             // 
             // lblHora
             // 
-            this.lblHora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHora.AutoSize = true;
             this.lblHora.BackColor = System.Drawing.Color.Transparent;
             this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblHora.Location = new System.Drawing.Point(993, 188);
+            this.lblHora.Location = new System.Drawing.Point(13, 372);
             this.lblHora.Name = "lblHora";
             this.lblHora.Size = new System.Drawing.Size(454, 91);
             this.lblHora.TabIndex = 30;
@@ -200,46 +231,6 @@ namespace Punto_de_venta.Inicio
             // bPBEntities1BindingSource
             // 
             this.bPBEntities1BindingSource.DataSource = typeof(Punto_de_venta.Bases_de_datos.BPBEntities1);
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label6.Location = new System.Drawing.Point(24, 278);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(171, 29);
-            this.label6.TabIndex = 30;
-            this.label6.Text = "Versión 2.0.1.0";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(24, 159);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(421, 29);
-            this.label4.TabIndex = 30;
-            this.label4.Text = "Bienvenido al sistema de cotizaciones\r\n";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(5, 188);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(690, 91);
-            this.label3.TabIndex = 30;
-            this.label3.Text = "BPB Technologies";
             // 
             // Inicio
             // 

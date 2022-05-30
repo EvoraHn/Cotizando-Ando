@@ -397,7 +397,7 @@ namespace Punto_de_venta.Ventas
         {
             QuitarProducto();
             HacerCuentas();
-            
+            Limpiar();
         }
 
         private void btnImprimir_Click(object sender, EventArgs e)
@@ -620,7 +620,9 @@ namespace Punto_de_venta.Ventas
                 MessageBox.Show("Selecciona un producto de la factura para eliminarlo",
                  "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning); return;
             }
-    }
+            HacerCuentas();
+            Limpiar();
+        }
 
         private void btnSoloGuardar_Click(object sender, EventArgs e)
         {
