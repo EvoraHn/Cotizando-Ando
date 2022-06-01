@@ -471,7 +471,6 @@ C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Co
 C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\ru\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\bin\Release\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto de venta.csproj.AssemblyReference.cache
 C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto_de_venta.Compras.Formulario_Compras.resources
 C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto_de_venta.Inicio.Inicio.resources
 C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto_de_venta.Inicio.Login.resources
@@ -497,3 +496,4 @@ C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Co
 C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto de venta.csproj.CopyComplete
 C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto de venta.exe
 C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto de venta.pdb
+C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Release\Punto de venta.csproj.AssemblyReference.cache

@@ -28,8 +28,8 @@ namespace Punto_de_venta.Mantenimientos
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
@@ -40,12 +40,10 @@ namespace Punto_de_venta.Mantenimientos
             this.dgProductos = new System.Windows.Forms.DataGridView();
             this.txtId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtVenta = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtCosto = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtEstante = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -63,6 +61,8 @@ namespace Punto_de_venta.Mantenimientos
             this.logo = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtProveedor = new System.Windows.Forms.TextBox();
+            this.txtVenta = new System.Windows.Forms.TextBox();
+            this.txtCosto = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgProductos)).BeginInit();
             this.panel1.SuspendLayout();
@@ -190,24 +190,24 @@ namespace Punto_de_venta.Mantenimientos
             this.dgProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgProductos.BackgroundColor = System.Drawing.Color.White;
             this.dgProductos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgProductos.ColumnHeadersVisible = false;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgProductos.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgProductos.DefaultCellStyle = dataGridViewCellStyle8;
             this.dgProductos.Location = new System.Drawing.Point(520, 65);
             this.dgProductos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgProductos.Name = "dgProductos";
@@ -221,7 +221,6 @@ namespace Punto_de_venta.Mantenimientos
             this.dgProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgProductos.Size = new System.Drawing.Size(1094, 964);
             this.dgProductos.TabIndex = 18;
-            this.dgProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgProductos_CellContentClick);
             this.dgProductos.SelectionChanged += new System.EventHandler(this.dgProductos_SelectionChanged);
             // 
             // txtId
@@ -245,18 +244,6 @@ namespace Punto_de_venta.Mantenimientos
             this.label1.Size = new System.Drawing.Size(71, 24);
             this.label1.TabIndex = 2;
             this.label1.Text = "Código";
-            // 
-            // txtVenta
-            // 
-            this.txtVenta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVenta.ForeColor = System.Drawing.Color.Gray;
-            this.txtVenta.Location = new System.Drawing.Point(27, 555);
-            this.txtVenta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtVenta.Name = "txtVenta";
-            this.txtVenta.Size = new System.Drawing.Size(223, 34);
-            this.txtVenta.TabIndex = 3;
-            this.txtVenta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtVenta_KeyPress);
             // 
             // label2
             // 
@@ -302,18 +289,6 @@ namespace Punto_de_venta.Mantenimientos
             this.label5.Size = new System.Drawing.Size(190, 24);
             this.label5.TabIndex = 10;
             this.label5.Text = "Nombre del producto";
-            // 
-            // txtCosto
-            // 
-            this.txtCosto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCosto.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCosto.ForeColor = System.Drawing.Color.Gray;
-            this.txtCosto.Location = new System.Drawing.Point(275, 555);
-            this.txtCosto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtCosto.Name = "txtCosto";
-            this.txtCosto.Size = new System.Drawing.Size(223, 34);
-            this.txtCosto.TabIndex = 4;
-            this.txtCosto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCosto_KeyPress);
             // 
             // label6
             // 
@@ -593,6 +568,30 @@ namespace Punto_de_venta.Mantenimientos
             this.txtProveedor.TabIndex = 11;
             this.txtProveedor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // txtVenta
+            // 
+            this.txtVenta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVenta.ForeColor = System.Drawing.Color.Gray;
+            this.txtVenta.Location = new System.Drawing.Point(27, 554);
+            this.txtVenta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtVenta.Name = "txtVenta";
+            this.txtVenta.Size = new System.Drawing.Size(223, 34);
+            this.txtVenta.TabIndex = 3;
+            this.txtVenta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtVenta_KeyPress);
+            // 
+            // txtCosto
+            // 
+            this.txtCosto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCosto.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCosto.ForeColor = System.Drawing.Color.Gray;
+            this.txtCosto.Location = new System.Drawing.Point(273, 554);
+            this.txtCosto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCosto.Name = "txtCosto";
+            this.txtCosto.Size = new System.Drawing.Size(223, 34);
+            this.txtCosto.TabIndex = 4;
+            this.txtCosto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCosto_KeyPress);
+            // 
             // Mantenimiento_Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -627,12 +626,10 @@ namespace Punto_de_venta.Mantenimientos
         private System.Windows.Forms.DataGridView dgProductos;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtVenta;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtCosto;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtCategoria;
@@ -652,5 +649,7 @@ namespace Punto_de_venta.Mantenimientos
         private System.Windows.Forms.ComboBox cmbImpuesto;
         private System.Windows.Forms.Button btnEstante;
         public System.Windows.Forms.Button btnTraerEstante;
+        private System.Windows.Forms.TextBox txtCosto;
+        private System.Windows.Forms.TextBox txtVenta;
     }
 }

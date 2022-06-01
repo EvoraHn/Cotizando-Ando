@@ -138,7 +138,6 @@ namespace Punto_de_venta.Mantenimientos
                     txtCategoria.Text = Convert.ToString(tabla.Categoria);
                     txtProveedor.Text = Convert.ToString(tabla.Proveedor);
                     txtEstante.Text = Convert.ToString(tabla.Estante);
-                    txtVenta.Text = Convert.ToString(tabla.PrecioVenta);
                     cmbImpuesto.Text = tabla.Tipo_Impuesto;
                     txtId.Enabled = false;
                     txtCategoria.Enabled = false;
@@ -319,29 +318,29 @@ namespace Punto_de_venta.Mantenimientos
 
         private void txtVenta_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar >= 32 && e.KeyChar <= 43) || (e.KeyChar >= 45 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            //permite . , y números recuerda ajustarlo de acuerdo a la región de la computadora.
+            if ((e.KeyChar >= 32 && e.KeyChar <= 45) || (e.KeyChar == 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
             {
-                MessageBox.Show("Por favor ingresa solo numeros positivos en este campo",
+                MessageBox.Show("Por favor ingresa solo numeros positivos en este campo , los decimales se representan por punto '.'",
                 "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 e.Handled = true;
                 return;
             }
         }
-
+       
         private void txtCosto_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar >= 32 && e.KeyChar <= 43) || (e.KeyChar >= 45 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            //permite . , y números recuerda ajustarlo de acuerdo a la región de la computadora.
+            if ((e.KeyChar >= 32 && e.KeyChar <= 45) ||  (e.KeyChar == 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
             {
-                MessageBox.Show("Por favor ingresa solo numeros positivos en este campo",
+                MessageBox.Show("Por favor ingresa solo numeros positivos en este campo, los decimales se representan por punto '.' ",
                 "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 e.Handled = true;
                 return;
             }
+           
         }
 
-        private void dgProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+     
     }
 }

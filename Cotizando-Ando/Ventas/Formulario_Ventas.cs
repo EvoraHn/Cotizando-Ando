@@ -147,7 +147,6 @@ namespace Punto_de_venta.Ventas
             string precio = dgProductos.Rows[indice].Cells[2].Value.ToString();
             string cantidad = dgFactura.RowCount == 0 ? "1" : dgFactura.Rows[indiceF].Cells[3].Value.ToString();
             
-            //HacerCuentas();
             foreach (DataGridViewRow dr in dgFactura.Rows)
             {
                 string id = (dr.Cells[1].Value).ToString();
@@ -230,38 +229,43 @@ namespace Punto_de_venta.Ventas
 
         private void HacerCuentas()
         {
-            decimal subtot = 0;
-            decimal isv15 = 0;
-            decimal isv18 = 0;
-            decimal exento = 0;
-            decimal iG15 = 0;
-            decimal iG18 = 0;
-            decimal descuento = txtDescuentos.Text == string.Empty ? 0 : Convert.ToDecimal(txtDescuentos.Text);
-            decimal exonerado = txtImporteExonerado.Text == string.Empty ? 0 : Convert.ToDecimal(txtImporteExonerado.Text);
+            double subtot = 0;
+            double isv15 = 0;
+            double isv18 = 0;
+            double exento = 0;
+            double iG15 = 0;
+            double iG18 = 0;
+            double descuento = txtDescuentos.Text == string.Empty ? 0 : Convert.ToDouble(txtDescuentos.Text);
+            double exonerado = txtImporteExonerado.Text == string.Empty ? 0 : Convert.ToDouble(txtImporteExonerado.Text);
             try
             {
                 foreach (DataGridViewRow dr in dgFactura.Rows)
                 {
-                    decimal cantidad = Convert.ToDecimal((dr.Cells[3].Value).ToString());
+                    double cantidad = Convert.ToDouble((dr.Cells[3].Value).ToString());
                     string fkid = (dr.Cells[0].Value).ToString(); ;
                     var pel = entity.Producto.FirstOrDefault(x => x.IdProducto == fkid);
-                    subtot += pel.PrecioVenta * cantidad;
+                    //subtot += Convert.ToDouble(pel.PrecioVenta) * cantidad;
+                    subtot += Convert.ToDouble(pel.PrecioVenta) * cantidad;
+                   
 
-                     
                     if (pel.Tipo_Impuesto != null)
                     {
-                        isv15 += pel.Tipo_Impuesto.Equals(null) ? 0 : pel.Tipo_Impuesto.Equals("15%") ? (pel.PrecioVenta * cantidad) * (Convert.ToDecimal(pel.Tipo_Impuesto.Substring(0, 2)) / 100)
-                          : 0;
-                        iG15 += pel.Tipo_Impuesto.Equals("15%") ? (pel.PrecioVenta * cantidad)
+                        //isv15 += pel.Tipo_Impuesto.Equals(null) ? 0 : pel.Tipo_Impuesto.Equals("15%") ? (pel.PrecioVenta * cantidad) * (Convert.ToDecimal(pel.Tipo_Impuesto.Substring(0, 2)) / 100)
+                        //: 0;
+                        //isv15 += pel.Tipo_Impuesto.Equals(null) ? 0 : pel.Tipo_Impuesto.Equals("15%") ? (Convert.ToDouble(pel.PrecioVenta) / 1.15) * cantidad
+                        //: 0;
+                        isv15 += pel.Tipo_Impuesto.Equals(null) ? 0 : pel.Tipo_Impuesto.Equals("15%") ? (Convert.ToDouble(pel.PrecioVenta ) * cantidad - ((Convert.ToDouble(pel.PrecioVenta) / 1.15) * cantidad))
+                        : 0;
+                        iG15 += pel.Tipo_Impuesto.Equals("15%") ? ((Convert.ToDouble(pel.PrecioVenta) / 1.15) * cantidad)
                             : 0;
 
-                        isv18 += pel.Tipo_Impuesto.Equals("18%") ? pel.PrecioVenta * (Convert.ToDecimal(pel.Tipo_Impuesto.Substring(0, 2)) / 100)
+                        isv18 += pel.Tipo_Impuesto.Equals("18%") ? Convert.ToDouble(pel.PrecioVenta) * (Convert.ToDouble(pel.PrecioVenta) * cantidad - ((Convert.ToDouble(pel.PrecioVenta) / 1.18) * cantidad))
                             : 0;
 
-                        iG18 += pel.Tipo_Impuesto.Equals("18%") ? pel.PrecioVenta
+                        iG18 += pel.Tipo_Impuesto.Equals("18%") ? ((Convert.ToDouble(pel.PrecioVenta) / 1.18) * cantidad)
                             : 0;
 
-                        exento += pel.Tipo_Impuesto.Equals("E  ") ? pel.PrecioVenta
+                        exento += pel.Tipo_Impuesto.Equals("E  ") ? Convert.ToDouble(pel.PrecioVenta) * cantidad
                             : 0;
                         
                     }
@@ -276,17 +280,18 @@ namespace Punto_de_venta.Ventas
                 txtIG15.Text = iG15.ToString("N2");
                 txtIG18.Text = iG18.ToString("N2");
                 txtImporteExento.Text = exento.ToString("N2");
-                txtTotal.Text = (subtot + isv15 + isv18 - (descuento + exonerado)).ToString("N2");
-                //if ( (descuento+exonerado) < subtot)
-                //{
-                //    txtTotal.Text = (subtot + isv15 + isv18 - (descuento + exonerado)).ToString("N2");
-                //}
-                //else
-                //{
-                //    //MessageBox.Show("Error en descuentos y exonerados",
-                //    //"No puede dar más descuentos de lo que suman los productos,¡Revise!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //    //return;
-                //}
+                txtTotal.Text = (iG15 + iG18+ exento + isv15 + isv18 - (descuento + exonerado)).ToString("N2");
+                if ((descuento + exonerado) < subtot)
+                {
+                    txtTotal.Text = (iG15 + iG18 + exento + isv15 + isv18 - (descuento + exonerado)).ToString("N2");
+                    //txtTotal.Text = (subtot + isv15 + isv18 - (descuento + exonerado)).ToString("N2");
+                }
+                else
+                {
+                    MessageBox.Show("Error en descuentos y exonerados",
+                    "No puede dar más descuentos de lo que suman los productos,¡Revise!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
 
             }
             catch (Exception)
@@ -526,7 +531,12 @@ namespace Punto_de_venta.Ventas
         private void imprimirFactura()
         {
             string total = "";
-            
+            if (!File.Exists("C:\\testPage.txt"))
+            {
+                // Crear .txt si no existe
+                using (StreamWriter swp = File.CreateText("C:\\testPage.txt"))
+                {}
+            }
             StreamWriter sw = new StreamWriter("C:\\testPage.txt");
             //----Encabezado----
            //sw.WriteLine("COTIZACIÓN DE PRODUCTOS",ContentAlignment.TopCenter);
@@ -545,14 +555,14 @@ namespace Punto_de_venta.Ventas
             }
             sw.WriteLine(" ");
             //----final de impresión 
-            sw.WriteLine("Subtotal: L. " + txtSubtotal.Text + " ");
-            //sw.WriteLine("Importe exonerado: L." + txtImporteExonerado.Text + " ");
+            //sw.WriteLine("Subtotal: L. " + txtSubtotal.Text + " ");
+            sw.WriteLine("Importe exonerado: L." + txtImporteExonerado.Text + " ");
             sw.WriteLine("Descuento: L. " + txtDescuentos.Text + " ");
-            //sw.WriteLine("Importe exento: L. " + txtImporteExento.Text + " ");
+            sw.WriteLine("Importe exento: L. " + txtImporteExento.Text + " ");
             //sw.WriteLine("Importe grabado 18%: L. " + txtIG18.Text + " ");
             //sw.WriteLine("I.S.V 18%: L. " + txtISV18.Text + " ");
-            //sw.WriteLine("Importe grabado 15%: L. " + txtIG15.Text + " ");
-            //sw.WriteLine("I.S.V 15%: L. " + txtISV15.Text + " ");
+            sw.WriteLine("Importe grabado 15%: L. " + txtIG15.Text + " ");
+            sw.WriteLine("I.S.V 15%: L. " + txtISV15.Text + " ");
             total = (Convert.ToDecimal(txtTotal.Text) - Convert.ToDecimal(txtDescuentos.Text) - Convert.ToDecimal(txtImporteExonerado.Text)).ToString();
             sw.WriteLine("Total: L. " + total + " ");
             sw.Close();
@@ -577,6 +587,7 @@ namespace Punto_de_venta.Ventas
                 e.Handled = true;
                 return;
             }
+            HacerCuentas();
         }
 
         private void BtnNuevaFactura_Click(object sender, EventArgs e)
@@ -655,6 +666,8 @@ namespace Punto_de_venta.Ventas
                 e.Handled = true;
                 return;
             }
+            HacerCuentas();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
