@@ -1,5 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="BPBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Categoria">
+    <Key>
+      <PropertyRef Name="IdCategoria" />
+    </Key>
+    <Property Name="IdCategoria" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
   <EntityType Name="Compra">
     <Key>
       <PropertyRef Name="IdCompra" />
@@ -10,23 +18,33 @@
     <Property Name="PrecioUnitario" Type="decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="Total" Type="decimal" Precision="10" Scale="2" Nullable="false" />
   </EntityType>
-  <EntityType Name="sysdiagrams">
+  <EntityType Name="Detalle_Venta_Tiempo">
     <Key>
-      <PropertyRef Name="diagram_id" />
+      <PropertyRef Name="IdVenta" />
     </Key>
-    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
-    <Property Name="principal_id" Type="int" Nullable="false" />
-    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="version" Type="int" />
-    <Property Name="definition" Type="varbinary(max)" />
+    <Property Name="IdVenta" Type="bigint" Nullable="false" />
+    <Property Name="Tiempo_Asignado" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Fecha_Venta" Type="datetime" Nullable="false" />
+    <Property Name="Fk_Pc" Type="bigint" Nullable="false" />
+    <Property Name="Fk_Usuario" Type="smallint" Nullable="false" />
   </EntityType>
-  <EntityType Name="Categoria">
+  <EntityType Name="DetalleVentas">
     <Key>
-      <PropertyRef Name="IdCategoria" />
+      <PropertyRef Name="id" />
     </Key>
-    <Property Name="IdCategoria" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Nombre" Type="varchar" MaxLength="100" Nullable="false" />
-    <Property Name="Descripcion" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Producto" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Venta" Type="int" Nullable="false" />
+    <Property Name="Cantidad" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Estado">
+    <Key>
+      <PropertyRef Name="IdEstado" />
+    </Key>
+    <Property Name="IdEstado" Type="int" Nullable="false" />
+    <Property Name="Estado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripción estado" Type="nvarchar" MaxLength="10" />
+    <Property Name="FKUsuario" Type="smallint" />
   </EntityType>
   <EntityType Name="Estante">
     <Key>
@@ -35,6 +53,81 @@
     <Property Name="IdEstante" Type="int" Nullable="false" />
     <Property Name="NombreEstante" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="DescripciónEstante" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Facturas">
+    <Key>
+      <PropertyRef Name="Factura" />
+      <PropertyRef Name="Producto" />
+      <PropertyRef Name="Precio" />
+    </Key>
+    <Property Name="Factura" Type="int" Nullable="false" />
+    <Property Name="Producto" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Cantidad" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Precio" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Monto" Type="decimal" Precision="21" Scale="4" />
+  </EntityType>
+  <EntityType Name="Imprimir_Facturas">
+    <Key>
+      <PropertyRef Name="Factura" />
+      <PropertyRef Name="Producto" />
+      <PropertyRef Name="Precio" />
+    </Key>
+    <Property Name="Factura" Type="int" Nullable="false" />
+    <Property Name="Producto" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Cantidad" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Precio" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Monto" Type="decimal" Precision="21" Scale="4" />
+  </EntityType>
+  <EntityType Name="ModuloPrincipal">
+    <Key>
+      <PropertyRef Name="IdModuloPrincipal" />
+    </Key>
+    <Property Name="IdModuloPrincipal" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DescripcionModuloPrin" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="EstadoModuloPrin" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Modulos">
+    <Key>
+      <PropertyRef Name="IdModulos" />
+    </Key>
+    <Property Name="IdModulos" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DescripcionModulo" Type="nvarchar" MaxLength="70" Nullable="false" />
+    <Property Name="EstadoModulo" Type="bit" Nullable="false" />
+    <Property Name="FKModuloPrincipal" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PC">
+    <Key>
+      <PropertyRef Name="IdPC" />
+    </Key>
+    <Property Name="IdPC" Type="bigint" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Fila" Type="nvarchar" MaxLength="5" />
+    <Property Name="Columna" Type="nvarchar" MaxLength="5" />
+    <Property Name="Estado" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Perfiles">
+    <Key>
+      <PropertyRef Name="IdPerfil" />
+    </Key>
+    <Property Name="IdPerfil" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DescripcionPerfil" Type="nvarchar" MaxLength="70" Nullable="false" />
+    <Property Name="EstadoPerfil" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PerfilesModulos">
+    <Key>
+      <PropertyRef Name="FKPerfilId" />
+      <PropertyRef Name="FKModuloId" />
+    </Key>
+    <Property Name="FKPerfilId" Type="smallint" Nullable="false" />
+    <Property Name="FKModuloId" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PerfilModulo">
+    <Key>
+      <PropertyRef Name="IdPerfilModulo" />
+    </Key>
+    <Property Name="FKPerfilId" Type="smallint" Nullable="false" />
+    <Property Name="FKModuloId" Type="smallint" Nullable="false" />
+    <Property Name="IdPerfilModulo" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="Producto">
     <Key>
@@ -61,47 +154,6 @@
     <Property Name="Contacto1" Type="varchar" MaxLength="100" />
     <Property Name="Descripcion" Type="varchar" MaxLength="500" />
   </EntityType>
-  <EntityType Name="ModuloPrincipal">
-    <Key>
-      <PropertyRef Name="IdModuloPrincipal" />
-    </Key>
-    <Property Name="IdModuloPrincipal" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="DescripcionModuloPrin" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="EstadoModuloPrin" Type="bit" Nullable="false" />
-  </EntityType>
-  <EntityType Name="Modulos">
-    <Key>
-      <PropertyRef Name="IdModulos" />
-    </Key>
-    <Property Name="IdModulos" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="DescripcionModulo" Type="nvarchar" MaxLength="70" Nullable="false" />
-    <Property Name="EstadoModulo" Type="bit" Nullable="false" />
-    <Property Name="FKModuloPrincipal" Type="smallint" Nullable="false" />
-  </EntityType>
-  <EntityType Name="Perfiles">
-    <Key>
-      <PropertyRef Name="IdPerfil" />
-    </Key>
-    <Property Name="IdPerfil" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="DescripcionPerfil" Type="nvarchar" MaxLength="70" Nullable="false" />
-    <Property Name="EstadoPerfil" Type="bit" Nullable="false" />
-  </EntityType>
-  <EntityType Name="PerfilesModulos">
-    <Key>
-      <PropertyRef Name="FKPerfilId" />
-      <PropertyRef Name="FKModuloId" />
-    </Key>
-    <Property Name="FKPerfilId" Type="smallint" Nullable="false" />
-    <Property Name="FKModuloId" Type="smallint" Nullable="false" />
-  </EntityType>
-  <EntityType Name="PerfilModulo">
-    <Key>
-      <PropertyRef Name="IdPerfilModulo" />
-    </Key>
-    <Property Name="FKPerfilId" Type="smallint" Nullable="false" />
-    <Property Name="FKModuloId" Type="smallint" Nullable="false" />
-    <Property Name="IdPerfilModulo" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-  </EntityType>
   <EntityType Name="Usuario">
     <Key>
       <PropertyRef Name="IdUsuario" />
@@ -119,24 +171,6 @@
     <Property Name="Contacto" Type="nchar" MaxLength="9" Nullable="false" />
     <Property Name="ContactoFamiliar" Type="nchar" MaxLength="9" />
   </EntityType>
-  <EntityType Name="DetalleVentas">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Producto" Type="varchar" MaxLength="100" Nullable="false" />
-    <Property Name="Venta" Type="int" Nullable="false" />
-    <Property Name="Cantidad" Type="decimal" Precision="10" Scale="2" Nullable="false" />
-  </EntityType>
-  <EntityType Name="Estado">
-    <Key>
-      <PropertyRef Name="IdEstado" />
-    </Key>
-    <Property Name="IdEstado" Type="int" Nullable="false" />
-    <Property Name="Estado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Descripción estado" Type="nvarchar" MaxLength="10" />
-    <Property Name="FKUsuario" Type="smallint" />
-  </EntityType>
   <EntityType Name="Venta">
     <Key>
       <PropertyRef Name="IdVenta" />
@@ -152,36 +186,6 @@
     <Property Name="Importe_Exento" Type="decimal" Precision="10" Scale="2" />
     <Property Name="Importe_Exonerado" Type="decimal" Precision="10" Scale="2" />
   </EntityType>
-  <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BPB.dbo.Facturas' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
-  <EntityType Name="Facturas">
-    <Key>
-      <PropertyRef Name="Factura" />
-      <PropertyRef Name="Producto" />
-      <PropertyRef Name="Precio" />
-    </Key>
-    <Property Name="Factura" Type="int" Nullable="false" />
-    <Property Name="Producto" Type="nvarchar" MaxLength="100" Nullable="false" />
-    <Property Name="Cantidad" Type="int" />
-    <Property Name="Precio" Type="decimal" Precision="10" Scale="2" Nullable="false" />
-    <Property Name="Monto" Type="decimal" Precision="21" Scale="2" />
-  </EntityType>
-  <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BPB.dbo.Imprimir_Facturas' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
-  <EntityType Name="Imprimir_Facturas">
-    <Key>
-      <PropertyRef Name="Factura" />
-      <PropertyRef Name="Producto" />
-      <PropertyRef Name="Precio" />
-    </Key>
-    <Property Name="Factura" Type="int" Nullable="false" />
-    <Property Name="Producto" Type="nvarchar" MaxLength="100" Nullable="false" />
-    <Property Name="Cantidad" Type="int" />
-    <Property Name="Precio" Type="decimal" Precision="10" Scale="2" Nullable="false" />
-    <Property Name="Monto" Type="decimal" Precision="21" Scale="2" />
-  </EntityType>
-  <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BPB.dbo.Vista1' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
   <EntityType Name="Vista1">
     <Key>
       <PropertyRef Name="Codigo" />
@@ -200,8 +204,6 @@ advertencia 6002: La tabla o vista 'BPB.dbo.Vista1' no tiene definida ninguna cl
     <Property Name="Categoria" Type="varchar" MaxLength="100" Nullable="false" />
     <Property Name="Proveedor" Type="varchar" MaxLength="100" Nullable="false" />
   </EntityType>
-  <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BPB.dbo.VistaProductoMasVendido' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
   <EntityType Name="VistaProductoMasVendido">
     <Key>
       <PropertyRef Name="Producto" />
@@ -209,8 +211,6 @@ advertencia 6002: La tabla o vista 'BPB.dbo.VistaProductoMasVendido' no tiene de
     <Property Name="Producto" Type="nvarchar" MaxLength="100" Nullable="false" />
     <Property Name="Vendidos" Type="decimal" Precision="38" Scale="2" />
   </EntityType>
-  <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BPB.dbo.VistaVentasPorMes' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
   <EntityType Name="VistaVentasPorMes">
     <Key>
       <PropertyRef Name="IdVenta" />
@@ -238,6 +238,30 @@ advertencia 6002: La tabla o vista 'BPB.dbo.VistaVentasPorMes' no tiene definida
       </Principal>
       <Dependent Role="Compra">
         <PropertyRef Name="Producto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Detalle_Venta_Tiempo_PC">
+    <End Role="PC" Type="Self.PC" Multiplicity="1" />
+    <End Role="Detalle_Venta_Tiempo" Type="Self.Detalle_Venta_Tiempo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PC">
+        <PropertyRef Name="IdPC" />
+      </Principal>
+      <Dependent Role="Detalle_Venta_Tiempo">
+        <PropertyRef Name="Fk_Pc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Detalle_Venta_Tiempo_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Detalle_Venta_Tiempo" Type="Self.Detalle_Venta_Tiempo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="Detalle_Venta_Tiempo">
+        <PropertyRef Name="Fk_Usuario" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -397,53 +421,13 @@ advertencia 6002: La tabla o vista 'BPB.dbo.VistaVentasPorMes' no tiene definida
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
-  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
-    <Parameter Name="owner_id" Type="int" Mode="In" />
-    <Parameter Name="version" Type="int" Mode="In" />
-    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
-  </Function>
-  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
-    <Parameter Name="owner_id" Type="int" Mode="In" />
-    <Parameter Name="version" Type="int" Mode="In" />
-    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
-  </Function>
-  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
-    <Parameter Name="owner_id" Type="int" Mode="In" />
-  </Function>
-  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
-    <Parameter Name="owner_id" Type="int" Mode="In" />
-  </Function>
-  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
-    <Parameter Name="owner_id" Type="int" Mode="In" />
-  </Function>
-  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
-    <Parameter Name="owner_id" Type="int" Mode="In" />
-    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
-  </Function>
-  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <EntityContainer Name="BPBModelStoreContainer">
-    <EntitySet Name="Compra" EntityType="Self.Compra" Schema="Compras" store:Type="Tables" />
-    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Categoria" EntityType="Self.Categoria" Schema="Productos" store:Type="Tables" />
-    <EntitySet Name="Estante" EntityType="Self.Estante" Schema="Productos" store:Type="Tables" />
-    <EntitySet Name="Producto" EntityType="Self.Producto" Schema="Productos" store:Type="Tables" />
-    <EntitySet Name="Proveedor" EntityType="Self.Proveedor" Schema="Productos" store:Type="Tables" />
-    <EntitySet Name="ModuloPrincipal" EntityType="Self.ModuloPrincipal" Schema="Usuarios" store:Type="Tables" />
-    <EntitySet Name="Modulos" EntityType="Self.Modulos" Schema="Usuarios" store:Type="Tables" />
-    <EntitySet Name="Perfiles" EntityType="Self.Perfiles" Schema="Usuarios" store:Type="Tables" />
-    <EntitySet Name="PerfilesModulos" EntityType="Self.PerfilesModulos" Schema="Usuarios" store:Type="Tables" />
-    <EntitySet Name="PerfilModulo" EntityType="Self.PerfilModulo" Schema="Usuarios" store:Type="Tables" />
-    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="Usuarios" store:Type="Tables" />
+    <EntitySet Name="Compra" EntityType="Self.Compra" Schema="Compras" store:Type="Tables" />
+    <EntitySet Name="Detalle_Venta_Tiempo" EntityType="Self.Detalle_Venta_Tiempo" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="DetalleVentas" EntityType="Self.DetalleVentas" Schema="Ventas" store:Type="Tables" />
     <EntitySet Name="Estado" EntityType="Self.Estado" Schema="Ventas" store:Type="Tables" />
-    <EntitySet Name="Venta" EntityType="Self.Venta" Schema="Ventas" store:Type="Tables" />
+    <EntitySet Name="Estante" EntityType="Self.Estante" Schema="Productos" store:Type="Tables" />
     <EntitySet Name="Facturas" EntityType="Self.Facturas" store:Type="Views" store:Schema="dbo">
       <DefiningQuery>SELECT 
 [Facturas].[Factura] AS [Factura], 
@@ -462,6 +446,16 @@ FROM [dbo].[Facturas] AS [Facturas]</DefiningQuery>
 [Imprimir_Facturas].[Monto] AS [Monto]
 FROM [dbo].[Imprimir_Facturas] AS [Imprimir_Facturas]</DefiningQuery>
     </EntitySet>
+    <EntitySet Name="ModuloPrincipal" EntityType="Self.ModuloPrincipal" Schema="Usuarios" store:Type="Tables" />
+    <EntitySet Name="Modulos" EntityType="Self.Modulos" Schema="Usuarios" store:Type="Tables" />
+    <EntitySet Name="PC" EntityType="Self.PC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Perfiles" EntityType="Self.Perfiles" Schema="Usuarios" store:Type="Tables" />
+    <EntitySet Name="PerfilesModulos" EntityType="Self.PerfilesModulos" Schema="Usuarios" store:Type="Tables" />
+    <EntitySet Name="PerfilModulo" EntityType="Self.PerfilModulo" Schema="Usuarios" store:Type="Tables" />
+    <EntitySet Name="Producto" EntityType="Self.Producto" Schema="Productos" store:Type="Tables" />
+    <EntitySet Name="Proveedor" EntityType="Self.Proveedor" Schema="Productos" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="Usuarios" store:Type="Tables" />
+    <EntitySet Name="Venta" EntityType="Self.Venta" Schema="Ventas" store:Type="Tables" />
     <EntitySet Name="Vista1" EntityType="Self.Vista1" store:Type="Views" store:Schema="dbo">
       <DefiningQuery>SELECT 
 [Vista1].[Codigo] AS [Codigo], 
@@ -499,6 +493,14 @@ FROM [dbo].[VistaVentasPorMes] AS [VistaVentasPorMes]</DefiningQuery>
     <AssociationSet Name="FK_Compras_Compra$Es_Un$Productos_Producto" Association="Self.FK_Compras_Compra$Es_Un$Productos_Producto">
       <End Role="Producto" EntitySet="Producto" />
       <End Role="Compra" EntitySet="Compra" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Detalle_Venta_Tiempo_PC" Association="Self.FK_Detalle_Venta_Tiempo_PC">
+      <End Role="PC" EntitySet="PC" />
+      <End Role="Detalle_Venta_Tiempo" EntitySet="Detalle_Venta_Tiempo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Detalle_Venta_Tiempo_Usuario" Association="Self.FK_Detalle_Venta_Tiempo_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Detalle_Venta_Tiempo" EntitySet="Detalle_Venta_Tiempo" />
     </AssociationSet>
     <AssociationSet Name="FK_Estado_Usuario" Association="Self.FK_Estado_Usuario">
       <End Role="Usuario" EntitySet="Usuario" />

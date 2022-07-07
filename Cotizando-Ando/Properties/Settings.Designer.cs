@@ -26,21 +26,11 @@ namespace Punto_de_venta.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(local)\\sqlexpress;Initial Catalog=BPB;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.1.106;Initial Catalog=BPB;Persist Security Info=True;User ID=" +
+            "Eliab;Password=Root123#")]
         public string BPBConnectionString {
             get {
                 return ((string)(this["BPBConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\SQLEXPRESS;Initial Catalog=BPB;Integrated Security=True;MultipleAct" +
-            "iveResultSets=True;Application Name=EntityFramework")]
-        public string BPBConnectionString911 {
-            get {
-                return ((string)(this["BPBConnectionString911"]));
             }
         }
     }

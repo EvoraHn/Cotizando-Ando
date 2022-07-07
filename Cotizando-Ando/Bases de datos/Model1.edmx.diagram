@@ -6,7 +6,6 @@
     <edmx:Diagrams>
       <Diagram DiagramId="a6a4c234f4cc4c58a0f95ebc3d664ed6" Name="Diagram1" ZoomLevel="83">
         <EntityTypeShape EntityType="BPBModel.Compra" Width="1.5" PointX="5.25" PointY="6" />
-        <EntityTypeShape EntityType="BPBModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="1.375" />
         <EntityTypeShape EntityType="BPBModel.Categoria" Width="1.5" PointX="0.75" PointY="3.25" />
         <EntityTypeShape EntityType="BPBModel.Estante" Width="1.5" PointX="0.75" PointY="0.75" />
         <EntityTypeShape EntityType="BPBModel.Producto" Width="1.5" PointX="3" PointY="2.375" />
@@ -37,7 +36,12 @@
         <AssociationConnector Association="BPBModel.FK_Usuario_Perfiles" />
         <AssociationConnector Association="BPBModel.FK_Estado_Usuario" />
         <AssociationConnector Association="BPBModel.PerfilesModulos" />
-      </Diagram>
+        <EntityTypeShape EntityType="BPBModel.Detalle_Venta_Tiempo" Width="1.5" PointX="8.5" PointY="17.25" />
+        <EntityTypeShape EntityType="BPBModel.PC" Width="1.5" PointX="6.25" PointY="21.375" />
+        <AssociationConnector Association="BPBModel.FK_Detalle_Venta_Tiempo_PC" />
+        <AssociationConnector Association="BPBModel.FK_Detalle_Venta_Tiempo_Usuario" />
+        <EntityTypeShape EntityType="BPBModel.sysdiagrams" Width="1.5" PointX="9.375" PointY="10.75" />
+        </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>
