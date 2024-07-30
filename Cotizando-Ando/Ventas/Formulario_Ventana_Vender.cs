@@ -118,7 +118,7 @@ namespace Punto_de_venta.Ventas
         private void LimpiarTodo()
         {
             rbtnninguno.Checked = true;
-            txtId.Text = txtCliente.Text = txtRTN.Text =
+            txtId.Text = txtCliente.Text = txtRTN.Text = txtBillete.Text =
             txtDescuentos.Text = txtImporteExento.Text = txtImporteExonerado.Text
             = txtISV15.Text = txtISV18.Text = txtIG18.Text = txtIG15.Text = txtTotal.Text =
             txtSubtotal.Text = txtBuscar.Text = string.Empty;
@@ -473,9 +473,33 @@ namespace Punto_de_venta.Ventas
             Limpiar();
         }
 
+
+        private void calcularVuelto()
+
+        {
+            double vuelto = 0;
+            if (txtBillete.Text == string.Empty)
+            {
+                txtBillete.Text = "0";
+            }
+            vuelto = Convert.ToDouble(txtBillete.Text) - Convert.ToDouble(txtTotal.Text) ;
+            if (vuelto > 0)
+            {
+                MessageBox.Show("Venta realizada correctamente , Su vuelto es: L. " + vuelto.ToString(), "Proceso realizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Total a cobrar: L. " + (vuelto*-1).ToString(), "Cobro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            
+        }
+
+
         private void btnImprimir_Click(object sender, EventArgs e)
         {
-
+            calcularVuelto();
+            //Punto_de_venta.Ventas.FrmVuelto Formulario = new Punto_de_venta.Ventas.FrmVuelto();
+            //Formulario.Show();
 
             HacerCuentas();
             //dgFactura.Focus();
@@ -493,7 +517,7 @@ namespace Punto_de_venta.Ventas
                     DisminuirInventario();
                     AgregarVenta();
                     AgregarDetalleDeVenta();
-                    MessageBox.Show("Venta realizada correctamente", "Proceso realizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //MessageBox.Show("Venta realizada correctamente", "Proceso realizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LimpiarTodo();
                     Mostrar_datos();
                 }
@@ -1180,6 +1204,18 @@ namespace Punto_de_venta.Ventas
             }
             MessageBox.Show("hola");
             HacerCuentas();
+        }
+
+        private void txtBillete_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Excluir cualquier caracter que no sea numero positivo y , y .
+            if ((e.KeyChar >= 32 && e.KeyChar <= 43) || (e.KeyChar >= 58 && e.KeyChar <= 255) || (e.KeyChar == 45) || (e.KeyChar == 47))
+            {
+                MessageBox.Show("Por favor ingresa solo numeros enteros positivos en este campo",
+                "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+                return;
+            }
         }
     }
 }

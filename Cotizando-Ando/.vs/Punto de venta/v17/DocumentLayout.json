@@ -15,6 +15,18 @@
       "RelativeMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|solutionrelative:ventas\\formulario_ventana_vender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|g:\\cotizando ando 271122\\cotizando-ando\\cotizando-ando\\ventas\\frmvuelto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|solutionrelative:ventas\\frmvuelto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|g:\\cotizando ando 271122\\cotizando-ando\\cotizando-ando\\ventas\\frmvuelto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|solutionrelative:ventas\\frmvuelto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|g:\\cotizando ando 271122\\cotizando-ando\\cotizando-ando\\inicio\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|solutionrelative:inicio\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\inicio\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|solutionrelative:inicio\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -26,8 +38,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.cs [Dise\u00F1o]",
+              "DocumentMoniker": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Inicio\\Login.cs",
+              "RelativeDocumentMoniker": "Inicio\\Login.cs",
+              "ToolTip": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Inicio\\Login.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Inicio\\Login.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T04:12:39.794Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmVuelto.cs",
+              "DocumentMoniker": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Ventas\\FrmVuelto.cs",
+              "RelativeDocumentMoniker": "Ventas\\FrmVuelto.cs",
+              "ToolTip": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Ventas\\FrmVuelto.cs",
+              "RelativeToolTip": "Ventas\\FrmVuelto.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAvwAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T04:11:10.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmVuelto.cs [Dise\u00F1o]",
+              "DocumentMoniker": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Ventas\\FrmVuelto.cs",
+              "RelativeDocumentMoniker": "Ventas\\FrmVuelto.cs",
+              "ToolTip": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Ventas\\FrmVuelto.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Ventas\\FrmVuelto.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T04:09:42.516Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -43,15 +92,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Login.cs",
               "DocumentMoniker": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Inicio\\Login.cs",
               "RelativeDocumentMoniker": "Inicio\\Login.cs",
               "ToolTip": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Inicio\\Login.cs",
               "RelativeToolTip": "Inicio\\Login.cs",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAWwJQAAABJAAAA",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAvwHUAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T03:08:25.348Z"
+              "WhenOpened": "2024-07-29T03:08:25.348Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -62,7 +112,8 @@
               "ToolTip": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Ventas\\Formulario_Ventana_Vender.cs [Dise\u00F1o]",
               "RelativeToolTip": "Ventas\\Formulario_Ventana_Vender.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T23:00:24.877Z"
+              "WhenOpened": "2024-07-28T23:00:24.877Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
@@ -72,9 +123,10 @@
               "RelativeDocumentMoniker": "Ventas\\Formulario_Ventana_Vender.cs",
               "ToolTip": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Ventas\\Formulario_Ventana_Vender.cs",
               "RelativeToolTip": "Ventas\\Formulario_Ventana_Vender.cs",
-              "ViewState": "AQIAAKoBAAAAAAAAAAAewLkBAAAeAAAA",
+              "ViewState": "AQIAANMBAAAAAAAAAAAewO0BAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T23:00:26.516Z"
+              "WhenOpened": "2024-07-28T23:00:26.516Z",
+              "EditorCaption": ""
             }
           ]
         }

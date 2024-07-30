@@ -507,3 +507,4 @@ G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.
 G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Compras.Formulario_Compras_Generales.resources
 G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Ventas.Formulario_CRUD_Correlativo.resources
 G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_cierre_Diario.resources
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Ventas.FrmVuelto.resources

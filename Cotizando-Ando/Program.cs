@@ -19,9 +19,9 @@ namespace Punto_de_venta
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Punto_de_venta.Menú.Menu_estilo_2(1));
             //Application.Run(new Punto_de_venta.Ventas.Formulario_Cancelar_Factura());
-            Application.Run(new Punto_de_venta.Mantenimientos.Mantenimiento_cierre_Diario());
+            //Application.Run(new Punto_de_venta.Mantenimientos.Mantenimiento_cierre_Diario());
             //("Administración"));
-            //Application.Run(new Punto_de_venta.Inicio.Login());
+            Application.Run(new Punto_de_venta.Inicio.Login());
             //Application.Run(new Punto_de_venta.Ventas.Formulario_Ventana_Vender());
             Application.Exit();
             //Application.Run(new Punto_de_venta.Mantenimientos.Mantenimiento_Usuarios_2_0());
