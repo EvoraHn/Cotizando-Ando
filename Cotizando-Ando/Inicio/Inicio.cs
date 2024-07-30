@@ -27,7 +27,7 @@ namespace Punto_de_venta.Inicio
             linkLabel1.Links.Add(0, 0, "https://wa.me/qr/ZV523Y7QNQHCE1");
             Mostrar_datos();
             Reloj();
-            cargarGrafico();
+            //cargarGrafico();
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -36,18 +36,18 @@ namespace Punto_de_venta.Inicio
         }
         private void Mostrar_datos()
         {
-            /*
+            
             var tProductos = from p in entity.Vista1
                              where p.Existencias < 10
                              select new
                              {
-                                 //p.Codigo,
+                                 p.Codigo,
                                  p.Producto,
                                  p.Existencias
                                
                              };
             this.mifiltro = (tProductos.CopyAnonymusToDataTable()).DefaultView;
-            this.dgProductos.DataSource = mifiltro;*/
+            this.dgProductos.DataSource = mifiltro;
 
         }
         private void Reloj()
@@ -69,66 +69,74 @@ namespace Punto_de_venta.Inicio
             lblFechaCompleta.Text = DateTime.Now.ToShortDateString();
             
         }
-        private void cargarGrafico()
-        {/*
-            var tMeses = from p in entity.VistaVentasPorMes
-                         select new
-                         {
-                             p.Enero,
-                             p.Febrero,
-                             p.Marzo,
-                             p.Abril,
-                             p.Mayo,
-                             p.Junio,
-                             p.Julio,
-                             p.Agosto,
-                             p.Septiembre,
-                             p.Octubre,
-                             p.Noviembre,
-                             p.Diciembre
+        //private void cargarGrafico()
+        //{
+        //    var tMeses = from p in entity.VistaVentasPorMes
+        //                 select new
+        //                 {
+        //                     p.Enero,
+        //                     p.Febrero,
+        //                     p.Marzo,
+        //                     p.Abril,
+        //                     p.Mayo,
+        //                     p.Junio,
+        //                     p.Julio,
+        //                     p.Agosto,
+        //                     p.Septiembre,
+        //                     p.Octubre,
+        //                     p.Noviembre,
+        //                     p.Diciembre
 
-                         };
-            var tMeses1 = from p in entity.Producto
-                         select new
-                         {
-                             p.IdProducto,
-                             
+        //                 };
+        //    var tMeses1 = from p in entity.Producto
+        //                  select new
+        //                  {
+        //                      p.IdProducto,
 
-                         };
-            double Enero = Convert.ToDouble(tMeses.FirstOrDefault().Enero);
-            double Febrero = Convert.ToDouble(tMeses.FirstOrDefault().Febrero);
-            double Marzo = Convert.ToDouble(tMeses.FirstOrDefault().Marzo);
-            double Abril = Convert.ToDouble(tMeses.FirstOrDefault().Abril);
-            double Mayo = Convert.ToDouble(tMeses.FirstOrDefault().Mayo);
-            double Junio = Convert.ToDouble(tMeses.FirstOrDefault().Junio);
-            double Julio = Convert.ToDouble(tMeses.FirstOrDefault().Julio);
-            double Agosto = Convert.ToDouble(tMeses.FirstOrDefault().Agosto);
-            double Septiembre = Convert.ToDouble(tMeses.FirstOrDefault().Septiembre);
-            double Octubre = Convert.ToDouble(tMeses.FirstOrDefault().Octubre);
-            double Noviembre = Convert.ToDouble(tMeses.FirstOrDefault().Noviembre);
-            double Diciembre = Convert.ToDouble(tMeses.FirstOrDefault().Diciembre);
-            double[] puntos = { Enero,Febrero,Marzo,Abril,Mayo,Junio,Julio,Agosto,Septiembre,Octubre,Noviembre,Diciembre};
-            
-            string[] series = { "Enero", "febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" };
-            
-            //ctMeses.Titles.Add("Ventas Por mes en este año");
-            for (int i = 0; i < series.Length; i++)
-            {
-                //titulos
-                Series serie = ctMeses.Series.Add(series[i]);
 
-                // cantidades 
-                //serie.Label = "L "+ puntos[i].ToString();
-                serie.Label = puntos[i].ToString();
-                serie.Points.Add(puntos[i]);
-            }*/
-        }
+        //                  };
+        //    double Enero = Convert.ToDouble(tMeses.FirstOrDefault().Enero);
+        //    double Febrero = Convert.ToDouble(tMeses.FirstOrDefault().Febrero);
+        //    double Marzo = Convert.ToDouble(tMeses.FirstOrDefault().Marzo);
+        //    double Abril = Convert.ToDouble(tMeses.FirstOrDefault().Abril);
+        //    double Mayo = Convert.ToDouble(tMeses.FirstOrDefault().Mayo);
+        //    double Junio = Convert.ToDouble(tMeses.FirstOrDefault().Junio);
+        //    double Julio = Convert.ToDouble(tMeses.FirstOrDefault().Julio);
+        //    double Agosto = Convert.ToDouble(tMeses.FirstOrDefault().Agosto);
+        //    double Septiembre = Convert.ToDouble(tMeses.FirstOrDefault().Septiembre);
+        //    double Octubre = Convert.ToDouble(tMeses.FirstOrDefault().Octubre);
+        //    double Noviembre = Convert.ToDouble(tMeses.FirstOrDefault().Noviembre);
+        //    double Diciembre = Convert.ToDouble(tMeses.FirstOrDefault().Diciembre);
+        //    double[] puntos = { Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, Septiembre, Octubre, Noviembre, Diciembre };
+
+        //    string[] series = { "Enero", "febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" };
+
+        //    //ctMeses.Titles.Add("Ventas Por mes en este año");
+        //    for (int i = 0; i < series.Length; i++)
+        //    {
+        //        //titulos
+        //        Series serie = ctMeses.Series.Add(series[i]);
+
+        //        // cantidades 
+        //        //serie.Label = "L "+ puntos[i].ToString();
+        //        serie.Label = puntos[i].ToString();
+        //        serie.Points.Add(puntos[i]);
+        //    }
+        //}
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start(e.Link.LinkData.ToString());
         }
 
-      
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

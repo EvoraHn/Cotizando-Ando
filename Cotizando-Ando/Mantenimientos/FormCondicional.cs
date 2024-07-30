@@ -30,11 +30,11 @@ namespace Punto_de_venta.Mantenimientos
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //if (Acceso == "Administración")
-            //{
-            //    button1.Enabled = false;
-            //}
-            //MessageBox.Show(Acceso);
+        //    if (Acceso == "Administración")
+        //    {
+        //        button1.Enabled = false;
+        //    }
+        //    MessageBox.Show(Acceso);
         }
 
         private void lbltitulo_Click(object sender, EventArgs e)
@@ -98,9 +98,9 @@ namespace Punto_de_venta.Mantenimientos
                         sw.WriteLine(rtxtLicencia.Text);
                         //Write a second line of text
                         sw.WriteLine("Licencia Generada Por Eliab Evora a la fecha de" + " " + Actual);
-                        sw.WriteLine("Si La licencia se llega a vencer debe contactar con el adminitador de Sistema (Eliab Evora).");
+                        sw.WriteLine("Si La licencia se llega a vencer debe contactar con el administrador de Sistema .");
                         sw.WriteLine("La renovación de la licencia está ligada a costo, consulte de acuerdo a la cantidad de tiempo que desea usar el sistema.");
-                        sw.WriteLine("+50499085779 Contacto del administrador de sistema.");
+                        sw.WriteLine("+504 3268-9959 Contacto del administrador de sistema.");
                         //Close the file
                         sw.Close();
                         MessageBox.Show("Licencia guardada correctamente");
@@ -109,12 +109,12 @@ namespace Punto_de_venta.Mantenimientos
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Licencia invalida " );
+                    MessageBox.Show("Licencia invalida ");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Licencia invalida " );
+                MessageBox.Show("Licencia invalida ");
             }
             finally
             {

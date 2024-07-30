@@ -87,6 +87,7 @@ namespace Punto_de_venta.Mantenimientos
         private void Mostrar_datos()
         {
             var tProductos = from p in entity.Vista1
+                             orderby p.Producto
                              select new
                              {
                                  p.Codigo,
@@ -94,9 +95,11 @@ namespace Punto_de_venta.Mantenimientos
                                  p.Proveedor,
                                  p.Producto,
                                  p.Precio,
-                                /* p.Costo,*/
-                                 
+                                 p.Existencias,
+                                 p.Costo    
                              };
+           
+
             this.mifiltro = (tProductos.CopyAnonymusToDataTable()).DefaultView;
             this.dgProductos.DataSource = mifiltro;
 
@@ -139,6 +142,7 @@ namespace Punto_de_venta.Mantenimientos
                     txtProveedor.Text = Convert.ToString(tabla.Proveedor);
                     txtEstante.Text = Convert.ToString(tabla.Estante);
                     cmbImpuesto.Text = tabla.Tipo_Impuesto;
+                    txtCantidad.Text = Convert.ToString(tabla.Cantidad);
                     txtId.Enabled = false;
                     txtCategoria.Enabled = false;
                     txtEstante.Enabled = false;
@@ -214,12 +218,13 @@ namespace Punto_de_venta.Mantenimientos
                         {
                             Punto_de_venta.Bases_de_datos.Producto tabla = new Punto_de_venta.Bases_de_datos.Producto();
                             tabla.IdProducto = txtId.Text;
-                            tabla.Nombre = txtNombre.Text;
+                            tabla.Nombre = txtNombre.Text.ToUpper();
                             tabla.Cantidad = 0;
                             tabla.PrecioCosto = Convert.ToDecimal(txtCosto.Text);
                             tabla.PrecioVenta = Convert.ToDecimal(txtVenta.Text);
                             tabla.Categoria = Convert.ToInt32(txtCategoria.Text);
                             tabla.Proveedor = Convert.ToInt32(txtProveedor.Text);
+                            //tabla.Cantidad = Convert.ToInt32(txtCantidad.Text);
                             if (txtEstante.Text.Equals(""))
                             {
                                 txtEstante.Text = "1";
@@ -319,7 +324,7 @@ namespace Punto_de_venta.Mantenimientos
         private void txtVenta_KeyPress(object sender, KeyPressEventArgs e)
         {
             //permite . , y números recuerda ajustarlo de acuerdo a la región de la computadora.
-            if ((e.KeyChar >= 32 && e.KeyChar <= 45) || (e.KeyChar == 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            if ((e.KeyChar >= 32 && e.KeyChar <= 43) || (e.KeyChar >= 58 && e.KeyChar <= 255) || (e.KeyChar == 45) || (e.KeyChar == 47))
             {
                 MessageBox.Show("Por favor ingresa solo numeros positivos en este campo , los decimales se representan por punto '.'",
                 "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -331,7 +336,7 @@ namespace Punto_de_venta.Mantenimientos
         private void txtCosto_KeyPress(object sender, KeyPressEventArgs e)
         {
             //permite . , y números recuerda ajustarlo de acuerdo a la región de la computadora.
-            if ((e.KeyChar >= 32 && e.KeyChar <= 45) ||  (e.KeyChar == 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            if ((e.KeyChar >= 32 && e.KeyChar <= 43) || (e.KeyChar >= 58 && e.KeyChar <= 255) || (e.KeyChar == 45) || (e.KeyChar == 47))
             {
                 MessageBox.Show("Por favor ingresa solo numeros positivos en este campo, los decimales se representan por punto '.' ",
                 "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -341,6 +346,56 @@ namespace Punto_de_venta.Mantenimientos
            
         }
 
-     
+        private void lblBuscar_Click(object sender, EventArgs e)
+        {
+
+            string salida_datos = "";
+            string[] palabras_busqueda = this.txtBuscar.Text.Split(' ');
+            foreach (string palabra in palabras_busqueda)
+            {
+                if (salida_datos.Length == 0)
+                {
+                    salida_datos = "(Codigo LIKE '%" + palabra + "%' OR Producto LIKE '%" + palabra + "%' )";
+                }
+                else
+                {
+                    salida_datos = "(Codigo LIKE '%" + palabra + "%' OR Producto LIKE '%" + palabra + "%' )";
+                }
+            }
+            this.mifiltro.RowFilter = salida_datos;
+        }
+
+        private void BtnActualizar_Click(object sender, EventArgs e)
+        {
+            Mostrar_datos();
+        }
+        private void Buscar()
+        {
+
+            string salida_datos = "";
+            string[] palabras_busqueda = this.txtBuscar.Text.Split(' ');
+            foreach (string palabra in palabras_busqueda)
+            {
+                if (salida_datos.Length == 0)
+                {
+                    salida_datos = "(Codigo LIKE '%" + palabra + "%' OR Producto LIKE '%" + palabra + "%' )";
+                }
+                else
+                {
+                    salida_datos = "(Codigo LIKE '%" + palabra + "%' OR Producto LIKE '%" + palabra + "%' )";
+                }
+            }
+            this.mifiltro.RowFilter = salida_datos;
+        }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -31,6 +31,27 @@ namespace Punto_de_venta.Mantenimientos
 
         private void txtBuscar_KeyUp(object sender, KeyEventArgs e)
         {
+            //string salida_datos = "";
+            //string[] palabras_busqueda = this.txtBuscar.Text.Split(' ');
+            //foreach (string palabra in palabras_busqueda)
+            //{
+            //    if (salida_datos.Length == 0)
+            //    {
+            //        salida_datos = "(IdUsuario LIKE '%" + palabra + "%' OR Usr LIKE '%" + palabra + "%' )";
+            //    }
+            //    else
+            //    {
+            //        salida_datos = "(IdUsuario LIKE '%" + palabra + "%' OR Usr LIKE '%" + palabra + "%' )";
+            //    }
+            //}
+            //this.mifiltro.RowFilter = salida_datos;
+
+            Buscar();
+
+        }
+
+        private void Buscar()
+        {
             string salida_datos = "";
             string[] palabras_busqueda = this.txtBuscar.Text.Split(' ');
             foreach (string palabra in palabras_busqueda)
@@ -45,9 +66,7 @@ namespace Punto_de_venta.Mantenimientos
                 }
             }
             this.mifiltro.RowFilter = salida_datos;
-
         }
-
         private void Mantenimiento_Usuarios_2_0_Load(object sender, EventArgs e)
         {
             txtBuscar.Focus();
@@ -63,7 +82,8 @@ namespace Punto_de_venta.Mantenimientos
         private void Mostrar_datos()
         {
             var tUsuarios = from p in entity.Usuario
-                             select new
+                            orderby p.Usr
+                            select new
                              {
                                  p.IdUsuario,
                                  p.Usr,
@@ -273,6 +293,12 @@ namespace Punto_de_venta.Mantenimientos
                     MessageBox.Show("¡Error al eliminar usuario!"); return;
                 }
             }
+        }
+
+        private void BtnActualizar_Click(object sender, EventArgs e)
+        {
+            Mostrar_datos();
+            Buscar();
         }
     }
 }

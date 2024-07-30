@@ -68,6 +68,7 @@ namespace Punto_de_venta.Mantenimientos
             this.txtConfirmacionPwd = new System.Windows.Forms.TextBox();
             this.txtUsr = new System.Windows.Forms.TextBox();
             this.txtPwd = new System.Windows.Forms.TextBox();
+            this.BtnActualizar = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgProductos)).BeginInit();
             this.panel1.SuspendLayout();
@@ -79,14 +80,15 @@ namespace Punto_de_venta.Mantenimientos
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.panel2.Controls.Add(this.BtnActualizar);
             this.panel2.Controls.Add(this.btnCerrar);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.txtBuscar);
             this.panel2.Location = new System.Drawing.Point(0, 2);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1655, 59);
+            this.panel2.Size = new System.Drawing.Size(1241, 48);
             this.panel2.TabIndex = 33;
             // 
             // btnCerrar
@@ -100,10 +102,10 @@ namespace Punto_de_venta.Mantenimientos
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.ForeColor = System.Drawing.Color.White;
-            this.btnCerrar.Location = new System.Drawing.Point(16, 6);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCerrar.Location = new System.Drawing.Point(12, 5);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(51, 46);
+            this.btnCerrar.Size = new System.Drawing.Size(38, 37);
             this.btnCerrar.TabIndex = 17;
             this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
@@ -114,9 +116,10 @@ namespace Punto_de_venta.Mantenimientos
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label8.Location = new System.Drawing.Point(1085, 14);
+            this.label8.Location = new System.Drawing.Point(814, 11);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(99, 29);
+            this.label8.Size = new System.Drawing.Size(78, 24);
             this.label8.TabIndex = 30;
             this.label8.Text = "Buscar :";
             // 
@@ -125,9 +128,10 @@ namespace Punto_de_venta.Mantenimientos
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label9.Location = new System.Drawing.Point(107, 22);
+            this.label9.Location = new System.Drawing.Point(80, 18);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(306, 29);
+            this.label9.Size = new System.Drawing.Size(239, 24);
             this.label9.TabIndex = 30;
             this.label9.Text = "Mantenimiento de Usuarios";
             // 
@@ -138,10 +142,10 @@ namespace Punto_de_venta.Mantenimientos
             this.txtBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscar.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtBuscar.Location = new System.Drawing.Point(1203, 14);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBuscar.Location = new System.Drawing.Point(902, 11);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(439, 34);
+            this.txtBuscar.Size = new System.Drawing.Size(329, 28);
             this.txtBuscar.TabIndex = 15;
             this.txtBuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtBuscar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtBuscar_KeyUp);
@@ -156,10 +160,10 @@ namespace Punto_de_venta.Mantenimientos
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.ForeColor = System.Drawing.Color.Gray;
-            this.btnNuevo.Location = new System.Drawing.Point(357, 993);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNuevo.Location = new System.Drawing.Point(268, 807);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(140, 34);
+            this.btnNuevo.Size = new System.Drawing.Size(105, 28);
             this.btnNuevo.TabIndex = 14;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = false;
@@ -175,10 +179,10 @@ namespace Punto_de_venta.Mantenimientos
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.Gray;
-            this.btnGuardar.Location = new System.Drawing.Point(29, 993);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnGuardar.Location = new System.Drawing.Point(22, 807);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(140, 34);
+            this.btnGuardar.Size = new System.Drawing.Size(105, 28);
             this.btnGuardar.TabIndex = 12;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -213,8 +217,8 @@ namespace Punto_de_venta.Mantenimientos
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgProductos.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgProductos.Location = new System.Drawing.Point(513, 71);
-            this.dgProductos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgProductos.Location = new System.Drawing.Point(385, 58);
+            this.dgProductos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgProductos.Name = "dgProductos";
             this.dgProductos.ReadOnly = true;
             this.dgProductos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -223,7 +227,7 @@ namespace Punto_de_venta.Mantenimientos
             this.dgProductos.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgProductos.RowTemplate.Height = 20;
             this.dgProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgProductos.Size = new System.Drawing.Size(1130, 955);
+            this.dgProductos.Size = new System.Drawing.Size(848, 776);
             this.dgProductos.TabIndex = 16;
             this.dgProductos.SelectionChanged += new System.EventHandler(this.dgProductos_SelectionChanged);
             // 
@@ -237,10 +241,10 @@ namespace Punto_de_venta.Mantenimientos
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.Gray;
-            this.btnEliminar.Location = new System.Drawing.Point(195, 993);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEliminar.Location = new System.Drawing.Point(146, 807);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(140, 34);
+            this.btnEliminar.Size = new System.Drawing.Size(105, 28);
             this.btnEliminar.TabIndex = 13;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -287,9 +291,9 @@ namespace Punto_de_venta.Mantenimientos
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.ForeColor = System.Drawing.Color.Gray;
             this.panel1.Location = new System.Drawing.Point(-1, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1655, 1041);
+            this.panel1.Size = new System.Drawing.Size(1241, 846);
             this.panel1.TabIndex = 0;
             // 
             // cmbAcceso
@@ -299,10 +303,10 @@ namespace Punto_de_venta.Mantenimientos
             this.cmbAcceso.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.cmbAcceso.ForeColor = System.Drawing.Color.Gray;
             this.cmbAcceso.FormattingEnabled = true;
-            this.cmbAcceso.Location = new System.Drawing.Point(277, 597);
-            this.cmbAcceso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbAcceso.Location = new System.Drawing.Point(208, 485);
+            this.cmbAcceso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbAcceso.Name = "cmbAcceso";
-            this.cmbAcceso.Size = new System.Drawing.Size(219, 37);
+            this.cmbAcceso.Size = new System.Drawing.Size(165, 30);
             this.cmbAcceso.TabIndex = 7;
             // 
             // cmbEstado
@@ -312,37 +316,34 @@ namespace Punto_de_venta.Mantenimientos
             this.cmbEstado.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.cmbEstado.ForeColor = System.Drawing.Color.Gray;
             this.cmbEstado.FormattingEnabled = true;
-            this.cmbEstado.Location = new System.Drawing.Point(29, 597);
-            this.cmbEstado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbEstado.Location = new System.Drawing.Point(22, 485);
+            this.cmbEstado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbEstado.Name = "cmbEstado";
-            this.cmbEstado.Size = new System.Drawing.Size(224, 37);
+            this.cmbEstado.Size = new System.Drawing.Size(169, 30);
             this.cmbEstado.TabIndex = 6;
             // 
             // TxtFamiliar
             // 
-            this.TxtFamiliar.Location = new System.Drawing.Point(277, 663);
-            this.TxtFamiliar.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtFamiliar.Location = new System.Drawing.Point(208, 539);
             this.TxtFamiliar.Mask = "0000-0000";
             this.TxtFamiliar.Name = "TxtFamiliar";
-            this.TxtFamiliar.Size = new System.Drawing.Size(219, 34);
+            this.TxtFamiliar.Size = new System.Drawing.Size(165, 28);
             this.TxtFamiliar.TabIndex = 9;
             // 
             // txtCelular
             // 
-            this.txtCelular.Location = new System.Drawing.Point(27, 663);
-            this.txtCelular.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCelular.Location = new System.Drawing.Point(20, 539);
             this.txtCelular.Mask = "0000-0000";
             this.txtCelular.Name = "txtCelular";
-            this.txtCelular.Size = new System.Drawing.Size(223, 34);
+            this.txtCelular.Size = new System.Drawing.Size(168, 28);
             this.txtCelular.TabIndex = 8;
             // 
             // txtIdentidad
             // 
-            this.txtIdentidad.Location = new System.Drawing.Point(27, 405);
-            this.txtIdentidad.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIdentidad.Location = new System.Drawing.Point(20, 329);
             this.txtIdentidad.Mask = "0000-0000-00000";
             this.txtIdentidad.Name = "txtIdentidad";
-            this.txtIdentidad.Size = new System.Drawing.Size(227, 34);
+            this.txtIdentidad.Size = new System.Drawing.Size(171, 28);
             this.txtIdentidad.TabIndex = 0;
             // 
             // button2
@@ -355,10 +356,10 @@ namespace Punto_de_venta.Mantenimientos
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Gray;
-            this.button2.Location = new System.Drawing.Point(195, 1127);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(146, 916);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(140, 34);
+            this.button2.Size = new System.Drawing.Size(105, 28);
             this.button2.TabIndex = 31;
             this.button2.Text = "Eliminar";
             this.button2.UseVisualStyleBackColor = false;
@@ -373,10 +374,10 @@ namespace Punto_de_venta.Mantenimientos
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Gray;
-            this.button1.Location = new System.Drawing.Point(195, 1060);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(146, 861);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 34);
+            this.button1.Size = new System.Drawing.Size(105, 28);
             this.button1.TabIndex = 31;
             this.button1.Text = "Eliminar";
             this.button1.UseVisualStyleBackColor = false;
@@ -386,10 +387,10 @@ namespace Punto_de_venta.Mantenimientos
             this.logo.BackgroundImage = global::Punto_de_venta.Properties.Resources.hombre;
             this.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.logo.InitialImage = global::Punto_de_venta.Properties.Resources.Producto1;
-            this.logo.Location = new System.Drawing.Point(112, 71);
-            this.logo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.logo.Location = new System.Drawing.Point(84, 58);
+            this.logo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(297, 290);
+            this.logo.Size = new System.Drawing.Size(223, 236);
             this.logo.TabIndex = 17;
             this.logo.TabStop = false;
             // 
@@ -398,9 +399,10 @@ namespace Punto_de_venta.Mantenimientos
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(277, 508);
+            this.label5.Location = new System.Drawing.Point(208, 413);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(159, 24);
+            this.label5.Size = new System.Drawing.Size(121, 18);
             this.label5.TabIndex = 2;
             this.label5.Text = "Segundo apellido";
             // 
@@ -409,9 +411,10 @@ namespace Punto_de_venta.Mantenimientos
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Gray;
-            this.label12.Location = new System.Drawing.Point(277, 443);
+            this.label12.Location = new System.Drawing.Point(208, 360);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(159, 24);
+            this.label12.Size = new System.Drawing.Size(122, 18);
             this.label12.TabIndex = 2;
             this.label12.Text = "Segundo nombre";
             // 
@@ -420,9 +423,10 @@ namespace Punto_de_venta.Mantenimientos
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Gray;
-            this.label14.Location = new System.Drawing.Point(277, 702);
+            this.label14.Location = new System.Drawing.Point(208, 570);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(179, 24);
+            this.label14.Size = new System.Drawing.Size(142, 18);
             this.label14.TabIndex = 2;
             this.label14.Text = "Verificar Contraseña";
             // 
@@ -431,9 +435,10 @@ namespace Punto_de_venta.Mantenimientos
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(277, 636);
+            this.label3.Location = new System.Drawing.Point(208, 517);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 24);
+            this.label3.Size = new System.Drawing.Size(110, 18);
             this.label3.TabIndex = 2;
             this.label3.Text = "Celular Familiar";
             // 
@@ -442,9 +447,10 @@ namespace Punto_de_venta.Mantenimientos
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Gray;
-            this.label11.Location = new System.Drawing.Point(277, 378);
+            this.label11.Location = new System.Drawing.Point(208, 307);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(74, 24);
+            this.label11.Size = new System.Drawing.Size(60, 18);
             this.label11.TabIndex = 2;
             this.label11.Text = "Usuario";
             // 
@@ -453,9 +459,10 @@ namespace Punto_de_venta.Mantenimientos
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Gray;
-            this.label10.Location = new System.Drawing.Point(277, 571);
+            this.label10.Location = new System.Drawing.Point(208, 464);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(74, 24);
+            this.label10.Size = new System.Drawing.Size(58, 18);
             this.label10.TabIndex = 2;
             this.label10.Text = "Acceso";
             // 
@@ -464,9 +471,10 @@ namespace Punto_de_venta.Mantenimientos
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(27, 508);
+            this.label4.Location = new System.Drawing.Point(20, 413);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(136, 24);
+            this.label4.Size = new System.Drawing.Size(106, 18);
             this.label4.TabIndex = 2;
             this.label4.Text = "Primer apellido";
             // 
@@ -475,9 +483,10 @@ namespace Punto_de_venta.Mantenimientos
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(27, 443);
+            this.label7.Location = new System.Drawing.Point(20, 360);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(136, 24);
+            this.label7.Size = new System.Drawing.Size(107, 18);
             this.label7.TabIndex = 2;
             this.label7.Text = "Primer nombre";
             // 
@@ -486,9 +495,10 @@ namespace Punto_de_venta.Mantenimientos
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Gray;
-            this.label13.Location = new System.Drawing.Point(27, 702);
+            this.label13.Location = new System.Drawing.Point(20, 570);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(106, 24);
+            this.label13.Size = new System.Drawing.Size(85, 18);
             this.label13.TabIndex = 2;
             this.label13.Text = "Contraseña";
             // 
@@ -497,9 +507,10 @@ namespace Punto_de_venta.Mantenimientos
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(27, 636);
+            this.label2.Location = new System.Drawing.Point(20, 517);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 24);
+            this.label2.Size = new System.Drawing.Size(102, 18);
             this.label2.TabIndex = 2;
             this.label2.Text = "Celular Propio";
             // 
@@ -508,9 +519,10 @@ namespace Punto_de_venta.Mantenimientos
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Gray;
-            this.label6.Location = new System.Drawing.Point(27, 378);
+            this.label6.Location = new System.Drawing.Point(20, 307);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 24);
+            this.label6.Size = new System.Drawing.Size(66, 18);
             this.label6.TabIndex = 2;
             this.label6.Text = "Identidad";
             // 
@@ -519,9 +531,10 @@ namespace Punto_de_venta.Mantenimientos
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(27, 571);
+            this.label1.Location = new System.Drawing.Point(20, 464);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 24);
+            this.label1.Size = new System.Drawing.Size(55, 18);
             this.label1.TabIndex = 2;
             this.label1.Text = "Estado";
             // 
@@ -530,10 +543,10 @@ namespace Punto_de_venta.Mantenimientos
             this.txtSApellido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSApellido.ForeColor = System.Drawing.Color.Gray;
-            this.txtSApellido.Location = new System.Drawing.Point(277, 535);
-            this.txtSApellido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSApellido.Location = new System.Drawing.Point(208, 435);
+            this.txtSApellido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSApellido.Name = "txtSApellido";
-            this.txtSApellido.Size = new System.Drawing.Size(219, 34);
+            this.txtSApellido.Size = new System.Drawing.Size(165, 28);
             this.txtSApellido.TabIndex = 5;
             // 
             // txtPApellido
@@ -541,10 +554,10 @@ namespace Punto_de_venta.Mantenimientos
             this.txtPApellido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPApellido.ForeColor = System.Drawing.Color.Gray;
-            this.txtPApellido.Location = new System.Drawing.Point(27, 535);
-            this.txtPApellido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPApellido.Location = new System.Drawing.Point(20, 435);
+            this.txtPApellido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPApellido.Name = "txtPApellido";
-            this.txtPApellido.Size = new System.Drawing.Size(227, 34);
+            this.txtPApellido.Size = new System.Drawing.Size(171, 28);
             this.txtPApellido.TabIndex = 4;
             // 
             // txtPNombre
@@ -552,10 +565,10 @@ namespace Punto_de_venta.Mantenimientos
             this.txtPNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPNombre.ForeColor = System.Drawing.Color.Gray;
-            this.txtPNombre.Location = new System.Drawing.Point(27, 468);
-            this.txtPNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPNombre.Location = new System.Drawing.Point(20, 380);
+            this.txtPNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPNombre.Name = "txtPNombre";
-            this.txtPNombre.Size = new System.Drawing.Size(227, 34);
+            this.txtPNombre.Size = new System.Drawing.Size(171, 28);
             this.txtPNombre.TabIndex = 2;
             // 
             // txtSNombre
@@ -563,10 +576,10 @@ namespace Punto_de_venta.Mantenimientos
             this.txtSNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSNombre.ForeColor = System.Drawing.Color.Gray;
-            this.txtSNombre.Location = new System.Drawing.Point(277, 470);
-            this.txtSNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSNombre.Location = new System.Drawing.Point(208, 382);
+            this.txtSNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSNombre.Name = "txtSNombre";
-            this.txtSNombre.Size = new System.Drawing.Size(219, 34);
+            this.txtSNombre.Size = new System.Drawing.Size(165, 28);
             this.txtSNombre.TabIndex = 3;
             // 
             // txtConfirmacionPwd
@@ -574,11 +587,11 @@ namespace Punto_de_venta.Mantenimientos
             this.txtConfirmacionPwd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtConfirmacionPwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmacionPwd.ForeColor = System.Drawing.Color.Gray;
-            this.txtConfirmacionPwd.Location = new System.Drawing.Point(277, 726);
-            this.txtConfirmacionPwd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtConfirmacionPwd.Location = new System.Drawing.Point(208, 590);
+            this.txtConfirmacionPwd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtConfirmacionPwd.Name = "txtConfirmacionPwd";
             this.txtConfirmacionPwd.PasswordChar = '*';
-            this.txtConfirmacionPwd.Size = new System.Drawing.Size(219, 34);
+            this.txtConfirmacionPwd.Size = new System.Drawing.Size(165, 28);
             this.txtConfirmacionPwd.TabIndex = 11;
             // 
             // txtUsr
@@ -586,10 +599,10 @@ namespace Punto_de_venta.Mantenimientos
             this.txtUsr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUsr.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsr.ForeColor = System.Drawing.Color.Gray;
-            this.txtUsr.Location = new System.Drawing.Point(277, 405);
-            this.txtUsr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtUsr.Location = new System.Drawing.Point(208, 329);
+            this.txtUsr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUsr.Name = "txtUsr";
-            this.txtUsr.Size = new System.Drawing.Size(219, 34);
+            this.txtUsr.Size = new System.Drawing.Size(165, 28);
             this.txtUsr.TabIndex = 1;
             // 
             // txtPwd
@@ -597,22 +610,43 @@ namespace Punto_de_venta.Mantenimientos
             this.txtPwd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPwd.ForeColor = System.Drawing.Color.Gray;
-            this.txtPwd.Location = new System.Drawing.Point(27, 726);
-            this.txtPwd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPwd.Location = new System.Drawing.Point(20, 590);
+            this.txtPwd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.PasswordChar = '*';
-            this.txtPwd.Size = new System.Drawing.Size(223, 34);
+            this.txtPwd.Size = new System.Drawing.Size(168, 28);
             this.txtPwd.TabIndex = 10;
+            // 
+            // BtnActualizar
+            // 
+            this.BtnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnActualizar.BackColor = System.Drawing.Color.Transparent;
+            this.BtnActualizar.BackgroundImage = global::Punto_de_venta.Properties.Resources.Actualizar;
+            this.BtnActualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnActualizar.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.BtnActualizar.FlatAppearance.BorderSize = 0;
+            this.BtnActualizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BtnActualizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.BtnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnActualizar.ForeColor = System.Drawing.Color.Gray;
+            this.BtnActualizar.Location = new System.Drawing.Point(773, 9);
+            this.BtnActualizar.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnActualizar.Name = "BtnActualizar";
+            this.BtnActualizar.Size = new System.Drawing.Size(37, 29);
+            this.BtnActualizar.TabIndex = 31;
+            this.BtnActualizar.UseVisualStyleBackColor = false;
+            this.BtnActualizar.Click += new System.EventHandler(this.BtnActualizar_Click);
             // 
             // Mantenimiento_Usuarios_2_0
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1653, 1042);
+            this.ClientSize = new System.Drawing.Size(1240, 847);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Mantenimiento_Usuarios_2_0";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "|";
@@ -667,5 +701,6 @@ namespace Punto_de_venta.Mantenimientos
         private System.Windows.Forms.TextBox txtPNombre;
         private System.Windows.Forms.ComboBox cmbAcceso;
         private System.Windows.Forms.ComboBox cmbEstado;
+        private System.Windows.Forms.Button BtnActualizar;
     }
 }

@@ -4,10 +4,10 @@
   <Settings>
     <Setting Name="BPBConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=192.168.1.106;Initial Catalog=BPB;Persist Security Info=True;User ID=Eliab;Password=Root123#&lt;/ConnectionString&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=192.168.0.106;Initial Catalog=BPB;Persist Security Info=True;User ID=Eliab;Password=Root123#&lt;/ConnectionString&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=192.168.1.106;Initial Catalog=BPB;Persist Security Info=True;User ID=Eliab;Password=Root123#</Value>
+      <Value Profile="(Default)">Data Source=192.168.0.106;Initial Catalog=BPB;Persist Security Info=True;User ID=Eliab;Password=Root123#</Value>
     </Setting>
   </Settings>
 </SettingsFile>

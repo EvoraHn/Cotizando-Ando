@@ -39,7 +39,7 @@
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Producto" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
     <Property Name="Venta" Type="Int32" Nullable="false" />
-    <Property Name="Cantidad" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="Cantidad" Type="Decimal" Nullable="false" Scale="2" Precision="10" />
     <NavigationProperty Name="Producto1" Relationship="BPBModel.FK_Ventas_DetalleVentas_Contiene_Productos_Producto" FromRole="DetalleVentas" ToRole="Producto" />
     <NavigationProperty Name="Venta1" Relationship="BPBModel.FK_Ventas_DetalleVentas_Pertenece_Ventas_Ventas" FromRole="DetalleVentas" ToRole="Venta" />
   </EntityType>
@@ -71,9 +71,9 @@
     </Key>
     <Property Name="Factura" Type="Int32" Nullable="false" />
     <Property Name="Producto" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
-    <Property Name="Cantidad" Type="Int32" />
+    <Property Name="Cantidad" Type="Int32" Nullable="false" />
     <Property Name="Precio" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
-    <Property Name="Monto" Type="Decimal" Precision="21" Scale="2" />
+    <Property Name="Monto" Type="Decimal" Precision="21" Scale="4" />
   </EntityType>
   <EntityType Name="Imprimir_Facturas">
     <Key>
@@ -83,9 +83,9 @@
     </Key>
     <Property Name="Factura" Type="Int32" Nullable="false" />
     <Property Name="Producto" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
-    <Property Name="Cantidad" Type="Int32" />
+    <Property Name="Cantidad" Type="Int32" Nullable="false" />
     <Property Name="Precio" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
-    <Property Name="Monto" Type="Decimal" Precision="21" Scale="2" />
+    <Property Name="Monto" Type="Decimal" Precision="21" Scale="4" />
   </EntityType>
   <EntityType Name="ModuloPrincipal">
     <Key>
@@ -146,7 +146,7 @@
     </Key>
     <Property Name="IdProducto" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
     <Property Name="Nombre" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
-    <Property Name="Cantidad" Type="Int32" Nullable="false" />
+    <Property Name="Cantidad" Type="Decimal" Nullable="false" />
     <Property Name="PrecioVenta" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
     <Property Name="PrecioCosto" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
     <Property Name="Categoria" Type="Int32" Nullable="false" />
@@ -170,16 +170,6 @@
     <Property Name="Contacto1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
     <Property Name="Descripcion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="Producto" Relationship="BPBModel.FK_Productos_Producto_Tiene_un_Productos_Proveedor" FromRole="Proveedor" ToRole="Producto" />
-  </EntityType>
-  <EntityType Name="sysdiagrams">
-    <Key>
-      <PropertyRef Name="diagram_id" />
-    </Key>
-    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
-    <Property Name="principal_id" Type="Int32" Nullable="false" />
-    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="version" Type="Int32" />
-    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
   <EntityType Name="Usuario">
     <Key>
@@ -509,7 +499,6 @@
     <EntitySet Name="PerfilModulo" EntityType="BPBModel.PerfilModulo" />
     <EntitySet Name="Producto" EntityType="BPBModel.Producto" />
     <EntitySet Name="Proveedor" EntityType="BPBModel.Proveedor" />
-    <EntitySet Name="sysdiagrams" EntityType="BPBModel.sysdiagrams" />
     <EntitySet Name="Usuario" EntityType="BPBModel.Usuario" />
     <EntitySet Name="Venta" EntityType="BPBModel.Venta" />
     <EntitySet Name="Vista1" EntityType="BPBModel.Vista1" />
@@ -575,6 +564,8 @@
       <End Role="Modulos" EntitySet="Modulos" />
       <End Role="Perfiles" EntitySet="Perfiles" />
     </AssociationSet>
+    <EntitySet Name="Cierre_Diario" EntityType="BPBModel.Cierre_Diario" />
+    <EntitySet Name="VistaVentasPorDiaDeSemana" EntityType="BPBModel.VistaVentasPorDiaDeSemana" />
   </EntityContainer>
   <ComplexType Name="sp_helpdiagramdefinition_Result">
     <Property Type="Int32" Name="version" Nullable="true" />
@@ -598,4 +589,28 @@
     <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
     <Property Type="Int32" Name="OwnerID" Nullable="false" />
   </ComplexType>
+  <EntityType Name="Cierre_Diario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Suelto" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Ventas" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Gastos" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Total" Type="Decimal" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="VistaVentasPorDiaDeSemana">
+    <Key>
+      <PropertyRef Name="IdVenta" />
+    </Key>
+    <Property Name="IdVenta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Domingo" Type="Decimal" Precision="38" Scale="2" />
+    <Property Name="Lunes" Type="Decimal" Precision="38" Scale="2" />
+    <Property Name="Martes" Type="Decimal" Precision="38" Scale="2" />
+    <Property Name="Miércoles" Type="Decimal" Precision="38" Scale="2" />
+    <Property Name="Jueves" Type="Decimal" Precision="38" Scale="2" />
+    <Property Name="Viernes" Type="Decimal" Precision="38" Scale="2" />
+    <Property Name="Sábado" Type="Decimal" Precision="38" Scale="2" />
+  </EntityType>
 </Schema>

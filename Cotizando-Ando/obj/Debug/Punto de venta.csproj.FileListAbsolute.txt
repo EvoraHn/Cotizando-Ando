@@ -414,3 +414,96 @@ C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Co
 C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto de venta.exe
 C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto de venta.pdb
 C:\Users\HackingTosh\Desktop\Programa nuevo 28052022\Cotizando\Punto de venta\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto de venta.csproj.AssemblyReference.cache
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto de venta.csproj.AssemblyReference.cache
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Compras.Formulario_Compras.resources
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Imprimir.Form1.resources
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Inicio.Inicio.resources
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Inicio.Login.resources
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Inventario.Inventario.resources
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Inventario.InventarioCompleto.resources
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Mantenimientos.Form1.resources
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Mantenimientos.FormCondicional.resources
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Categoria.resources
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Estantes.resources
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Perfiles.resources
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Productos.resources
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Plantilla.resources
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Proveedor.resources
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Usuarios.resources
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Usuarios_2_0.resources
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Menú.Menu_estilo_1.resources
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Menú.Menu_estilo_2.resources
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Properties.Resources.resources
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Ventas.Formulario_Cancelar_Factura.resources
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Ventas.Formulario_Ventas.resources
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto de venta.csproj.GenerateResource.cache
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto de venta.csproj.CoreCompileInputs.cache
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\Punto de venta.exe.config
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\Punto de venta.exe
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\Punto de venta.pdb
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\EntityFramework.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\Microsoft.ReportViewer.Common.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\Microsoft.ReportViewer.Design.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\Microsoft.SqlServer.Types.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\System.Configuration.ConfigurationManager.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\System.Security.AccessControl.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\System.Security.Permissions.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\System.Security.Principal.Windows.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\Zen.Barcode.Core.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\EnvDTE.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\stdole.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\EntityFramework.xml
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\System.Configuration.ConfigurationManager.xml
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\System.Security.AccessControl.xml
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\System.Security.Permissions.xml
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\System.Security.Principal.Windows.xml
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto de.1B4E928B.Up2Date
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto de venta.exe
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto de venta.pdb
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Ventas.Formulario_Ventana_Vender.resources
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Compras.Formulario_Compras_Generales.resources
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Ventas.Formulario_CRUD_Correlativo.resources
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_cierre_Diario.resources

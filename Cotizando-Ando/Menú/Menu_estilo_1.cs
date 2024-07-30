@@ -96,5 +96,10 @@ namespace Punto_de_venta.Menú
                 abrirFormularioHijo(new Punto_de_venta.Inicio.Inicio());
             }
         }
+
+        private void panelPrincipal_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

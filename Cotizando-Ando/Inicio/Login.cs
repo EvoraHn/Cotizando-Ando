@@ -39,56 +39,118 @@ namespace Punto_de_venta.Inicio
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            String line;
+            
             try
-            { 
+            {
+                string line;
+                string Temporal;
+                DateTime fechaLimite;
+                
                 StreamReader sr = new StreamReader("C:\\Test.txt");
                 line = sr.ReadLine();
-                DateTime fechaActual = DateTime.Now;
-                DateTime fechaLimite = Convert.ToDateTime(Seguridad.DesEncriptar(line));
                 sr.Close();
-                Console.ReadLine();
-                //DateTime fechaLimite = new DateTime(2022, 10, 18, 1, 1, 1);
-                
-                if ((DateTime.Compare(fechaActual, fechaLimite)) < 0)
+                //MessageBox.Show(line);
+                DateTime fechaActual = DateTime.Now;
+                if (((Seguridad.DesEncriptar(line)).Length) > 1)
                 {
-                    if ((txtUsuario.Text == string.Empty) | (txtContraseña.Text == string.Empty))
+                    try
                     {
-                        MessageBox.Show("Favor llenar los campos de usuario y contraseña antes de iniciar sesión");
+                        fechaLimite = Convert.ToDateTime(Seguridad.DesEncriptar(line));
+                        
                     }
-                    else
+                    catch
                     {
-                        string pass = Hash.obtenerHash256(txtContraseña.Text);
-
-                        var tUsuarios = entity.Usuario.FirstOrDefault(x => x.Usr == txtUsuario.Text && x.Pwd == pass);
-
-                        if (tUsuarios == null)
-                        {
-                            MessageBox.Show("Usuario o contraseña incorrecto");
-                            return;
-                        }
-                        else
-                        {
-                            //this.Hide();
-                            limpiar();
-                            Punto_de_venta.Menú.Menu_estilo_2 Formulario = new Punto_de_venta.Menú.Menu_estilo_2(tUsuarios.FKPerfil);
-                            Formulario.Show();
-                            limpiar();
-                           //this.Show();
-                        }
+                        StreamWriter sw = new StreamWriter("C:\\Test.txt");
+                        //Write a line of text
+                        sw.WriteLine("bAB1AG4AZQBzACwAIAA1ACAAZABlACAAYQBiAHIAaQBsACAAZABlACAAMQA5ADkAOQA =");
+                        sw.Close();
+                        fechaLimite = new DateTime(2022, 10, 18, 1, 1, 1);
                     }
+                    
                 }
                 else
                 {
-                    MessageBox.Show("¡Su licencia expiró!");
-                    Punto_de_venta.Mantenimientos.FormCondicional Licencia = new Punto_de_venta.Mantenimientos.FormCondicional();
-                    this.Hide();
-                    Licencia.ShowDialog();
-                    this.Show();
+                    fechaLimite = Convert.ToDateTime(Seguridad.DesEncriptar(line));
                 }
+                //DateTime fechaLimite = Convert.ToDateTime(Seguridad.DesEncriptar(line));
+                Console.ReadLine();
+
+
+
+
+                //DateTime fechaLimite = new DateTime(2022, 10, 18, 1, 1, 1);
+
+                var horas = (fechaLimite - DateTime.Now).TotalHours;
+                if ((DateTime.Compare(fechaActual, fechaLimite)) < 0)
+                {
+                    
+                    
+                    MessageBox.Show("Horas restantes para que se acabe su licencia: " + horas.ToString(),
+                        "LICENCIA DE PROGRAMA",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    this.Hide();
+                    if (horas < 360)
+                    {
+                        MessageBox.Show("Su licencia está a punto de vencer , contacte con su proveedor de servicios : +504 32689959 ",
+                            "Contacte con su proveedor de servicios : +504 32689959",
+                            MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    if ((txtUsuario.Text == string.Empty) | (txtContraseña.Text == string.Empty))
+                        {
+                            MessageBox.Show("Favor llenar los campos de usuario y contraseña antes de iniciar sesión");
+                        }
+                        else
+                        {
+                            string pass = Hash.obtenerHash256(txtContraseña.Text);
+
+                            var tUsuarios = entity.Usuario.FirstOrDefault(x => x.Usr == txtUsuario.Text && x.Pwd == pass);
+
+                            if (tUsuarios == null)
+                            {
+                                MessageBox.Show("Usuario o contraseña incorrecto");
+                                return;
+                            }
+                            else
+                            {
+
+                                limpiar();
+                                this.Hide();
+                                Punto_de_venta.Menú.Menu_estilo_2 Formulario = new Punto_de_venta.Menú.Menu_estilo_2(tUsuarios.FKPerfil);
+                                Formulario.Show();
+                                limpiar();
+                                this.Show();
+                            }
+                        }
+
+                }
+
+                else
+                    {
+                    if (horas > 0)
+                    {
+                        MessageBox.Show("Revise su conexión a internet, No se puede acceder al servidor","Error",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
+                        MessageBox.Show("¡Su licencia expiró!");
+                        Punto_de_venta.Mantenimientos.FormCondicional Licencia = new Punto_de_venta.Mantenimientos.FormCondicional();
+                        this.Hide();
+                        Licencia.ShowDialog();
+
+                        this.Show();
+
+                    }
+                    
+                    }
+                
             }
             catch (Exception ex)
             {
+               
+                MessageBox.Show("Revise su licencia o conexión a internet");
+                Punto_de_venta.Mantenimientos.FormCondicional Licencia = new Punto_de_venta.Mantenimientos.FormCondicional();
+                this.Hide();
+                Licencia.ShowDialog();
+                this.Show();
                 Console.WriteLine("Exception: " + ex.Message);
             }
             finally

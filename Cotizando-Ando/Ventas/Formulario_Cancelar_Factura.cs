@@ -38,7 +38,7 @@ namespace Punto_de_venta.Ventas
         private void Mostrar_datos()
         {
             var tFacturas = from p in entity.Venta
-                             where p.Estado == 1
+                             //where p.Estado == 1
                              select new
                              {
                                  p.IdVenta,
@@ -120,34 +120,60 @@ namespace Punto_de_venta.Ventas
         {
             try
             {
-                if (txtEstado.Text.Equals("") | txtId.Text.Equals(""))
+                var tablaP = entity.Venta.FirstOrDefault(x => x.IdVenta == id);
+
+                if (txtEstado.Text == "Activo")
                 {
-                    MessageBox.Show("Por favor ingresar todos los datos en el formulario");
-                    return;
+                    MessageBox.Show(txtEstado.Text.ToString());
+                    tablaP.Estado = 1;
                 }
                 else
                 {
-                    var tablaP = entity.Venta.FirstOrDefault(x => x.IdVenta == id);
-                    if (txtEstado.Text == "Activo")
-                    {
-                        tablaP.Estado = 1;
-                    }
-                    else
-                    {
-                        Mostrar_detalles();
-                        tablaP.Estado = 2;
-                        entity.SaveChanges();
-                        Thread.Sleep(100);
-                        regresarProducto();
-                        Thread.Sleep(100);
-                        Mostrar_datos();
-                        Limpiar();
-                        MessageBox.Show("¡Factura inhabilitada correctamente!");
-
-                    }
+                    MessageBox.Show(txtEstado.Text.ToString());
+                    Mostrar_detalles();
+                    tablaP.Estado = 2;
+                    entity.SaveChanges();
+                    Thread.Sleep(100);
+                    regresarProducto();
+                    Thread.Sleep(100);
                     Mostrar_datos();
+                    Limpiar();
+                    MessageBox.Show("¡Factura inhabilitada correctamente!");
                 }
-            }
+
+
+
+
+
+
+                    //if (txtEstado.Text.Equals("") | txtId.Text.Equals(""))
+                    //{
+                    //    MessageBox.Show("Por favor ingresar todos los datos en el formulario");
+                    //    return;
+                    //}
+                    //else
+                    //{
+                    //    var tablaP = entity.Venta.FirstOrDefault(x => x.IdVenta == id);
+                    //    if (txtEstado.Text == "Activo")
+                    //    {
+                    //        tablaP.Estado = 1;
+                    //    }
+                    //    else
+                    //    {
+                    //        Mostrar_detalles();
+                    //        tablaP.Estado = 2;
+                    //        entity.SaveChanges();
+                    //        Thread.Sleep(100);
+                    //        regresarProducto();
+                    //        Thread.Sleep(100);
+                    //        Mostrar_datos();
+                    //        Limpiar();
+                    //        MessageBox.Show("¡Factura inhabilitada correctamente!");
+
+                    //    }
+                    //    Mostrar_datos();
+                    //}
+                }
             catch (Exception) { }
         }
 

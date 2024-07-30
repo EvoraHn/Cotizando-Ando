@@ -62,12 +62,17 @@ namespace Punto_de_venta.Menú
 
         private void btnVentas_Click(object sender, EventArgs e)
         {
-            abrirFormularioHijo(new Punto_de_venta.Ventas.Formulario_Ventas());
+            var formulario = new Punto_de_venta.Ventas.Formulario_Ventas();
+            formulario.Show();
+
+            //abrirFormularioHijo(new Punto_de_venta.Ventas.Formulario_Ventas());
         }
 
         private void btnComprar_Click(object sender, EventArgs e)
         {
-            abrirFormularioHijo(new Punto_de_venta.Compras.Formulario_Compras());
+            var formulario = new Punto_de_venta.Compras.Formulario_Compras_Generales();
+            formulario.Show();
+            //abrirFormularioHijo(new Punto_de_venta.Compras.Formulario_Compras_Generales());
         }
 
         private void Menu_estilo_1_Load(object sender, EventArgs e)
@@ -224,6 +229,23 @@ namespace Punto_de_venta.Menú
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
             abrirFormularioHijo(new Mantenimientos.Mantenimiento_Usuarios_2_0());
+        }
+
+        private void btnVender_Click(object sender, EventArgs e)
+        {
+            var formulario = new Punto_de_venta.Ventas.Formulario_Ventana_Vender();
+            formulario.Show();
+            //abrirFormularioHijo(new Punto_de_venta.Ventas.Formulario_Ventana_Vender());
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new Punto_de_venta.Mantenimientos.Mantenimiento_cierre_Diario());
+        }
+
+        private void panelPrincipal_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -22,7 +22,7 @@ namespace Punto_de_venta.Bases_de_datos
     
         public string IdProducto { get; set; }
         public string Nombre { get; set; }
-        public int Cantidad { get; set; }
+        public decimal Cantidad { get; set; }
         public decimal PrecioVenta { get; set; }
         public decimal PrecioCosto { get; set; }
         public int Categoria { get; set; }

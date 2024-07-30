@@ -10,6 +10,9 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Drawing.Printing;
 using System.IO;
+using System.Runtime.InteropServices.ComTypes;
+using CrystalDecisions.Shared;
+//using Aspose.Pdf.Facades;
 
 namespace Punto_de_venta.Ventas
 {
@@ -63,30 +66,20 @@ namespace Punto_de_venta.Ventas
 
         private void txtBuscar_KeyUp(object sender, KeyEventArgs e)
         {
-            string salida_datos = "";
-            string[] palabras_busqueda = this.txtBuscar.Text.Split(' ');
-            foreach (string palabra in palabras_busqueda)
-            {
-                if (salida_datos.Length == 0)
-                {
-                    salida_datos = "(Codigo LIKE '%" + palabra + "%' OR Producto LIKE '%" + palabra + "%' )";
-                }
-                else
-                {
-                    salida_datos = "(Codigo LIKE '%" + palabra + "%' OR Producto LIKE '%" + palabra + "%' )";
-                }
-            }
-            this.mifiltro.RowFilter = salida_datos;
-
+            Buscar();
         }
         private void Mostrar_datos()
         {
             var tProductos = from p in entity.Vista1
+                             orderby p.Producto
                              select new
                              {
                                  p.Codigo,
+                                 p.Categoria,
+                                 p.Proveedor,
                                  p.Producto,
-                                 p.Precio
+                                 p.Precio,
+                                 /* p.Costo,*/
                              };
             this.mifiltro = (tProductos.CopyAnonymusToDataTable()).DefaultView;
             this.dgProductos.DataSource = mifiltro;
@@ -110,10 +103,13 @@ namespace Punto_de_venta.Ventas
             txtBuscar.Text = txtId.Text = txtProducto.Text =  string.Empty;
             txtCantidad.Text = "1" ;
             txtBuscar.Focus();
+            //agregado
+            HacerCuentas();
         }
         private void LimpiarTodo()
         {
-            txtId.Text = txtCliente.Text = txtRTN.Text =
+            rbtnninguno.Checked = true;
+            txtId.Text = txtCliente.Text = txtRTN.Text = 
             txtDescuentos.Text = txtImporteExento.Text = txtImporteExonerado.Text
             =txtISV15.Text =txtISV18.Text = txtIG18.Text = txtIG15.Text = txtTotal.Text =
             txtSubtotal.Text=txtBuscar.Text= string.Empty;
@@ -123,6 +119,7 @@ namespace Punto_de_venta.Ventas
             dgFactura.RowCount = 0;
             txtCantidad.Text = "1";
             lblFactura.Text = "00000";
+            //agregado
             txtBuscar.Focus();
             
         }
@@ -143,10 +140,10 @@ namespace Punto_de_venta.Ventas
             int indiceF = dgFactura.RowCount == 0 ? 0 : dgFactura.CurrentCell.RowIndex;
 
             string codigo = dgProductos.Rows[indice].Cells[0].Value.ToString();
-            string producto = dgProductos.Rows[indice].Cells[1].Value.ToString();
-            string precio = dgProductos.Rows[indice].Cells[2].Value.ToString();
-            string cantidad = dgFactura.RowCount == 0 ? "1" : dgFactura.Rows[indiceF].Cells[3].Value.ToString();
-            
+            string producto = dgProductos.Rows[indice].Cells[3].Value.ToString();
+            string precio = dgProductos.Rows[indice].Cells[4].Value.ToString();
+            string cantidad = dgFactura.RowCount == 0 ? txtCantidad.Text : dgFactura.Rows[indiceF].Cells[3].Value.ToString();
+            //string PrecioXCantidad = (Convert.ToDouble(precio) * Convert.ToDouble(cantidad)).ToString();
             foreach (DataGridViewRow dr in dgFactura.Rows)
             {
                 string id = (dr.Cells[1].Value).ToString();
@@ -157,6 +154,7 @@ namespace Punto_de_venta.Ventas
                     int quantity = Convert.ToInt32(dr.Cells[3].Value);
                     cantidad = (Convert.ToInt32(txtCantidad.Text) + quantity).ToString();
                     dgFactura.Rows.RemoveAt(dr.Index);
+                    //PrecioXCantidad = (Convert.ToDouble(precio) * Convert.ToDouble(cantidad)).ToString();
                     break;
                 }
                 else
@@ -235,18 +233,52 @@ namespace Punto_de_venta.Ventas
             double exento = 0;
             double iG15 = 0;
             double iG18 = 0;
+            //double descuento = 0.00;
             double descuento = txtDescuentos.Text == string.Empty ? 0 : Convert.ToDouble(txtDescuentos.Text);
+
             double exonerado = txtImporteExonerado.Text == string.Empty ? 0 : Convert.ToDouble(txtImporteExonerado.Text);
+
+            verificar_checkbox_descuentos();
+            //if (rbtn3.Checked) { descuento = (Convert.ToDouble(txtTotal.Text) * 0.03);
+            //    rbtn10.Checked = false;
+            //    rbtn5.Checked = false;
+            //    rbtnninguno.Checked = false;
+            //    txtDescuentos.Text = descuento.ToString();
+            //}
+            //if (rbtn5.Checked) { descuento = (Convert.ToDouble(txtTotal.Text) * 0.05);
+            //    rbtn10.Checked = false;
+            //    rbtn3.Checked = false;
+            //    rbtnninguno.Checked = false;
+            //    txtDescuentos.Text = descuento.ToString();
+            //}
+            //if (rbtn10.Checked) { descuento = (Convert.ToDouble(txtTotal.Text) * 0.10);
+            //    rbtn3.Checked = false;
+            //    rbtn5.Checked = false;
+            //    rbtnninguno.Checked = false;
+            //    txtDescuentos.Text = descuento.ToString();
+            //}
+            //if (rbtnninguno.Checked)
+            //{
+            //    descuento = 0.00;
+            //    rbtn3.Checked = false;
+            //    rbtn5.Checked = false;
+            //    rbtn10.Checked = false;
+            //    txtDescuentos.Text = descuento.ToString();
+            //}
+
+            //txtDescuentos.Text = descuento.ToString();
+
             try
             {
                 foreach (DataGridViewRow dr in dgFactura.Rows)
                 {
                     double cantidad = Convert.ToDouble((dr.Cells[3].Value).ToString());
                     string fkid = (dr.Cells[0].Value).ToString(); ;
+                    //var pel = entity.Producto.FirstOrDefault(x => x.IdProducto == fkid);
                     var pel = entity.Producto.FirstOrDefault(x => x.IdProducto == fkid);
-                    //subtot += Convert.ToDouble(pel.PrecioVenta) * cantidad;
                     subtot += Convert.ToDouble(pel.PrecioVenta) * cantidad;
-                   
+                    //subtot += Convert.ToDouble((dr.Cells[2].Value).ToString()) * cantidad;
+
 
                     if (pel.Tipo_Impuesto != null)
                     {
@@ -309,7 +341,7 @@ namespace Punto_de_venta.Ventas
 
             try
             {
-                 descuento = txtDescuentos.Text == " " ? 0 : Convert.ToDouble(txtDescuentos.Text);
+                 //descuento = txtDescuentos.Text == " " ? 0 : Convert.ToDouble(txtDescuentos.Text);
                  total = txtTotal.Text == " " ? 0 : Convert.ToDouble(txtTotal.Text);
                  exonerado = txtImporteExonerado.Text == " " ? 0 : Convert.ToDouble(txtImporteExonerado.Text);
             }
@@ -394,7 +426,7 @@ namespace Punto_de_venta.Ventas
         }
         private void Formulario_Ventas_Load(object sender, EventArgs e)
         {
-            this.KeyPreview = true;
+            //this.KeyPreview = true;
             Mostrar_datos();
         }
 
@@ -407,6 +439,7 @@ namespace Punto_de_venta.Ventas
 
         private void btnImprimir_Click(object sender, EventArgs e)
         {
+            HacerCuentas();
             //dgFactura.Focus();
             if (dgFactura.SelectedRows.Count <= 0)
             {
@@ -485,9 +518,9 @@ namespace Punto_de_venta.Ventas
             //ancho total de la factura, separación entre textos
             //tipos de alineado
             Font font = new Font("Arial", 10);
-            int ancho = 800;
+            int ancho = 180;
             int y = 0;
-            string total = "";
+            
 
 
             StringFormat stringFormat = new StringFormat();
@@ -506,65 +539,82 @@ namespace Punto_de_venta.Ventas
             e.MarginBounds.Size, StringFormat.GenericTypographic,
             out charactersOnPage, out linesPerPage);
 
-         
+
 
             //----------------------- Logo de la empresa ----------------------------------------------------------
-            Bitmap myPng = Properties.Resources.Encabezado_Factura;
-            e.Graphics.DrawImage(myPng, new RectangleF(60, y += 10, 700, 95));
+            Bitmap myPng = Properties.Resources.puleria_isis;
+            //----------------------------------------- x,y,ancho y alto
+            e.Graphics.DrawImage(myPng, new RectangleF(50, y += 10, 100, 100));
+            Bitmap myPng2 = Properties.Resources.PROFORMASOLA;
+            //----------------------------------------- x,y,ancho y alto
+            e.Graphics.DrawImage(myPng2, new RectangleF(25, y += 120, 150, 17));
             // //-----------------------Encabezado de cotización ----------------------------------------------------
 
             //---------------------------- Productos --------------------------------------------------------------
             //e.Graphics.DrawString("------ ------ ------ ------ ------ ------ ------ ------ ------ ------ Productos ------ ------ ------ ------ ------ ------ ------ ------ ------ ------", font, Brushes.Black, new RectangleF(0, y += 40, ancho, 20), stringFormat);
 
-            // Draws the string within the bounds of the page        
-            e.Graphics.DrawString(stringToPrint, font, Brushes.Black, e.MarginBounds, StringFormat.GenericTypographic);
-            
+            // Draws the string within the bounds of the page        font, Brushes.Black, new RectangleF(0, y += 40, ancho, 20), stringFormat);
+            e.Graphics.DrawString(stringToPrint, font, Brushes.Black, new RectangleF(10, y += 20, ancho, e.MarginBounds.Height), StringFormat.GenericTypographic);
+
             //-------------------------- Pie de cotización --------------------------------------------------------
 
 
             // Remove the portion of the string that has been printed.
-            stringToPrint = stringToPrint.Substring(charactersOnPage);
+           // stringToPrint = stringToPrint.Substring(charactersOnPage);
 
             // Check to see if more pages are to be printed.
-            e.HasMorePages = (stringToPrint.Length > 0);
+            //e.HasMorePages = (stringToPrint.Length > 0);
+            //e.Graphics.DrawString(stringToPrint, font, Brushes.Black, new RectangleF(10, y += 20, ancho, e.MarginBounds.Height), StringFormat.GenericTypographic);
         }
         private void imprimirFactura()
         {
             string total = "";
-            if (!File.Exists("C:\\testPage.txt"))
-            {
-                // Crear .txt si no existe
-                using (StreamWriter swp = File.CreateText("C:\\testPage.txt"))
-                {}
-            }
             StreamWriter sw = new StreamWriter("C:\\testPage.txt");
+            //string filePath = @"C:\testPage.txt";
+            //if (!File.Exists(filePath))
+            //{
+            //    File.SetAttributes(filePath,
+            //            (new FileInfo(filePath)).Attributes | FileAttributes.ReadOnly);
+
+            //    // Crear .txt si no existe
+            //    using (StreamWriter swp = File.CreateText(filePath))
+            //    {}
+            //}
+            
             //----Encabezado----
-           //sw.WriteLine("COTIZACIÓN DE PRODUCTOS",ContentAlignment.TopCenter);
+            //sw.WriteLine("COTIZACIÓN DE PRODUCTOS",ContentAlignment.TopCenter);
+            sw.WriteLine(" ");
+            sw.WriteLine(" ");
             sw.WriteLine("Teléfono: 2773 - 0953"+"                                                         "+ DateTime.Now.ToString());
             //sw.WriteLine(DateTime.Now.ToString(),ContentAlignment.TopRight);
-            sw.WriteLine("" + "Cliente: " + txtCliente.Text + " ");
+            sw.WriteLine("" + "Cliente: " + txtCliente.Text.ToUpper() + " ");
             sw.WriteLine("" + "RTN: " + txtRTN.Text + " ");
-            sw.WriteLine("" + "Bodegón de los precios bajos, esquina opuesta al instituto Dr.Genaro Muñoz Hernandez, Siguatepeque, Comayagua.");
+            sw.WriteLine("" + "Bodegón de los Precios Bajos, esquina opuesta al instituto Dr.Genaro Muñoz Hernandez, Siguatepeque, Comayagua.");
+            sw.WriteLine(" ");
+            sw.WriteLine("      ← PRODUCTOS →   ");
             sw.WriteLine(" ");
             //----productos----
             foreach (DataGridViewRow row in dgFactura.Rows)
             {
-                sw.WriteLine(row.Cells[1].Value.ToString().ToLower() + " ");
-                //sw.WriteLine("Teléfono: 2773 - 0953" + "                                                         " + DateTime.Now.ToString());
-                sw.WriteLine("                                                                                           L. " + row.Cells[2].Value.ToString() + " X " + row.Cells[3].Value.ToString());
+                // Producto
+                sw.WriteLine("◢ "+ row.Cells[1].Value.ToString() + " ");
+                sw.WriteLine("                  L. " + row.Cells[2].Value.ToString() + " X " + row.Cells[3].Value.ToString());
+                sw.WriteLine(" ");
             }
             sw.WriteLine(" ");
             //----final de impresión 
-            //sw.WriteLine("Subtotal: L. " + txtSubtotal.Text + " ");
+            sw.WriteLine("Subtotal: L. " + txtSubtotal.Text + " ");
             sw.WriteLine("Importe exonerado: L." + txtImporteExonerado.Text + " ");
-            sw.WriteLine("Descuento: L. " + txtDescuentos.Text + " ");
+            sw.WriteLine("Descuento: L. " + Convert.ToDecimal(txtDescuentos.Text) + " ");
             sw.WriteLine("Importe exento: L. " + txtImporteExento.Text + " ");
             //sw.WriteLine("Importe grabado 18%: L. " + txtIG18.Text + " ");
             //sw.WriteLine("I.S.V 18%: L. " + txtISV18.Text + " ");
-            sw.WriteLine("Importe grabado 15%: L. " + txtIG15.Text + " ");
+            sw.WriteLine("Importe grabado 15%: ");
+            sw.WriteLine("L. " + txtIG15.Text + " ");
             sw.WriteLine("I.S.V 15%: L. " + txtISV15.Text + " ");
-            total = (Convert.ToDecimal(txtTotal.Text) - Convert.ToDecimal(txtDescuentos.Text) - Convert.ToDecimal(txtImporteExonerado.Text)).ToString();
-            sw.WriteLine("Total: L. " + total + " ");
+            total = (Convert.ToDecimal(txtSubtotal.Text) - Convert.ToDecimal(txtDescuentos.Text) - Convert.ToDecimal(txtImporteExonerado.Text)).ToString();
+            sw.WriteLine(" ");
+            sw.WriteLine("TOTAL: L. " + txtTotal.Text + " ");
             sw.Close();
             string docName = "testPage.txt";
             string docPath = @"C:\";
@@ -573,8 +623,43 @@ namespace Punto_de_venta.Ventas
             printDocument1.DocumentName = docName;
 
             stringToPrint = System.IO.File.ReadAllText(fullPath);
+            //PrintDocument.PrinterSettings.PrinterName = "Microsoft Print To PDF";
 
+         
+             //PrinterSettings settings = new PrinterSettings();
+             //foreach (string printer in PrinterSettings.InstalledPrinters)
+             //{
+             //    settings.PrinterName = "Microsoft Print To PDF";
+               
+             //}
+
+         
+         
             printDocument1.Print();
+
+           
+        }
+        /* private void getImpresoraPorDefecto()
+         {
+             PrinterSettings settings = new PrinterSettings();
+             foreach (string printer in PrinterSettings.InstalledPrinters)
+             {
+                 settings.PrinterName = printer;
+                 if (settings.IsDefaultPrinter)
+                     MessageBox.Show( printer);
+             }
+
+         }
+        */
+            private void getImpresoraPorDefecto()
+        {
+            PrinterSettings settings = new PrinterSettings();
+            foreach (string printer in PrinterSettings.InstalledPrinters)
+            {
+                settings.PrinterName = "Microsoft Print To PDF";
+                /*if (settings.IsDefaultPrinter)
+                    MessageBox.Show(printer);*/
+            }
 
         }
 
@@ -587,7 +672,7 @@ namespace Punto_de_venta.Ventas
                 e.Handled = true;
                 return;
             }
-            HacerCuentas();
+            //HacerCuentas();
         }
 
         private void BtnNuevaFactura_Click(object sender, EventArgs e)
@@ -652,6 +737,7 @@ namespace Punto_de_venta.Ventas
                 if (lblFactura.Text == "00000")
                 {
                     cotizacion = true;
+                   
                     imprimirFactura();
                 }
             }
@@ -684,6 +770,207 @@ namespace Punto_de_venta.Ventas
         private void txtSubtotal_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnActualizar_Click(object sender, EventArgs e)
+        {
+            Mostrar_datos();
+            Buscar();
+        }
+
+        private void lblBuscar_Click(object sender, EventArgs e)
+        {
+            Buscar();
+        }
+        private void Buscar()
+        {
+
+            string salida_datos = "";
+            string[] palabras_busqueda = this.txtBuscar.Text.Split(' ');
+            foreach (string palabra in palabras_busqueda)
+            {
+                if (salida_datos.Length == 0)
+                {
+                    salida_datos = "(Codigo LIKE '%" + palabra + "%' OR Producto LIKE '%" + palabra +
+                        "%' OR Categoria LIKE '%" + palabra + "%' OR Proveedor LIKE '%" + palabra + "%' )";
+                }
+                else
+                {
+                    salida_datos += "AND(Codigo LIKE '%" + palabra + "%' OR Producto LIKE '%" + palabra +
+                        "%' OR Categoria LIKE '%" + palabra + "%' OR Proveedor LIKE '%" + palabra + "%' )";
+                }
+            }
+            this.mifiltro.RowFilter = salida_datos;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            //getImpresoraPorDefecto();
+        }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBuscar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                if(dgProductos.Rows.Count == 0)
+                {
+                    MessageBox.Show("No se encontró el producto que está buscando");
+                }
+                else
+                {
+                    if (txtCantidad.Text == string.Empty || Convert.ToInt32(txtCantidad.Text) < 1)
+                    {
+                        txtCantidad.Text = "1";
+                    }
+                    AgregarProducto();
+                    /*Limpiar();*/
+                    /*Seleccionar todo el texto del textbox*/
+                    if (!String.IsNullOrEmpty(txtBuscar.Text))
+                    {
+                        txtBuscar.SelectionStart = 0;
+                        txtBuscar.SelectionLength = txtBuscar.Text.Length;
+                    }
+                }
+            }
+        }
+
+        private void dgFactura_KeyUp(object sender, KeyEventArgs e)
+        {
+            //HacerCuentas();
+        }
+
+        private void txtDescuentos_KeyUp(object sender, KeyEventArgs e)
+        {
+            //HacerCuentas();
+        }
+
+        private void rbtn3_CheckedChanged(object sender, EventArgs e)
+        {
+            //double descuento = 0.00;
+
+            //if (rbtn3.Checked)
+            //{
+            //    descuento = (Convert.ToDouble(txtTotal.Text) * 0.03);
+            //    rbtn10.Checked = false;
+            //    rbtn5.Checked = false;
+            //    rbtnninguno.Checked = false;
+            //}
+           
+            //txtDescuentos.Text = descuento.ToString();
+            txtDescuentos.ReadOnly = true;
+            HacerCuentas();
+        }
+
+        private void rbtn5_CheckedChanged(object sender, EventArgs e)
+        {
+            //double descuento = 0.00;
+
+            //if (rbtn5.Checked)
+            //{
+            //    descuento = (Convert.ToDouble(txtTotal.Text) * 0.05);
+            //    rbtn10.Checked = false;
+            //    rbtn3.Checked = false;
+            //    rbtnninguno.Checked = false;
+
+            //}
+            
+            //txtDescuentos.Text = descuento.ToString();
+            txtDescuentos.ReadOnly = true;
+            HacerCuentas();
+        }
+
+        private void rbtn10_CheckedChanged(object sender, EventArgs e)
+        {
+            //double descuento = 0.00;
+
+            //if (rbtn10.Checked)
+            //{
+            //    descuento = (Convert.ToDouble(txtTotal.Text) * 0.10);
+            //    rbtn3.Checked = false;
+            //    rbtn5.Checked = false;
+            //    rbtnninguno.Checked = false;
+
+            //}
+
+            //txtDescuentos.Text = descuento.ToString();
+            txtDescuentos.ReadOnly = true;
+            HacerCuentas();
+        }
+
+        private void rbtnninguno_CheckedChanged(object sender, EventArgs e)
+        {
+            //double descuento = 0.00;
+            verificar_checkbox_descuentos();
+            //if (rbtnninguno.Checked)
+            //{
+            //    rbtn3.Checked = false;
+            //    rbtn5.Checked = false;
+            //    rbtn10.Checked = false;
+
+            //}
+
+            //txtDescuentos.Text = descuento.ToString();
+            txtDescuentos.Text = 0.ToString();
+            txtDescuentos.ReadOnly = true;
+            HacerCuentas();
+
+        }
+
+        private void verificar_checkbox_descuentos()
+        {
+            double descuento = 0.00;
+            double total_calculado = 0.00;
+            if (rbtn3.Checked)
+            {
+                total_calculado = (Convert.ToDouble(txtSubtotal.Text));// + Convert.ToDouble(txtISV15.Text) + Convert.ToDouble(txtISV18.Text));
+                //descuento = (Convert.ToDouble(txtTotal.Text) * 0.03);
+                descuento = total_calculado * 0.03;
+                rbtn10.Checked = false;
+                rbtn5.Checked = false;
+                rbtnninguno.Checked = false;
+                txtDescuentos.Text = descuento.ToString();
+            }
+            if (rbtn5.Checked)
+            {
+                total_calculado = (Convert.ToDouble(txtSubtotal.Text));// + Convert.ToDouble(txtISV15.Text) + Convert.ToDouble(txtISV18.Text));
+               
+                descuento = total_calculado * 0.05;
+                rbtn10.Checked = false;
+                rbtn3.Checked = false;
+                rbtnninguno.Checked = false;
+                txtDescuentos.Text = descuento.ToString();
+            }
+            if (rbtn10.Checked)
+            {
+                total_calculado = (Convert.ToDouble(txtSubtotal.Text)); // + Convert.ToDouble(txtISV15.Text) + Convert.ToDouble(txtISV18.Text)+Convert.ToDouble(txtImporteExento.Text));
+                descuento = total_calculado * 0.10;
+                rbtn3.Checked = false;
+                rbtn5.Checked = false;
+                rbtnninguno.Checked = false;
+                txtDescuentos.Text = descuento.ToString();
+            }
+            //txtDescuentos.Text = descuento.ToString();
+            if (rbtnninguno.Checked)
+            {
+                //descuento = (Convert.ToDouble(txtTotal.Text) - (Convert.ToDouble(txtDescuentos.Text) )); 
+                rbtn3.Checked = false;
+                rbtn5.Checked = false;
+                rbtn10.Checked = false;
+                //txtTotal.Text = descuento.ToString();
+
+            }
+            
+            
+        }
+
+        private void txtDescuentos_TextChanged(object sender, EventArgs e)
+        {
+            //HacerCuentas();
         }
     }
 }

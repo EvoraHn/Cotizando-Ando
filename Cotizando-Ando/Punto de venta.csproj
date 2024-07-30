@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Punto_de_venta</RootNamespace>
     <AssemblyName>Punto de venta</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -116,9 +116,15 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
+    <Reference Include="Zen.Barcode.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b5ae55aa76d2d9de, processorArchitecture=MSIL">
+      <HintPath>packages\Zen.Barcode.Rendering.Framework.3.1.10729.1\lib\Zen.Barcode.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bases de datos\Categoria.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bases de datos\Cierre_Diario.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Bases de datos\Compra.cs">
@@ -190,9 +196,6 @@
     <Compile Include="Bases de datos\sp_helpdiagrams_Result.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Bases de datos\sysdiagrams.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Bases de datos\Usuario.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -203,6 +206,9 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Bases de datos\VistaProductoMasVendido.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bases de datos\VistaVentasPorDiaDeSemana.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Bases de datos\VistaVentasPorMes.cs">
@@ -216,11 +222,23 @@
     <Compile Include="Compras\Formulario_Compras.Designer.cs">
       <DependentUpon>Formulario_Compras.cs</DependentUpon>
     </Compile>
+    <Compile Include="Compras\Formulario_Compras_Generales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Formulario_Compras_Generales.Designer.cs">
+      <DependentUpon>Formulario_Compras_Generales.cs</DependentUpon>
+    </Compile>
     <Compile Include="Control de tiempo\Frm_Control_Tiempo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Control de tiempo\Frm_Control_Tiempo.Designer.cs">
       <DependentUpon>Frm_Control_Tiempo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imprimir\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imprimir\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Inicio\Inicio.cs">
       <SubType>Form</SubType>
@@ -264,6 +282,12 @@
     </Compile>
     <Compile Include="Mantenimientos\Mantenimiento_Categoria.Designer.cs">
       <DependentUpon>Mantenimiento_Categoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Mantenimiento_cierre_Diario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Mantenimiento_cierre_Diario.Designer.cs">
+      <DependentUpon>Mantenimiento_cierre_Diario.cs</DependentUpon>
     </Compile>
     <Compile Include="Mantenimientos\Mantenimiento_Estantes.cs">
       <SubType>Form</SubType>
@@ -327,6 +351,18 @@
     <Compile Include="Ventas\Formulario_Cancelar_Factura.Designer.cs">
       <DependentUpon>Formulario_Cancelar_Factura.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mantenimientos\Mantenimiento_CRUD_Correlativo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Mantenimiento_CRUD_Correlativo.Designer.cs">
+      <DependentUpon>Mantenimiento_CRUD_Correlativo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\Formulario_Ventana_Vender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\Formulario_Ventana_Vender.Designer.cs">
+      <DependentUpon>Formulario_Ventana_Vender.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ventas\Formulario_Ventas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -338,6 +374,12 @@
     </Compile>
     <EmbeddedResource Include="Compras\Formulario_Compras.resx">
       <DependentUpon>Formulario_Compras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Formulario_Compras_Generales.resx">
+      <DependentUpon>Formulario_Compras_Generales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imprimir\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio\Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
@@ -359,6 +401,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\Mantenimiento_Categoria.resx">
       <DependentUpon>Mantenimiento_Categoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Mantenimiento_cierre_Diario.resx">
+      <DependentUpon>Mantenimiento_cierre_Diario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\Mantenimiento_Estantes.resx">
       <DependentUpon>Mantenimiento_Estantes.cs</DependentUpon>
@@ -399,6 +444,12 @@
     </Compile>
     <EmbeddedResource Include="Ventas\Formulario_Cancelar_Factura.resx">
       <DependentUpon>Formulario_Cancelar_Factura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Mantenimiento_CRUD_Correlativo.resx">
+      <DependentUpon>Mantenimiento_CRUD_Correlativo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\Formulario_Ventana_Vender.resx">
+      <DependentUpon>Formulario_Ventana_Vender.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventas\Formulario_Ventas.resx">
       <DependentUpon>Formulario_Ventas.cs</DependentUpon>
@@ -441,15 +492,21 @@
     </Content>
     <Content Include="Imagenes\casa %281%29.png" />
     <Content Include="Imagenes\casa.png" />
+    <Content Include="Resources\LOGONEGRO.png" />
+    <Content Include="Resources\PISIS.png" />
+    <None Include="Resources\puleria isis.png" />
+    <None Include="Resources\LOGONEGRO1.png" />
+    <Content Include="Resources\Proforma.png" />
+    <Content Include="Resources\PROFORMASOLA.PNG" />
+    <None Include="Resources\PROFORMASOLA1.PNG" />
     <None Include="Resources\LogoBlancoBPB.png" />
     <None Include="Resources\usuarios.png" />
     <None Include="Resources\Inventario 2.01.png" />
     <None Include="Resources\Inventario 2.0.png" />
     <None Include="Resources\Cotizar1.png" />
     <Content Include="LogoBlancoBPB.ico" />
+    <None Include="Resources\Actualizar.png" />
     <Content Include="Resources\Encabezado_Factura.jpg" />
-    <Content Include="Resources\Encabezado_Factura.png" />
-    <None Include="Resources\Encabezado_Factura1.png" />
     <None Include="Resources\Contacto WhatsApp.png" />
     <None Include="Resources\escritura.png" />
     <None Include="Resources\disco-flexible 1.png" />

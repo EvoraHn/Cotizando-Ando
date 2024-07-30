@@ -16,7 +16,7 @@ namespace Punto_de_venta.Bases_de_datos
     {
         public int Factura { get; set; }
         public string Producto { get; set; }
-        public Nullable<int> Cantidad { get; set; }
+        public int Cantidad { get; set; }
         public decimal Precio { get; set; }
         public Nullable<decimal> Monto { get; set; }
     }
