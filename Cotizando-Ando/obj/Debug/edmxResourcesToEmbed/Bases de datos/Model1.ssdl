@@ -267,6 +267,22 @@ advertencia 6002: La tabla o vista 'BPB.dbo.VistaVentasPorMes' no tiene definida
     <Property Name="Noviembre" Type="decimal" Precision="38" Scale="2" />
     <Property Name="Diciembre" Type="decimal" Precision="38" Scale="2" />
   </EntityType>
+  <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'BPB.dbo.VistaVentasPorMesSinOrdenar' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="VistaVentasPorMesSinOrdenar">
+          <Property Name="Enero" Type="decimal" Precision="38" Scale="2" />
+          <Property Name="Febrero" Type="decimal" Precision="38" Scale="2" />
+          <Property Name="Marzo" Type="decimal" Precision="38" Scale="2" />
+          <Property Name="Abril" Type="decimal" Precision="38" Scale="2" />
+          <Property Name="Mayo" Type="decimal" Precision="38" Scale="2" />
+          <Property Name="Junio" Type="decimal" Precision="38" Scale="2" />
+          <Property Name="Julio" Type="decimal" Precision="38" Scale="2" />
+          <Property Name="Agosto" Type="decimal" Precision="38" Scale="2" />
+          <Property Name="Septiembre" Type="decimal" Precision="38" Scale="2" />
+          <Property Name="Octubre" Type="decimal" Precision="38" Scale="2" />
+          <Property Name="Noviembre" Type="decimal" Precision="38" Scale="2" />
+          <Property Name="Diciembre" Type="decimal" Precision="38" Scale="2" />
+        </EntityType>-->
   <Association Name="FK_Compras_Compra$Es_Un$Productos_Producto">
     <End Role="Producto" Type="Self.Producto" Multiplicity="0..1" />
     <End Role="Compra" Type="Self.Compra" Multiplicity="*" />
