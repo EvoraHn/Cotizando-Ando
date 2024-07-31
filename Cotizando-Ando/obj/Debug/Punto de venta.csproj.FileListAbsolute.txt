@@ -508,3 +508,98 @@ G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.
 G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Ventas.Formulario_CRUD_Correlativo.resources
 G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_cierre_Diario.resources
 G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Ventas.FrmVuelto.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\Punto de venta.exe.config
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\Punto de venta.exe
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\Punto de venta.pdb
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\EntityFramework.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\System.Security.Permissions.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\Zen.Barcode.Core.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\EnvDTE.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\stdole.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\EntityFramework.xml
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\System.Security.Permissions.xml
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto de venta.csproj.AssemblyReference.cache
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto de venta.csproj.SuggestedBindingRedirects.cache
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Compras.Formulario_Compras.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Compras.Formulario_Compras_Generales.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Imprimir.Form1.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Inicio.Inicio.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Inicio.Login.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Inventario.Inventario.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Inventario.InventarioCompleto.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Mantenimientos.Form1.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Mantenimientos.FormCondicional.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Categoria.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_cierre_Diario.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Estantes.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Perfiles.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Productos.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Plantilla.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Proveedor.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Usuarios.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Mantenimientos.Mantenimiento_Usuarios_2_0.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Menú.Menu_estilo_1.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Menú.Menu_estilo_2.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Properties.Resources.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Ventas.Formulario_Cancelar_Factura.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Ventas.Formulario_CRUD_Correlativo.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Ventas.Formulario_Ventana_Vender.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Ventas.Formulario_Ventas.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Ventas.FrmVuelto.resources
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto de venta.csproj.GenerateResource.cache
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto de venta.csproj.CoreCompileInputs.cache
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto de venta.csproj.CopyComplete
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto de venta.exe
+C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto de venta.pdb

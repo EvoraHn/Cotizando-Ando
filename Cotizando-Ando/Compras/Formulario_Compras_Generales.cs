@@ -122,7 +122,7 @@ namespace Punto_de_venta.Compras
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            if (txtCantidad.Text == string.Empty || Convert.ToInt32(txtCantidad.Text) < 1)
+            if (txtCantidad.Text == string.Empty || Convert.ToDouble(txtCantidad.Text) < 0.01)
             {
                 txtCantidad.Text = "1";
             }
@@ -139,16 +139,18 @@ namespace Punto_de_venta.Compras
             string producto = dgProductos.Rows[indice].Cells[3].Value.ToString();
             string precio = dgProductos.Rows[indice].Cells[4].Value.ToString();
             string cantidad = dgFactura.RowCount == 0 ? txtCantidad.Text : dgFactura.Rows[indiceF].Cells[3].Value.ToString();
-
+            string PrecioXCantidad = (Convert.ToDouble(precio) * Convert.ToDouble(cantidad)).ToString();
             foreach (DataGridViewRow dr in dgFactura.Rows)
             {
                 string id = (dr.Cells[1].Value).ToString();
 
                 if (id == producto)
                 {
-                    int quantity = Convert.ToInt32(dr.Cells[3].Value);
-                    cantidad = (Convert.ToInt32(txtCantidad.Text) + quantity).ToString();
+
+                    double quantity = Convert.ToDouble(dr.Cells[3].Value);
+                    cantidad = (Convert.ToDouble(txtCantidad.Text) + quantity).ToString();
                     dgFactura.Rows.RemoveAt(dr.Index);
+                    PrecioXCantidad = (Convert.ToDouble(precio) * Convert.ToDouble(cantidad)).ToString();
                     break;
                 }
                 else
@@ -157,7 +159,7 @@ namespace Punto_de_venta.Compras
                 }
 
             }
-            dgFactura.Rows.Add(codigo, producto, precio, cantidad);
+            dgFactura.Rows.Add(codigo, producto, precio, cantidad, PrecioXCantidad);
             HacerCuentas();
         }
 
@@ -169,7 +171,7 @@ namespace Punto_de_venta.Compras
                 {
                     int indice = dgFactura.CurrentCell.RowIndex;
                     int indiceF = dgFactura.RowCount == 0 ? 0 : dgFactura.CurrentCell.RowIndex;
-                    int cantidadf = dgFactura.RowCount == 0 ? 0 : Convert.ToInt32(dgFactura.Rows[indice].Cells[3].Value);
+                    double cantidadf = dgFactura.RowCount == 0 ? 0 : Convert.ToDouble(dgFactura.Rows[indice].Cells[3].Value);
 
                     if (cantidadf <= 1)
                     {
@@ -181,6 +183,8 @@ namespace Punto_de_venta.Compras
                         string producto = dgFactura.Rows[indice].Cells[1].Value.ToString();
                         string precio = dgFactura.Rows[indice].Cells[2].Value.ToString();
                         string cantidad = dgFactura.RowCount == 0 ? "0" : dgFactura.Rows[indiceF].Cells[3].Value.ToString();
+                        string PrecioXCantidad = (Convert.ToDouble(precio) * Convert.ToDouble(cantidad)).ToString();
+                        //HacerCuentas();
                         foreach (DataGridViewRow dr in dgFactura.Rows)
                         {
                             string id = (dr.Cells[1].Value).ToString();
@@ -189,8 +193,9 @@ namespace Punto_de_venta.Compras
                             {
 
                                 int quantity = 1;
-                                cantidad = (Convert.ToInt32(cantidad) - quantity).ToString();
+                                cantidad = (Convert.ToDouble(cantidad) - quantity).ToString();
                                 dgFactura.Rows.RemoveAt(dr.Index);
+                                PrecioXCantidad = (Convert.ToDouble(precio) * Convert.ToDouble(cantidad)).ToString();
                                 break;
                             }
                             else
@@ -199,7 +204,7 @@ namespace Punto_de_venta.Compras
                             }
 
                         }
-                        dgFactura.Rows.Add(codigo, producto, precio, cantidad);
+                        dgFactura.Rows.Add(codigo, producto, precio, cantidad, PrecioXCantidad);
                         HacerCuentas();
                         dgFactura.ClearSelection();
                     }
@@ -216,6 +221,7 @@ namespace Punto_de_venta.Compras
                  "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning); return;
             }
         }
+
 
         private void HacerCuentas()
         {
@@ -379,7 +385,7 @@ namespace Punto_de_venta.Compras
                 Punto_de_venta.Bases_de_datos.Producto tabla = new Punto_de_venta.Bases_de_datos.Producto();
                 id = (dr.Cells[0].Value).ToString();
                 var tablaP = entity.Producto.FirstOrDefault(x => x.IdProducto == id);
-                tablaP.Cantidad = tablaP.Cantidad + Convert.ToInt32(dr.Cells[3].Value);
+                tablaP.Cantidad = tablaP.Cantidad + Convert.ToDecimal(dr.Cells[3].Value);
                 entity.SaveChanges();
 
 
@@ -651,7 +657,8 @@ namespace Punto_de_venta.Compras
 
         private void txtCantidad_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            // Excluir cualquier caracter que no sea numero positivo y , y .
+            if ((e.KeyChar >= 32 && e.KeyChar <= 43) || (e.KeyChar >= 58 && e.KeyChar <= 255) || (e.KeyChar == 45) || (e.KeyChar == 47))
             {
                 MessageBox.Show("Por favor ingresa solo numeros enteros positivos en este campo",
                 "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);

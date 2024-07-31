@@ -208,7 +208,7 @@ namespace Punto_de_venta.Ventas
                             {
 
                                 int quantity = 1;
-                                cantidad = (Convert.ToInt32(cantidad) - quantity).ToString();
+                                cantidad = (Convert.ToDouble(cantidad) - quantity).ToString();
                                 dgFactura.Rows.RemoveAt(dr.Index);
                                 PrecioXCantidad = (Convert.ToDouble(precio) * Convert.ToDouble(cantidad)).ToString();
                                 break;
@@ -1216,6 +1216,12 @@ namespace Punto_de_venta.Ventas
                 e.Handled = true;
                 return;
             }
+        }
+
+        private void btnCancelarFactura_Click(object sender, EventArgs e)
+        {
+            Punto_de_venta.Ventas.Formulario_Cancelar_Factura Formulario = new Punto_de_venta.Ventas.Formulario_Cancelar_Factura();
+            Formulario.Show();
         }
     }
 }
