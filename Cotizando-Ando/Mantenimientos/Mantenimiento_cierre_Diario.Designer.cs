@@ -75,6 +75,8 @@
             this.btnQuitar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.cmbNombresUsuarios = new System.Windows.Forms.ComboBox();
+            this.lblver = new System.Windows.Forms.Label();
             this.BtnActualizar = new System.Windows.Forms.Button();
             this.lblBuscar = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -597,7 +599,7 @@
             this.txtTotal.Margin = new System.Windows.Forms.Padding(2);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
-            this.txtTotal.Size = new System.Drawing.Size(162, 28);
+            this.txtTotal.Size = new System.Drawing.Size(305, 28);
             this.txtTotal.TabIndex = 12;
             this.txtTotal.Text = "0";
             // 
@@ -701,6 +703,8 @@
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.panel3.Controls.Add(this.cmbNombresUsuarios);
+            this.panel3.Controls.Add(this.lblver);
             this.panel3.Controls.Add(this.BtnActualizar);
             this.panel3.Controls.Add(this.lblBuscar);
             this.panel3.Controls.Add(this.label4);
@@ -711,6 +715,27 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1216, 234);
             this.panel3.TabIndex = 33;
+            // 
+            // cmbNombresUsuarios
+            // 
+            this.cmbNombresUsuarios.FormattingEnabled = true;
+            this.cmbNombresUsuarios.Location = new System.Drawing.Point(260, 6);
+            this.cmbNombresUsuarios.Name = "cmbNombresUsuarios";
+            this.cmbNombresUsuarios.Size = new System.Drawing.Size(305, 30);
+            this.cmbNombresUsuarios.TabIndex = 32;
+            this.cmbNombresUsuarios.SelectedIndexChanged += new System.EventHandler(this.cmbNombresUsuarios_SelectedIndexChanged);
+            // 
+            // lblver
+            // 
+            this.lblver.AutoSize = true;
+            this.lblver.BackColor = System.Drawing.Color.Transparent;
+            this.lblver.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblver.Location = new System.Drawing.Point(124, 9);
+            this.lblver.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblver.Name = "lblver";
+            this.lblver.Size = new System.Drawing.Size(131, 24);
+            this.lblver.TabIndex = 31;
+            this.lblver.Text = "Ver ventas de:";
             // 
             // BtnActualizar
             // 
@@ -896,5 +921,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataVisualization.Charting.Chart ctSemana;
+        private System.Windows.Forms.Label lblver;
+        private System.Windows.Forms.ComboBox cmbNombresUsuarios;
     }
 }

@@ -18,8 +18,8 @@ namespace Punto_de_venta.Clases
         //public int Estado { get; set; }
         public string Usr { get; set; }
         public string Pwd { get; set; }
-
-
+        public static string ID { get; set; }
+        public static string Name { get; set; }
     }
 }
 

@@ -80,6 +80,7 @@
     <EntitySetMapping Name="Venta">
       <EntityTypeMapping TypeName="BPBModel.Venta">
         <MappingFragment StoreEntitySet="Venta">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
           <ScalarProperty Name="Importe_Exonerado" ColumnName="Importe_Exonerado" />
           <ScalarProperty Name="Importe_Exento" ColumnName="Importe_Exento" />
           <ScalarProperty Name="ISV18_" ColumnName="ISV18%" />

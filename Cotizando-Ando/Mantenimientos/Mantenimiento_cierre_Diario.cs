@@ -1,8 +1,11 @@
-﻿using Microsoft.ReportingServices.ReportProcessing.OnDemandReportObjectModel;
+﻿using Microsoft.Reporting.Map.WebForms.BingMaps;
+using Microsoft.ReportingServices.ReportProcessing.OnDemandReportObjectModel;
+using Punto_de_venta.Bases_de_datos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Drawing.Printing;
 using System.IO;
@@ -21,10 +24,12 @@ namespace Punto_de_venta.Mantenimientos
         {
             InitializeComponent();
         }
-
-        private void Mantenimiento_cierre_Diario_Load(object sender, EventArgs e)
+        private void Formulario_Ventas_Load(object sender, EventArgs e)
         {
-
+            //this.KeyPreview = true;
+            Ver_ventas_usuario();
+            Mostrar_datos();
+            
         }
         private string stringToPrint = "";
         //Conexión a la base de datos
@@ -74,7 +79,29 @@ namespace Punto_de_venta.Mantenimientos
         }
         //where p.Fecha_Venta <= (DateTime.UtcNow)
         //DateTime Fecha_Actual = DateTime.Parse((DateTime.UtcNow.ToShortDateString()).ToString());
-        
+
+
+
+
+        private void Ver_ventas_usuario()
+        {
+
+            using (BPBEntities1 db = new BPBEntities1())
+            {
+                //realizamos la consulta aplicando filtros y ordenamientos
+                //y convertimos a lista, esto ultimo es Importante
+                cmbNombresUsuarios.DataSource = db.Usuario.Where(d => d.IdUsuario > -1 ).OrderBy(d => d.PrimerNombre).ToList();
+
+                //campo que vera el usuario
+                cmbNombresUsuarios.DisplayMember = "IdUsuario";
+
+                //campo que es el valor real
+                cmbNombresUsuarios.ValueMember = "IdUsuario";
+                
+            }
+            //------------------------------------------
+            //cmbNombresUsuarios.Items.Clear();
+        }
         
         private void Mostrar_datos()    
         {
@@ -82,6 +109,7 @@ namespace Punto_de_venta.Mantenimientos
             string year = (DateTime.Now.Year.ToString()).ToString();
             string day = (DateTime.Now.Day.ToString()).ToString();
             string mont = (DateTime.Now.Month.ToString()).ToString();
+            int id = Convert.ToInt16(Punto_de_venta.Clases.Usuario.ID);
             if (mont.Length == 1)
             {
                 mont = "0" + mont;
@@ -96,8 +124,27 @@ namespace Punto_de_venta.Mantenimientos
 
             //Formato
             //DateTime Fecha_Actual = DateTime.Parse("2024-05-20 00:00:00");
+            int vMember = Convert.ToInt32(Punto_de_venta.Clases.Usuario.ID);
+            //MessageBox.Show((cmbNombresUsuarios.ValueMember).ToString());
+            try
+            {
+                
+                if (cmbNombresUsuarios.Text == string.Empty)
+                {
+                    vMember = Convert.ToInt32(Punto_de_venta.Clases.Usuario.ID);
+                }
+                else
+                {
+                    vMember = Convert.ToInt32(cmbNombresUsuarios.Text);
+                }
+            }
+            catch (Exception)
+            {
+                
+            }
+            
             var tdetalles = from p in entity.Venta
-                            where (p.Estado == 1 ) && (p.Fecha_Venta >= Fecha_Actual )
+                            where (p.Estado == 1 ) && (p.Fecha_Venta >= Fecha_Actual ) && (p.IdUsuario == vMember )
 
                             //p.Fecha_Venta >= Fecha_Actual
                             orderby p.Fecha_Venta 
@@ -197,7 +244,9 @@ namespace Punto_de_venta.Mantenimientos
         private void cargarGraficoVentasPorSemana()
         {
             var tMeses = from p in entity.VistaVentasPorDiaDeSemana
+                         
                          select new
+                         
                          {
                              p.Domingo,
                              p.Lunes,
@@ -419,11 +468,7 @@ namespace Punto_de_venta.Mantenimientos
         }
         
        
-        private void Formulario_Ventas_Load(object sender, EventArgs e)
-        {
-            //this.KeyPreview = true;
-            Mostrar_datos();
-        }
+        
 
         private void btnQuitar_Click(object sender, EventArgs e)
         {
@@ -885,6 +930,11 @@ namespace Punto_de_venta.Mantenimientos
                 return;
             }
             //HacerCuentas();
+        }
+
+        private void cmbNombresUsuarios_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Mostrar_datos();
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using CrystalDecisions.Shared;
 using Microsoft.ReportingServices.ReportProcessing.OnDemandReportObjectModel;
+using Punto_de_venta.Bases_de_datos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -427,6 +428,7 @@ namespace Punto_de_venta.Ventas
             tabla.Total_Venta = Convert.ToDecimal(txtTotal.Text);
             tabla.Fecha_Venta = DateTime.Now;
             tabla.Estado = 1;
+            tabla.IdUsuario = Convert.ToInt16(Punto_de_venta.Clases.Usuario.ID);
             entity.Venta.Add(tabla);
             entity.SaveChanges();
             lblFactura.Text = tabla.IdVenta.ToString();
@@ -512,7 +514,8 @@ namespace Punto_de_venta.Ventas
             {
                 if (lblFactura.Text == "00000")
                 {
-                    cotizacion = true;
+                    
+                    cotizacion = false;
                     imprimirFactura();
                     DisminuirInventario();
                     AgregarVenta();
@@ -634,7 +637,7 @@ namespace Punto_de_venta.Ventas
 
             
                 //----------------------- Logo de la empresa ----------------------------------------------------------
-                Bitmap myPng = Properties.Resources.puleria_isis;
+                Bitmap myPng = Properties.Resources.LOGONEGRO;
                 //----------------------------------------- x,y,ancho y alto
                 e.Graphics.DrawImage(myPng, new RectangleF(100, y += 10, 100, 100));
 
@@ -714,12 +717,22 @@ namespace Punto_de_venta.Ventas
             //sw.WriteLine("COTIZACIÓN DE PRODUCTOS", ContentAlignment.TopCenter);
             sw.WriteLine(" ");
             sw.WriteLine(" ");
-            sw.WriteLine(/*"Teléfono: 2773 - 0953" + "                                                         " +*/ DateTime.Now.ToString());
+            sw.WriteLine("Teléfono: 3268 - 9959" + "                                                         " + DateTime.Now.ToString());
+            sw.WriteLine(" ");
+            if (cotizacion)
+            {
+                sw.WriteLine("                         COTIZACIÓN");
+            }
+            else
+            {
+                sw.WriteLine("                          FACTURA");
+            }
+            sw.WriteLine(" ");
             //sw.WriteLine(DateTime.Now.ToString(),ContentAlignment.TopRight);
             sw.WriteLine("" + "Cliente: " + txtCliente.Text.ToUpper() + " ");
             sw.WriteLine("" + "RTN: " + txtRTN.Text + " ");
-            sw.WriteLine("" + "Pulpería Isis, Barrio el Parnazo una cuadra a la izquierda de CEB Renacimiento.");
-            //sw.WriteLine("" + "Bodegón de los Precios Bajos, esquina opuesta al instituto Dr.Genaro Muñoz Hernandez, Siguatepeque, Comayagua.");
+            //sw.WriteLine("" + "Pulpería Isis, Barrio el Parnazo una cuadra a la izquierda de CEB Renacimiento.");
+            sw.WriteLine("" + "Bodegón de los Precios Bajos, esquina opuesta al instituto Dr.Genaro Muñoz Hernandez, Siguatepeque, Comayagua.");
             sw.WriteLine(" ");
             sw.WriteLine("                  ← PRODUCTOS →   ");
             sw.WriteLine(" ");
@@ -875,8 +888,10 @@ namespace Punto_de_venta.Ventas
                 if (lblFactura.Text == "00000")
                 {
                     cotizacion = true;
-
                     imprimirFactura();
+                    DisminuirInventario();
+                    LimpiarTodo();
+                    Mostrar_datos();
                 }
             }
         }

@@ -29,6 +29,7 @@ namespace Punto_de_venta.Bases_de_datos
         public Nullable<decimal> ISV18_ { get; set; }
         public Nullable<decimal> Importe_Exento { get; set; }
         public Nullable<decimal> Importe_Exonerado { get; set; }
+        public Nullable<short> IdUsuario { get; set; }
     
         public virtual ICollection<DetalleVentas> DetalleVentas { get; set; }
         public virtual Estado Estado1 { get; set; }

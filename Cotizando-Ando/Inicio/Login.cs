@@ -90,7 +90,7 @@ namespace Punto_de_venta.Inicio
                     this.Hide();
                     if (horas < 360)
                     {
-                        MessageBox.Show("Su licencia está a punto de vencer , contacte con su proveedor de servicios : +504 32689959 ",
+                        MessageBox.Show("SU LICENCIA ESTÁ A MENOS DE 15 DÍAS A VENCER (REVISE SUS HORAS RESTANTES) , contacte con su proveedor de servicios : +504 32689959 ",
                             "Contacte con su proveedor de servicios : +504 32689959",
                             MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
@@ -114,7 +114,8 @@ namespace Punto_de_venta.Inicio
 
                                 limpiar();
                                 this.Hide();
-                                Punto_de_venta.Menú.Menu_estilo_2 Formulario = new Punto_de_venta.Menú.Menu_estilo_2(tUsuarios.FKPerfil);
+                                Punto_de_venta.Clases.Usuario.ID = tUsuarios.IdUsuario.ToString();
+                                Punto_de_venta.Menú.Menu_estilo_2 Formulario = new Punto_de_venta.Menú.Menu_estilo_2(tUsuarios.FKPerfil); 
                                 Formulario.Show();
                                 limpiar();
                                 this.Show();

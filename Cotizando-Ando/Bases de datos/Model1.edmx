@@ -179,6 +179,7 @@ advertencia 6002: La tabla o vista 'BPB.dbo.Cierre_Diario' no tiene definida nin
           <Property Name="ISV18%" Type="decimal" Precision="10" Scale="2" />
           <Property Name="Importe_Exento" Type="decimal" Precision="10" Scale="2" />
           <Property Name="Importe_Exonerado" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="IdUsuario" Type="smallint" />
         </EntityType>
         <!--Errores durante la generación:
 advertencia 6002: La tabla o vista 'BPB.dbo.Facturas' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
@@ -849,6 +850,7 @@ FROM [dbo].[VistaVentasPorMes] AS [VistaVentasPorMes]</DefiningQuery>
           <Property Name="Importe_Exonerado" Type="Decimal" Precision="10" Scale="2" />
           <NavigationProperty Name="DetalleVentas" Relationship="BPBModel.FK_Ventas_DetalleVentas_Pertenece_Ventas_Ventas" FromRole="Venta" ToRole="DetalleVentas" />
           <NavigationProperty Name="Estado1" Relationship="BPBModel.FK_Ventas_Ventas_Pertenece_Ventas_Estado" FromRole="Venta" ToRole="Estado" />
+          <Property Name="IdUsuario" Type="Int16" />
         </EntityType>
         <EntityType Name="Vista1">
           <Key>
@@ -1340,6 +1342,7 @@ FROM [dbo].[VistaVentasPorMes] AS [VistaVentasPorMes]</DefiningQuery>
           <EntitySetMapping Name="Venta">
             <EntityTypeMapping TypeName="BPBModel.Venta">
               <MappingFragment StoreEntitySet="Venta">
+                <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
                 <ScalarProperty Name="Importe_Exonerado" ColumnName="Importe_Exonerado" />
                 <ScalarProperty Name="Importe_Exento" ColumnName="Importe_Exento" />
                 <ScalarProperty Name="ISV18_" ColumnName="ISV18%" />

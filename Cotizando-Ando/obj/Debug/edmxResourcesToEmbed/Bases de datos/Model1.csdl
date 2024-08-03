@@ -207,6 +207,7 @@
     <Property Name="Importe_Exonerado" Type="Decimal" Precision="10" Scale="2" />
     <NavigationProperty Name="DetalleVentas" Relationship="BPBModel.FK_Ventas_DetalleVentas_Pertenece_Ventas_Ventas" FromRole="Venta" ToRole="DetalleVentas" />
     <NavigationProperty Name="Estado1" Relationship="BPBModel.FK_Ventas_Ventas_Pertenece_Ventas_Estado" FromRole="Venta" ToRole="Estado" />
+    <Property Name="IdUsuario" Type="Int16" />
   </EntityType>
   <EntityType Name="Vista1">
     <Key>

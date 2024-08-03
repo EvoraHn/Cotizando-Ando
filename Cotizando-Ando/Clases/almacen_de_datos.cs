@@ -13,6 +13,5 @@ namespace Punto_de_venta.Clases
         public static string Categoria { get; set; }
         public static string Proveedor { get; set; }
 
-
     }
 }
