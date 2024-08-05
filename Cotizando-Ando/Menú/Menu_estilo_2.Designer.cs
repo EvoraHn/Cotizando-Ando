@@ -75,7 +75,7 @@ namespace Punto_de_venta.Menú
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(0, 724);
+            this.button1.Location = new System.Drawing.Point(12, 282);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(190, 76);
@@ -93,7 +93,7 @@ namespace Punto_de_venta.Menú
             this.btnVender.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnVender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVender.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVender.Location = new System.Drawing.Point(0, 293);
+            this.btnVender.Location = new System.Drawing.Point(11, 206);
             this.btnVender.Margin = new System.Windows.Forms.Padding(2);
             this.btnVender.Name = "btnVender";
             this.btnVender.Size = new System.Drawing.Size(190, 76);
@@ -111,7 +111,7 @@ namespace Punto_de_venta.Menú
             this.btnUsuarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsuarios.Location = new System.Drawing.Point(2, 533);
+            this.btnUsuarios.Location = new System.Drawing.Point(10, 513);
             this.btnUsuarios.Margin = new System.Windows.Forms.Padding(2);
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Size = new System.Drawing.Size(190, 76);
@@ -129,7 +129,7 @@ namespace Punto_de_venta.Menú
             this.btnComprar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnComprar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnComprar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnComprar.Location = new System.Drawing.Point(0, 374);
+            this.btnComprar.Location = new System.Drawing.Point(10, 359);
             this.btnComprar.Margin = new System.Windows.Forms.Padding(2);
             this.btnComprar.Name = "btnComprar";
             this.btnComprar.Size = new System.Drawing.Size(190, 76);
@@ -166,7 +166,7 @@ namespace Punto_de_venta.Menú
             this.btnVentas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVentas.Location = new System.Drawing.Point(0, 213);
+            this.btnVentas.Location = new System.Drawing.Point(10, 588);
             this.btnVentas.Margin = new System.Windows.Forms.Padding(2);
             this.btnVentas.Name = "btnVentas";
             this.btnVentas.Size = new System.Drawing.Size(190, 76);
@@ -184,7 +184,7 @@ namespace Punto_de_venta.Menú
             this.btnInventario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInventario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInventario.Location = new System.Drawing.Point(1, 454);
+            this.btnInventario.Location = new System.Drawing.Point(10, 436);
             this.btnInventario.Margin = new System.Windows.Forms.Padding(2);
             this.btnInventario.Name = "btnInventario";
             this.btnInventario.Size = new System.Drawing.Size(190, 76);

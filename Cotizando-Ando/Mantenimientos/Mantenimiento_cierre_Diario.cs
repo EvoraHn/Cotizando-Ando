@@ -124,11 +124,12 @@ namespace Punto_de_venta.Mantenimientos
 
             //Formato
             //DateTime Fecha_Actual = DateTime.Parse("2024-05-20 00:00:00");
-            int vMember = Convert.ToInt32(Punto_de_venta.Clases.Usuario.ID);
+            
             //MessageBox.Show((cmbNombresUsuarios.ValueMember).ToString());
+
             try
             {
-                
+                int vMember = Convert.ToInt32(Punto_de_venta.Clases.Usuario.ID);
                 if (cmbNombresUsuarios.Text == string.Empty)
                 {
                     vMember = Convert.ToInt32(Punto_de_venta.Clases.Usuario.ID);
@@ -137,29 +138,36 @@ namespace Punto_de_venta.Mantenimientos
                 {
                     vMember = Convert.ToInt32(cmbNombresUsuarios.Text);
                 }
+
+                //cmbNombresUsuarios.Text = Punto_de_venta.Clases.Usuario.ID;
+
+                var tdetalles = from p in entity.Venta
+                                where (p.Estado == 1) && (p.Fecha_Venta >= Fecha_Actual) && (p.IdUsuario == vMember)
+
+                                //p.Fecha_Venta >= Fecha_Actual
+                                orderby p.Fecha_Venta
+                                select new
+                                {
+                                    p.IdVenta,
+                                    p.Estado,
+                                    p.Total_Venta,
+                                    p.ISV15_,
+                                    p.ISV18_,
+                                }
+                             ;
+
+                this.mifiltro = (tdetalles.CopyAnonymusToDataTable()).DefaultView;
+                this.dgDetalle_Transaccion.DataSource = mifiltro;
+
+
             }
             catch (Exception)
             {
-                
-            }
-            
-            var tdetalles = from p in entity.Venta
-                            where (p.Estado == 1 ) && (p.Fecha_Venta >= Fecha_Actual ) && (p.IdUsuario == vMember )
 
-                            //p.Fecha_Venta >= Fecha_Actual
-                            orderby p.Fecha_Venta 
-                             select new 
-                             {
-                                 p.IdVenta,
-                                 p.Estado,
-                                 p.Total_Venta,
-                                 p.ISV15_,
-                                 p.ISV18_,
-                             }
-                             ;
+            }
+
             
-            this.mifiltro = (tdetalles.CopyAnonymusToDataTable()).DefaultView;
-            this.dgDetalle_Transaccion.DataSource = mifiltro;
+          
             try
             {
                 cargarGraficoVentasPorSemana();
@@ -394,7 +402,7 @@ namespace Punto_de_venta.Mantenimientos
                 txtVentasEnSistema.Text = Venta.ToString();
                 txtISV15.Text = ISV15.ToString();
                 txtISV18.Text = ISV18.ToString();
-                double MontoSistemaSumado = (Venta + Montoinicial)- ConteodeCaja;
+                double MontoSistemaSumado = Venta - ConteodeCaja;
                 
 
                 //MessageBox.Show(MontoSistemaSumado.ToString());
@@ -415,7 +423,12 @@ namespace Punto_de_venta.Mantenimientos
                 Sobrante =Convert.ToDouble(txtSobrante.Text);
                 Faltante = Convert.ToDouble(txtFaltante.Text);
                 
-                txtTotal.Text = (Venta + Montoinicial + Sobrante - Faltante - Gastos).ToString();
+
+                if (Faltante > 0)
+                {
+                    txtTotal.Text= (Montoinicial - Faltante).ToString();
+                }
+                //txtTotal.Text = (Venta + Montoinicial + Sobrante - Faltante - Gastos).ToString();
                
             }
             catch(Exception)

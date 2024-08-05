@@ -250,7 +250,7 @@ namespace Punto_de_venta.Ventas
                 {
                     double cantidad = Convert.ToDouble((dr.Cells[3].Value).ToString());
                     double precio = Convert.ToDouble((dr.Cells[2].Value).ToString());
-                    if (cantidad < 1)
+                    if (cantidad < 0)
                     {
                         var resultado = MessageBox.Show("Desea arreglarlo",
                         "Error en cantidades", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Error);
@@ -261,7 +261,7 @@ namespace Punto_de_venta.Ventas
                         }
                     }
 
-                    if (precio < 1)
+                    if (precio < 0)
                     {
                         var resultado = MessageBox.Show("Desea arreglarlo",
                         "Error en precios", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Error);
@@ -873,7 +873,27 @@ namespace Punto_de_venta.Ventas
 
         private void btnSoloGuardar_Click(object sender, EventArgs e)
         {
+            calcularVuelto();
+            HacerCuentas();
+            if (dgFactura.SelectedRows.Count <= 0)
+            {
+                MessageBox.Show("Para guardar una cotización debe tener por lo menos un producto seleccionado",
+                "Error al guardar", MessageBoxButtons.OK, MessageBoxIcon.Error); return;
+            }
+            else
+            {
+                if (lblFactura.Text == "00000")
+                {
 
+                    cotizacion = false;
+                    DisminuirInventario();
+                    AgregarVenta();
+                    AgregarDetalleDeVenta();
+                    MessageBox.Show("Venta realizada correctamente", "Proceso realizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LimpiarTodo();
+                    Mostrar_datos();
+                }
+            }
         }
 
         private void btnCotizacion_Click(object sender, EventArgs e)
