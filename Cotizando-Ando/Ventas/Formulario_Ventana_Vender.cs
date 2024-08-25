@@ -637,7 +637,7 @@ namespace Punto_de_venta.Ventas
 
             
                 //----------------------- Logo de la empresa ----------------------------------------------------------
-                Bitmap myPng = Properties.Resources.LOGONEGRO;
+                Bitmap myPng = Properties.Resources.puleria_isis;
                 //----------------------------------------- x,y,ancho y alto
                 e.Graphics.DrawImage(myPng, new RectangleF(100, y += 10, 100, 100));
 
@@ -717,7 +717,7 @@ namespace Punto_de_venta.Ventas
             //sw.WriteLine("COTIZACIÓN DE PRODUCTOS", ContentAlignment.TopCenter);
             sw.WriteLine(" ");
             sw.WriteLine(" ");
-            sw.WriteLine("Teléfono: 3268 - 9959" + "                                                         " + DateTime.Now.ToString());
+            sw.WriteLine("Teléfono: 9694-5585" + "                                                         " + DateTime.Now.ToString());
             sw.WriteLine(" ");
             if (cotizacion)
             {
@@ -731,8 +731,8 @@ namespace Punto_de_venta.Ventas
             //sw.WriteLine(DateTime.Now.ToString(),ContentAlignment.TopRight);
             sw.WriteLine("" + "Cliente: " + txtCliente.Text.ToUpper() + " ");
             sw.WriteLine("" + "RTN: " + txtRTN.Text + " ");
-            //sw.WriteLine("" + "Pulpería Isis, Barrio el Parnazo una cuadra a la izquierda de CEB Renacimiento.");
-            sw.WriteLine("" + "Bodegón de los Precios Bajos, esquina opuesta al instituto Dr.Genaro Muñoz Hernandez, Siguatepeque, Comayagua.");
+            sw.WriteLine("" + "Pulpería Isis, Barrio el Parnazo una cuadra a la izquierda de CEB Renacimiento.");
+            //sw.WriteLine("" + "Bodegón de los Precios Bajos, esquina opuesta al instituto Dr.Genaro Muñoz Hernandez, Siguatepeque, Comayagua.");
             sw.WriteLine(" ");
             sw.WriteLine("                  ← PRODUCTOS →   ");
             sw.WriteLine(" ");
