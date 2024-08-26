@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
@@ -45,7 +45,6 @@
             this.ctSemana = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label2 = new System.Windows.Forms.Label();
             this.ctMeses = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.txtVentas = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -54,20 +53,11 @@
             this.btnCotizacion = new System.Windows.Forms.Button();
             this.btnImprimir = new System.Windows.Forms.Button();
             this.btnQuitarTodo = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtISV18 = new System.Windows.Forms.TextBox();
-            this.txtISV15 = new System.Windows.Forms.TextBox();
             this.txtSobrante = new System.Windows.Forms.TextBox();
-            this.txtGastos = new System.Windows.Forms.TextBox();
-            this.txtTotal = new System.Windows.Forms.TextBox();
             this.txtFaltante = new System.Windows.Forms.TextBox();
             this.txtConteodeCaja = new System.Windows.Forms.TextBox();
             this.txtVentasEnSistema = new System.Windows.Forms.TextBox();
@@ -161,25 +151,15 @@
             this.panel1.Controls.Add(this.ctSemana);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.ctMeses);
-            this.panel1.Controls.Add(this.txtVentas);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.btnQuitarTodo);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.label16);
-            this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.label15);
-            this.panel1.Controls.Add(this.label18);
-            this.panel1.Controls.Add(this.label20);
             this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.txtISV18);
-            this.panel1.Controls.Add(this.txtISV15);
             this.panel1.Controls.Add(this.txtSobrante);
-            this.panel1.Controls.Add(this.txtGastos);
-            this.panel1.Controls.Add(this.txtTotal);
             this.panel1.Controls.Add(this.txtFaltante);
             this.panel1.Controls.Add(this.txtConteodeCaja);
             this.panel1.Controls.Add(this.txtVentasEnSistema);
@@ -220,18 +200,18 @@
             this.ctSemana.BorderSkin.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.Center;
             this.ctSemana.BorderSkin.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Cross;
             this.ctSemana.BorderSkin.BorderColor = System.Drawing.Color.BlanchedAlmond;
-            chartArea3.Name = "ChartArea1";
-            this.ctSemana.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.ctSemana.Legends.Add(legend3);
+            chartArea5.Name = "ChartArea1";
+            this.ctSemana.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.ctSemana.Legends.Add(legend5);
             this.ctSemana.Location = new System.Drawing.Point(693, 528);
             this.ctSemana.Name = "ctSemana";
             this.ctSemana.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            series3.YValuesPerPoint = 4;
-            this.ctSemana.Series.Add(series3);
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "Series1";
+            series5.YValuesPerPoint = 4;
+            this.ctSemana.Series.Add(series5);
             this.ctSemana.Size = new System.Drawing.Size(472, 291);
             this.ctSemana.TabIndex = 45;
             this.ctSemana.Text = "chart1";
@@ -254,34 +234,21 @@
             // 
             // ctMeses
             // 
-            chartArea4.Name = "ChartArea1";
-            this.ctMeses.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.ctMeses.Legends.Add(legend4);
+            chartArea6.Name = "ChartArea1";
+            this.ctMeses.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.ctMeses.Legends.Add(legend6);
             this.ctMeses.Location = new System.Drawing.Point(16, 528);
             this.ctMeses.Name = "ctMeses";
             this.ctMeses.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            series4.YValuesPerPoint = 6;
-            this.ctMeses.Series.Add(series4);
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            series6.YValuesPerPoint = 6;
+            this.ctMeses.Series.Add(series6);
             this.ctMeses.Size = new System.Drawing.Size(534, 291);
             this.ctMeses.TabIndex = 44;
             this.ctMeses.Text = "chart1";
-            // 
-            // txtVentas
-            // 
-            this.txtVentas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVentas.ForeColor = System.Drawing.Color.Gray;
-            this.txtVentas.Location = new System.Drawing.Point(230, 367);
-            this.txtVentas.Margin = new System.Windows.Forms.Padding(2);
-            this.txtVentas.Name = "txtVentas";
-            this.txtVentas.ReadOnly = true;
-            this.txtVentas.Size = new System.Drawing.Size(220, 28);
-            this.txtVentas.TabIndex = 43;
-            this.txtVentas.Text = "0";
             // 
             // label8
             // 
@@ -306,7 +273,6 @@
             this.label1.Size = new System.Drawing.Size(91, 18);
             this.label1.TabIndex = 35;
             this.label1.Text = "Monto Inicial";
-            this.label1.Visible = false;
             // 
             // panel4
             // 
@@ -404,7 +370,6 @@
             this.btnImprimir.Size = new System.Drawing.Size(44, 37);
             this.btnImprimir.TabIndex = 23;
             this.btnImprimir.UseVisualStyleBackColor = false;
-            this.btnImprimir.Visible = false;
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // btnQuitarTodo
@@ -427,88 +392,24 @@
             this.btnQuitarTodo.Visible = false;
             this.btnQuitarTodo.Click += new System.EventHandler(this.btnQuitarTodo_Click);
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Gray;
-            this.label11.Location = new System.Drawing.Point(227, 347);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(57, 18);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "Ventas ";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Gray;
-            this.label16.Location = new System.Drawing.Point(594, 346);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(85, 18);
-            this.label16.TabIndex = 10;
-            this.label16.Text = "I.S.V. (18%)";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Gray;
-            this.label17.Location = new System.Drawing.Point(453, 346);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(85, 18);
-            this.label17.TabIndex = 10;
-            this.label17.Text = "I.S.V. (15%)";
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Gray;
-            this.label15.Location = new System.Drawing.Point(597, 296);
+            this.label15.Location = new System.Drawing.Point(450, 296);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(68, 18);
             this.label15.TabIndex = 10;
             this.label15.Text = "Sobrante";
             // 
-            // label18
-            // 
-            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Gray;
-            this.label18.Location = new System.Drawing.Point(903, 296);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(57, 18);
-            this.label18.TabIndex = 10;
-            this.label18.Text = "Gastos";
-            this.label18.Visible = false;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.Gray;
-            this.label20.Location = new System.Drawing.Point(740, 346);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(77, 18);
-            this.label20.TabIndex = 10;
-            this.label20.Text = "Total Libre";
-            this.label20.Visible = false;
-            // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Gray;
-            this.label19.Location = new System.Drawing.Point(743, 296);
+            this.label19.Location = new System.Drawing.Point(593, 296);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(60, 18);
@@ -521,7 +422,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Gray;
-            this.label13.Location = new System.Drawing.Point(7, 346);
+            this.label13.Location = new System.Drawing.Point(761, 296);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(129, 18);
@@ -540,38 +441,12 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Cliente";
             // 
-            // txtISV18
-            // 
-            this.txtISV18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtISV18.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtISV18.ForeColor = System.Drawing.Color.Gray;
-            this.txtISV18.Location = new System.Drawing.Point(597, 367);
-            this.txtISV18.Margin = new System.Windows.Forms.Padding(2);
-            this.txtISV18.Name = "txtISV18";
-            this.txtISV18.ReadOnly = true;
-            this.txtISV18.Size = new System.Drawing.Size(139, 28);
-            this.txtISV18.TabIndex = 10;
-            this.txtISV18.Text = "0";
-            // 
-            // txtISV15
-            // 
-            this.txtISV15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtISV15.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtISV15.ForeColor = System.Drawing.Color.Gray;
-            this.txtISV15.Location = new System.Drawing.Point(454, 367);
-            this.txtISV15.Margin = new System.Windows.Forms.Padding(2);
-            this.txtISV15.Name = "txtISV15";
-            this.txtISV15.ReadOnly = true;
-            this.txtISV15.Size = new System.Drawing.Size(139, 28);
-            this.txtISV15.TabIndex = 7;
-            this.txtISV15.Text = "0";
-            // 
             // txtSobrante
             // 
             this.txtSobrante.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSobrante.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSobrante.ForeColor = System.Drawing.Color.Gray;
-            this.txtSobrante.Location = new System.Drawing.Point(597, 317);
+            this.txtSobrante.Location = new System.Drawing.Point(453, 317);
             this.txtSobrante.Margin = new System.Windows.Forms.Padding(2);
             this.txtSobrante.Name = "txtSobrante";
             this.txtSobrante.ReadOnly = true;
@@ -579,39 +454,12 @@
             this.txtSobrante.TabIndex = 9;
             this.txtSobrante.Text = "0";
             // 
-            // txtGastos
-            // 
-            this.txtGastos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtGastos.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGastos.ForeColor = System.Drawing.Color.Gray;
-            this.txtGastos.Location = new System.Drawing.Point(906, 317);
-            this.txtGastos.Margin = new System.Windows.Forms.Padding(2);
-            this.txtGastos.Name = "txtGastos";
-            this.txtGastos.Size = new System.Drawing.Size(139, 28);
-            this.txtGastos.TabIndex = 6;
-            this.txtGastos.Text = "0";
-            this.txtGastos.Visible = false;
-            // 
-            // txtTotal
-            // 
-            this.txtTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotal.ForeColor = System.Drawing.Color.Gray;
-            this.txtTotal.Location = new System.Drawing.Point(740, 367);
-            this.txtTotal.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTotal.Name = "txtTotal";
-            this.txtTotal.ReadOnly = true;
-            this.txtTotal.Size = new System.Drawing.Size(305, 28);
-            this.txtTotal.TabIndex = 12;
-            this.txtTotal.Text = "0";
-            this.txtTotal.Visible = false;
-            // 
             // txtFaltante
             // 
             this.txtFaltante.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFaltante.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFaltante.ForeColor = System.Drawing.Color.Gray;
-            this.txtFaltante.Location = new System.Drawing.Point(740, 317);
+            this.txtFaltante.Location = new System.Drawing.Point(596, 317);
             this.txtFaltante.Margin = new System.Windows.Forms.Padding(2);
             this.txtFaltante.Name = "txtFaltante";
             this.txtFaltante.ReadOnly = true;
@@ -638,7 +486,7 @@
             this.txtVentasEnSistema.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtVentasEnSistema.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVentasEnSistema.ForeColor = System.Drawing.Color.Gray;
-            this.txtVentasEnSistema.Location = new System.Drawing.Point(6, 367);
+            this.txtVentasEnSistema.Location = new System.Drawing.Point(762, 317);
             this.txtVentasEnSistema.Margin = new System.Windows.Forms.Padding(2);
             this.txtVentasEnSistema.Name = "txtVentasEnSistema";
             this.txtVentasEnSistema.ReadOnly = true;
@@ -660,7 +508,6 @@
             this.txtMontoInicial.Size = new System.Drawing.Size(220, 28);
             this.txtMontoInicial.TabIndex = 2;
             this.txtMontoInicial.Text = "0";
-            this.txtMontoInicial.Visible = false;
             this.txtMontoInicial.TextChanged += new System.EventHandler(this.txtMontoInicial_TextChanged);
             this.txtMontoInicial.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMontoInicial_KeyPress);
             // 
@@ -815,23 +662,23 @@
             this.dgDetalle_Transaccion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgDetalle_Transaccion.BackgroundColor = System.Drawing.Color.White;
             this.dgDetalle_Transaccion.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgDetalle_Transaccion.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgDetalle_Transaccion.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgDetalle_Transaccion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgDetalle_Transaccion.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgDetalle_Transaccion.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgDetalle_Transaccion.Location = new System.Drawing.Point(6, 42);
             this.dgDetalle_Transaccion.Margin = new System.Windows.Forms.Padding(2);
             this.dgDetalle_Transaccion.Name = "dgDetalle_Transaccion";
@@ -885,20 +732,11 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnImprimir;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtISV18;
-        private System.Windows.Forms.TextBox txtISV15;
         private System.Windows.Forms.TextBox txtSobrante;
-        private System.Windows.Forms.TextBox txtGastos;
-        private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.TextBox txtFaltante;
         private System.Windows.Forms.TextBox txtConteodeCaja;
         private System.Windows.Forms.TextBox txtVentasEnSistema;
@@ -920,7 +758,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblFactura;
         private System.Windows.Forms.Button BtnActualizar;
-        private System.Windows.Forms.TextBox txtVentas;
         private System.Windows.Forms.DataVisualization.Charting.Chart ctMeses;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

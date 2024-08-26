@@ -43,13 +43,10 @@ namespace Punto_de_venta.Inicio
             try
             {
                 string line;
-                string Temporal;
                 DateTime fechaLimite;
-                
                 StreamReader sr = new StreamReader("C:\\Test.txt");
                 line = sr.ReadLine();
                 sr.Close();
-                //MessageBox.Show(line);
                 DateTime fechaActual = DateTime.Now;
                 if (((Seguridad.DesEncriptar(line)).Length) > 1)
                 {
@@ -61,7 +58,6 @@ namespace Punto_de_venta.Inicio
                     catch
                     {
                         StreamWriter sw = new StreamWriter("C:\\Test.txt");
-                        //Write a line of text
                         sw.WriteLine("bAB1AG4AZQBzACwAIAA1ACAAZABlACAAYQBiAHIAaQBsACAAZABlACAAMQA5ADkAOQA =");
                         sw.Close();
                         fechaLimite = new DateTime(2022, 10, 18, 1, 1, 1);
@@ -72,11 +68,7 @@ namespace Punto_de_venta.Inicio
                 {
                     fechaLimite = Convert.ToDateTime(Seguridad.DesEncriptar(line));
                 }
-                //DateTime fechaLimite = Convert.ToDateTime(Seguridad.DesEncriptar(line));
                 Console.ReadLine();
-
-
-
 
                 //DateTime fechaLimite = new DateTime(2022, 10, 18, 1, 1, 1);
 
@@ -91,7 +83,7 @@ namespace Punto_de_venta.Inicio
                     if (horas < 360)
                     {
                         MessageBox.Show("SU LICENCIA ESTÁ A MENOS DE 15 DÍAS A VENCER (REVISE SUS HORAS RESTANTES) , contacte con su proveedor de servicios : +504 32689959 ",
-                            "Contacte con su proveedor de servicios : +504 32689959",
+                            "Contacte con su proveedor de servicios : +504 3268-9959",
                             MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     if ((txtUsuario.Text == string.Empty) | (txtContraseña.Text == string.Empty))
@@ -113,41 +105,36 @@ namespace Punto_de_venta.Inicio
                             {
 
                                 limpiar();
-                                this.Hide();
+                                
                                 Punto_de_venta.Clases.Usuario.ID = tUsuarios.IdUsuario.ToString();
-                                Punto_de_venta.Menú.Menu_estilo_2 Formulario = new Punto_de_venta.Menú.Menu_estilo_2(tUsuarios.FKPerfil); 
-                                Formulario.Show();
-                                limpiar();
+                                Punto_de_venta.Menú.Menu_estilo_2 Formulario = new Punto_de_venta.Menú.Menu_estilo_2(tUsuarios.FKPerfil);
+                                this.Hide();                 
+                                Formulario.ShowDialog();                                
                                 this.Show();
                             }
                         }
-
                 }
 
                 else
                     {
-                    if (horas > 0)
-                    {
-                        MessageBox.Show("Revise su conexión a internet, No se puede acceder al servidor","Error",MessageBoxButtons.OK,MessageBoxIcon.Warning);
-                    }
-                    else
-                    {
-                        MessageBox.Show("¡Su licencia expiró!");
-                        Punto_de_venta.Mantenimientos.FormCondicional Licencia = new Punto_de_venta.Mantenimientos.FormCondicional();
-                        this.Hide();
-                        Licencia.ShowDialog();
-
-                        this.Show();
-
-                    }
-                    
-                    }
-                
+                        if (horas > 0)
+                        {
+                            MessageBox.Show("Revise su conexión a la Red, No se puede acceder al servidor","Error",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                        }
+                        else
+                        {
+                            MessageBox.Show("¡Su licencia expiró!");
+                            Punto_de_venta.Mantenimientos.FormCondicional Licencia = new Punto_de_venta.Mantenimientos.FormCondicional();
+                            this.Hide();
+                            Licencia.ShowDialog();
+                            this.Show();
+                        }     
+                    }  
             }
             catch (Exception ex)
             {
                
-                MessageBox.Show("Revise su licencia o conexión a internet");
+                MessageBox.Show("Revise su licencia o conexión a la Red");
                 Punto_de_venta.Mantenimientos.FormCondicional Licencia = new Punto_de_venta.Mantenimientos.FormCondicional();
                 this.Hide();
                 Licencia.ShowDialog();
