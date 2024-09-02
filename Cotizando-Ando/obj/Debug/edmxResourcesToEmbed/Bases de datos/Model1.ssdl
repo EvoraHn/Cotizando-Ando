@@ -150,6 +150,7 @@ advertencia 6002: La tabla o vista 'BPB.dbo.Cierre_Diario' no tiene definida nin
     <Property Name="Producto" Type="varchar" MaxLength="100" Nullable="false" />
     <Property Name="Venta" Type="int" Nullable="false" />
     <Property Name="Cantidad" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Precio_Reflejado" Type="decimal" Precision="10" Scale="2" />
   </EntityType>
   <EntityType Name="Estado">
     <Key>

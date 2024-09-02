@@ -252,6 +252,12 @@
     <Compile Include="Inicio\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inicio\Login_Acceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio\Login_Acceso.Designer.cs">
+      <DependentUpon>Login_Acceso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inventario\Inventario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -392,6 +398,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio\Login_Acceso.resx">
+      <DependentUpon>Login_Acceso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inventario\Inventario.resx">
       <DependentUpon>Inventario.cs</DependentUpon>

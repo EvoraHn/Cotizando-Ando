@@ -20,14 +20,22 @@ namespace Punto_de_venta.Menú
         {
             InitializeComponent();
             idUsuario = _idUsuario;
-            if (idUsuario == 1)
+            if (idUsuario == 1 )
             {
                 modulo = "Administración";
+                
+                btnInventario.Visible = true;
+            }
+            
+            else if (idUsuario == 4)
+            {
+                modulo = "Gerencia";
                 btnUsuarios.Visible = true;
                 btnInventario.Visible = true;
             }
             else
             {
+                btnComprar.Visible = false;
                 btnUsuarios.Visible = false;
                 btnInventario.Visible = false;
             }

@@ -155,6 +155,7 @@ advertencia 6002: La tabla o vista 'BPB.dbo.Cierre_Diario' no tiene definida nin
           <Property Name="Producto" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="Venta" Type="int" Nullable="false" />
           <Property Name="Cantidad" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="Precio_Reflejado" Type="decimal" Precision="10" Scale="2" />
         </EntityType>
         <EntityType Name="Estado">
           <Key>
@@ -685,6 +686,7 @@ FROM [dbo].[VistaVentasPorMes] AS [VistaVentasPorMes]</DefiningQuery>
           <Property Name="Cantidad" Type="Decimal" Nullable="false" Scale="2" Precision="10" />
           <NavigationProperty Name="Producto1" Relationship="BPBModel.FK_Ventas_DetalleVentas_Contiene_Productos_Producto" FromRole="DetalleVentas" ToRole="Producto" />
           <NavigationProperty Name="Venta1" Relationship="BPBModel.FK_Ventas_DetalleVentas_Pertenece_Ventas_Ventas" FromRole="DetalleVentas" ToRole="Venta" />
+          <Property Name="Precio_Reflejado" Type="Decimal" Precision="10" Scale="2" />
         </EntityType>
         <EntityType Name="Estado">
           <Key>
@@ -1322,6 +1324,7 @@ FROM [dbo].[VistaVentasPorMes] AS [VistaVentasPorMes]</DefiningQuery>
           <EntitySetMapping Name="DetalleVentas">
             <EntityTypeMapping TypeName="BPBModel.DetalleVentas">
               <MappingFragment StoreEntitySet="DetalleVentas">
+                <ScalarProperty Name="Precio_Reflejado" ColumnName="Precio_Reflejado" />
                 <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
                 <ScalarProperty Name="Venta" ColumnName="Venta" />
                 <ScalarProperty Name="Producto" ColumnName="Producto" />

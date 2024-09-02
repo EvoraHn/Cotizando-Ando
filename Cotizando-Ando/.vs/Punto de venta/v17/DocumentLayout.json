@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|g:\\cotizando ando 271122\\cotizando-ando\\cotizando-ando\\mantenimientos\\mantenimiento_cierre_diario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|solutionrelative:mantenimientos\\mantenimiento_cierre_diario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|g:\\cotizando ando 271122\\cotizando-ando\\cotizando-ando\\ventas\\formulario_cancelar_factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|solutionrelative:ventas\\formulario_cancelar_factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\mantenimientos\\mantenimiento_cierre_diario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|solutionrelative:mantenimientos\\mantenimiento_cierre_diario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\ventas\\formulario_cancelar_factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|solutionrelative:ventas\\formulario_cancelar_factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\men\u00FA\\menu_estilo_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|solutionrelative:men\u00FA\\menu_estilo_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\bases de datos\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|solutionrelative:bases de datos\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\mantenimientos\\mantenimiento_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|solutionrelative:mantenimientos\\mantenimiento_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\inicio\\login_acceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|solutionrelative:inicio\\login_acceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\inicio\\login_acceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|solutionrelative:inicio\\login_acceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\ventas\\formulario_ventana_vender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,12 +35,40 @@
       "RelativeMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|solutionrelative:ventas\\formulario_ventana_vender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\men\u00FA\\menu_estilo_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|solutionrelative:men\u00FA\\menu_estilo_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|g:\\cotizando ando 271122\\cotizando-ando\\cotizando-ando\\inicio\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\mantenimientos\\mantenimiento_usuarios_2_0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|solutionrelative:mantenimientos\\mantenimiento_usuarios_2_0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\mantenimientos\\mantenimiento_usuarios_2_0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|solutionrelative:mantenimientos\\mantenimiento_usuarios_2_0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\inicio\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|solutionrelative:inicio\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\inicio\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|solutionrelative:inicio\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\inicio\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|solutionrelative:inicio\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\mantenimientos\\mantenimiento_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|solutionrelative:mantenimientos\\mantenimiento_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\men\u00FA\\menu_estilo_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|solutionrelative:men\u00FA\\menu_estilo_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68856241-F475-4835-B691-4D2A45BA5BAD}|Punto de venta.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,95 +78,205 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
+              "Title": "Login_Acceso.cs",
+              "DocumentMoniker": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Inicio\\Login_Acceso.cs",
+              "RelativeDocumentMoniker": "Inicio\\Login_Acceso.cs",
+              "ToolTip": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Inicio\\Login_Acceso.cs",
+              "RelativeToolTip": "Inicio\\Login_Acceso.cs",
+              "ViewState": "AQIAAJQAAAAAAAAAAADgv6QAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T00:51:07.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login_Acceso.cs [Dise\u00F1o]",
+              "DocumentMoniker": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Inicio\\Login_Acceso.cs",
+              "RelativeDocumentMoniker": "Inicio\\Login_Acceso.cs",
+              "ToolTip": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Inicio\\Login_Acceso.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Inicio\\Login_Acceso.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T00:48:18.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Login.Designer.cs",
+              "DocumentMoniker": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Inicio\\Login.Designer.cs",
+              "RelativeDocumentMoniker": "Inicio\\Login.Designer.cs",
+              "ToolTip": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Inicio\\Login.Designer.cs",
+              "RelativeToolTip": "Inicio\\Login.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAOsAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T00:46:58.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Login.cs",
               "DocumentMoniker": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Inicio\\Login.cs",
               "RelativeDocumentMoniker": "Inicio\\Login.cs",
               "ToolTip": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Inicio\\Login.cs",
               "RelativeToolTip": "Inicio\\Login.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD4AAAAYAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T00:51:59.492Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-02T00:42:56.582Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
+              "Title": "Login.cs [Dise\u00F1o]",
+              "DocumentMoniker": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Inicio\\Login.cs",
+              "RelativeDocumentMoniker": "Inicio\\Login.cs",
+              "ToolTip": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Inicio\\Login.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Inicio\\Login.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T00:42:54.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Menu_estilo_2.cs",
+              "DocumentMoniker": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Men\u00FA\\Menu_estilo_2.cs",
+              "RelativeDocumentMoniker": "Men\u00FA\\Menu_estilo_2.cs",
+              "ToolTip": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Men\u00FA\\Menu_estilo_2.cs",
+              "RelativeToolTip": "Men\u00FA\\Menu_estilo_2.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACcAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T00:36:09.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Menu_estilo_2.cs [Dise\u00F1o]",
               "DocumentMoniker": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Men\u00FA\\Menu_estilo_2.cs",
               "RelativeDocumentMoniker": "Men\u00FA\\Menu_estilo_2.cs",
               "ToolTip": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Men\u00FA\\Menu_estilo_2.cs [Dise\u00F1o]",
               "RelativeToolTip": "Men\u00FA\\Menu_estilo_2.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T00:10:54.474Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-09-02T00:36:06.703Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Mantenimiento_cierre_Diario.cs",
-              "DocumentMoniker": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Mantenimientos\\Mantenimiento_cierre_Diario.cs",
-              "RelativeDocumentMoniker": "Mantenimientos\\Mantenimiento_cierre_Diario.cs",
-              "ToolTip": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Mantenimientos\\Mantenimiento_cierre_Diario.cs",
-              "RelativeToolTip": "Mantenimientos\\Mantenimiento_cierre_Diario.cs",
-              "ViewState": "AQIAAPoCAAAAAAAAAAAewA8DAAANAAAA",
+              "DocumentIndex": 9,
+              "Title": "Mantenimiento_Usuarios_2_0.cs",
+              "DocumentMoniker": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Mantenimientos\\Mantenimiento_Usuarios_2_0.cs",
+              "RelativeDocumentMoniker": "Mantenimientos\\Mantenimiento_Usuarios_2_0.cs",
+              "ToolTip": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Mantenimientos\\Mantenimiento_Usuarios_2_0.cs",
+              "RelativeToolTip": "Mantenimientos\\Mantenimiento_Usuarios_2_0.cs",
+              "ViewState": "AQIAAC4BAAAAAAAAAAAswDkBAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T03:38:08.846Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-02T00:21:36.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Mantenimiento_Usuarios_2_0.cs [Dise\u00F1o]",
+              "DocumentMoniker": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Mantenimientos\\Mantenimiento_Usuarios_2_0.cs",
+              "RelativeDocumentMoniker": "Mantenimientos\\Mantenimiento_Usuarios_2_0.cs",
+              "ToolTip": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Mantenimientos\\Mantenimiento_Usuarios_2_0.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Mantenimientos\\Mantenimiento_Usuarios_2_0.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T00:21:26.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Mantenimiento_Productos.cs",
+              "DocumentMoniker": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Mantenimientos\\Mantenimiento_Productos.cs",
+              "RelativeDocumentMoniker": "Mantenimientos\\Mantenimiento_Productos.cs",
+              "ToolTip": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Mantenimientos\\Mantenimiento_Productos.cs",
+              "RelativeToolTip": "Mantenimientos\\Mantenimiento_Productos.cs",
+              "ViewState": "AQIAAD0BAAAAAAAAAAAuwFsBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T22:45:37.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Mantenimiento_Productos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Mantenimientos\\Mantenimiento_Productos.cs",
+              "RelativeDocumentMoniker": "Mantenimientos\\Mantenimiento_Productos.cs",
+              "ToolTip": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Mantenimientos\\Mantenimiento_Productos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Mantenimientos\\Mantenimiento_Productos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T22:45:21.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Bases de datos\\Model1.edmx",
+              "RelativeDocumentMoniker": "Bases de datos\\Model1.edmx",
+              "ToolTip": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Bases de datos\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "Bases de datos\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-09-01T21:15:10.655Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Mantenimiento_cierre_Diario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Mantenimientos\\Mantenimiento_cierre_Diario.cs",
-              "RelativeDocumentMoniker": "Mantenimientos\\Mantenimiento_cierre_Diario.cs",
-              "ToolTip": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Mantenimientos\\Mantenimiento_cierre_Diario.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Mantenimientos\\Mantenimiento_cierre_Diario.cs [Dise\u00F1o]",
+              "Title": "Formulario_Cancelar_Factura.cs",
+              "DocumentMoniker": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Ventas\\Formulario_Cancelar_Factura.cs",
+              "RelativeDocumentMoniker": "Ventas\\Formulario_Cancelar_Factura.cs",
+              "ToolTip": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Ventas\\Formulario_Cancelar_Factura.cs",
+              "RelativeToolTip": "Ventas\\Formulario_Cancelar_Factura.cs",
+              "ViewState": "AQIAABQBAAAAAAAAAAAlwCQBAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T03:38:00.721Z",
+              "WhenOpened": "2024-09-01T18:36:51.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Formulario_Cancelar_Factura.cs [Dise\u00F1o]",
+              "DocumentMoniker": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Ventas\\Formulario_Cancelar_Factura.cs",
+              "RelativeDocumentMoniker": "Ventas\\Formulario_Cancelar_Factura.cs",
+              "ToolTip": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Ventas\\Formulario_Cancelar_Factura.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Ventas\\Formulario_Cancelar_Factura.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T18:36:42.02Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Formulario_Ventana_Vender.cs [Dise\u00F1o]",
               "DocumentMoniker": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Ventas\\Formulario_Ventana_Vender.cs",
               "RelativeDocumentMoniker": "Ventas\\Formulario_Ventana_Vender.cs",
               "ToolTip": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Ventas\\Formulario_Ventana_Vender.cs [Dise\u00F1o]",
               "RelativeToolTip": "Ventas\\Formulario_Ventana_Vender.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T23:00:24.877Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-07-28T23:00:24.877Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Formulario_Ventana_Vender.cs",
               "DocumentMoniker": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Ventas\\Formulario_Ventana_Vender.cs",
               "RelativeDocumentMoniker": "Ventas\\Formulario_Ventana_Vender.cs",
               "ToolTip": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Ventas\\Formulario_Ventana_Vender.cs",
               "RelativeToolTip": "Ventas\\Formulario_Ventana_Vender.cs",
-              "ViewState": "AQIAAM4EAAAAAAAAAAAewOQEAAANAAAA",
+              "ViewState": "AQIAANsEAAAAAAAAAAAawOkEAABiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T23:00:26.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-28T23:00:26.516Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 16,
               "Title": "Program.cs",
               "DocumentMoniker": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "G:\\Cotizando Ando 271122\\Cotizando-Ando\\Cotizando-Ando\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAAAMAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABwAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T03:04:06.744Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-30T03:04:06.744Z"
             }
           ]
         }

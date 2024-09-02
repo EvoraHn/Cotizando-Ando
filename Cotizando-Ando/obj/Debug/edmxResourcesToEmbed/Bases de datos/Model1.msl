@@ -60,6 +60,7 @@
     <EntitySetMapping Name="DetalleVentas">
       <EntityTypeMapping TypeName="BPBModel.DetalleVentas">
         <MappingFragment StoreEntitySet="DetalleVentas">
+          <ScalarProperty Name="Precio_Reflejado" ColumnName="Precio_Reflejado" />
           <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
           <ScalarProperty Name="Venta" ColumnName="Venta" />
           <ScalarProperty Name="Producto" ColumnName="Producto" />

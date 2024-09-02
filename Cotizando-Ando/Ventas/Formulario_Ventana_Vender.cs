@@ -443,7 +443,7 @@ namespace Punto_de_venta.Ventas
                 tabla.Producto = (dr.Cells[0].Value).ToString();
                 tabla.Cantidad = Convert.ToDecimal(dr.Cells[3].Value);
                 tabla.Venta = Convert.ToInt32(lblFactura.Text);
-          
+                tabla.Precio_Reflejado = Convert.ToDecimal(dr.Cells[2].Value);
                 entity.DetalleVentas.Add(tabla);
                 entity.SaveChanges();
 
@@ -1255,8 +1255,10 @@ namespace Punto_de_venta.Ventas
 
         private void btnCancelarFactura_Click(object sender, EventArgs e)
         {
-            Punto_de_venta.Ventas.Formulario_Cancelar_Factura Formulario = new Punto_de_venta.Ventas.Formulario_Cancelar_Factura();
-            Formulario.Show();
+            Punto_de_venta.Inicio.Login_Acceso Formulario = new Punto_de_venta.Inicio.Login_Acceso();
+            Formulario.ShowDialog();
+            
+
         }
     }
 }

@@ -42,6 +42,7 @@
     <Property Name="Cantidad" Type="Decimal" Nullable="false" Scale="2" Precision="10" />
     <NavigationProperty Name="Producto1" Relationship="BPBModel.FK_Ventas_DetalleVentas_Contiene_Productos_Producto" FromRole="DetalleVentas" ToRole="Producto" />
     <NavigationProperty Name="Venta1" Relationship="BPBModel.FK_Ventas_DetalleVentas_Pertenece_Ventas_Ventas" FromRole="DetalleVentas" ToRole="Venta" />
+    <Property Name="Precio_Reflejado" Type="Decimal" Precision="10" Scale="2" />
   </EntityType>
   <EntityType Name="Estado">
     <Key>

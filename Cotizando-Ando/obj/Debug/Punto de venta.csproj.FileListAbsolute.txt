@@ -603,3 +603,4 @@ C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto de 
 C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto de venta.csproj.CopyComplete
 C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto de venta.exe
 C:\Users\Eliab Evora\Documents\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto de venta.pdb
+G:\Cotizando Ando 271122\Cotizando-Ando\Cotizando-Ando\obj\Debug\Punto_de_venta.Inicio.Login_Acceso.resources

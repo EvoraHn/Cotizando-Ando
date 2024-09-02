@@ -75,7 +75,7 @@ namespace Punto_de_venta.Mantenimientos
                         "Inactivo"};
             cmbEstado.DataSource = LEstado;
             var LAcceso = new[] {"Auditoría",
-                        "Admin","Caja"};
+                        "Admin","Caja","Gerencia"};
             cmbAcceso.DataSource = LAcceso;
         }
 
@@ -120,6 +120,10 @@ namespace Punto_de_venta.Mantenimientos
                     else if (tabla.FKPerfil == 3)
                     {
                         cmbAcceso.Text = "Auditoría";
+                    }
+                    else if (tabla.FKPerfil == 4)
+                    {
+                        cmbAcceso.Text = "Gerencia";
                     }
                     //modulo de Estado
                     if (tabla.Estado == true)
@@ -181,6 +185,10 @@ namespace Punto_de_venta.Mantenimientos
                     {
                         tUsuarios.FKPerfil = 3;
                     }
+                    else if (cmbAcceso.Text == "Gerencia")
+                    {
+                        tUsuarios.FKPerfil = 4;
+                    }
                     tUsuarios.Contacto = txtCelular.Text;
                     tUsuarios.ContactoFamiliar = TxtFamiliar.Text;
 
@@ -238,6 +246,10 @@ namespace Punto_de_venta.Mantenimientos
                     else if (cmbAcceso.Text == "Auditoría")
                     {
                         tUsuarios.FKPerfil = 3;
+                    }
+                    else if (cmbAcceso.Text == "Gerencia")
+                    {
+                        tUsuarios.FKPerfil = 4;
                     }
                     tUsuarios.Contacto = txtCelular.Text;
                     tUsuarios.ContactoFamiliar = TxtFamiliar.Text;
