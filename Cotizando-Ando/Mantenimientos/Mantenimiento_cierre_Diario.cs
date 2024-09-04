@@ -938,5 +938,9 @@ namespace Punto_de_venta.Mantenimientos
 
         }
 
+        private void txtVentasEnSistema_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

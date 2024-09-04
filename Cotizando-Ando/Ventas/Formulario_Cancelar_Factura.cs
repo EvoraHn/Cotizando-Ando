@@ -123,65 +123,36 @@ namespace Punto_de_venta.Ventas
 
         }
 
+        private void CambiarEstado()
+        {
+            var tablaP = entity.Venta.FirstOrDefault(x => x.IdVenta == id);
+
+            if (txtEstado.Text == "Activo")
+            {
+                MessageBox.Show(txtEstado.Text.ToString());
+                tablaP.Estado = 1;
+            }
+            else
+            {
+                MessageBox.Show(txtEstado.Text.ToString());
+                Mostrar_detalles();
+                tablaP.Estado = 2;
+                entity.SaveChanges();
+                Thread.Sleep(100);
+                MessageBox.Show("¡Factura inhabilitada correctamente!");
+            }
+        }
 
         private void btnCambiar_Click(object sender, EventArgs e)
         {
             try
             {
-                var tablaP = entity.Venta.FirstOrDefault(x => x.IdVenta == id);
-
-                if (txtEstado.Text == "Activo")
-                {
-                    MessageBox.Show(txtEstado.Text.ToString());
-                    tablaP.Estado = 1;
-                }
-                else
-                {
-                    MessageBox.Show(txtEstado.Text.ToString());
-                    Mostrar_detalles();
-                    tablaP.Estado = 2;
-                    entity.SaveChanges();
-                    Thread.Sleep(100);
-                    regresarProducto();
-                    Thread.Sleep(100);
-                    Mostrar_datos();
-                    Limpiar();
-                    MessageBox.Show("¡Factura inhabilitada correctamente!");
-                }
-
-
-
-
-
-
-                    //if (txtEstado.Text.Equals("") | txtId.Text.Equals(""))
-                    //{
-                    //    MessageBox.Show("Por favor ingresar todos los datos en el formulario");
-                    //    return;
-                    //}
-                    //else
-                    //{
-                    //    var tablaP = entity.Venta.FirstOrDefault(x => x.IdVenta == id);
-                    //    if (txtEstado.Text == "Activo")
-                    //    {
-                    //        tablaP.Estado = 1;
-                    //    }
-                    //    else
-                    //    {
-                    //        Mostrar_detalles();
-                    //        tablaP.Estado = 2;
-                    //        entity.SaveChanges();
-                    //        Thread.Sleep(100);
-                    //        regresarProducto();
-                    //        Thread.Sleep(100);
-                    //        Mostrar_datos();
-                    //        Limpiar();
-                    //        MessageBox.Show("¡Factura inhabilitada correctamente!");
-
-                    //    }
-                    //    Mostrar_datos();
-                    //}
-                }
+                CambiarEstado();
+                regresarProducto();
+                Thread.Sleep(100);
+                Mostrar_datos();
+                Limpiar();
+            }
             catch (Exception) { }
         }
 
@@ -285,6 +256,20 @@ namespace Punto_de_venta.Ventas
             Limpiar();
            
         }
+
+
+        private void RegresarProductoUnitario(decimal cantidadP,string productop)
+        {
+            
+                Punto_de_venta.Bases_de_datos.Producto tabla = new Punto_de_venta.Bases_de_datos.Producto();
+                //producto = (dr.Cells[0].Value).ToString();
+                var tablaP = entity.Producto.FirstOrDefault(x => x.IdProducto == productop);
+                //double n = Convert.ToDouble(dr.Cells[2].Value);
+                //int numeroEntero = Convert.ToInt32(Math.Truncate(n));
+                tablaP.Cantidad += cantidadP;
+                entity.SaveChanges();
+            
+        }
         private void EditarDetalleDeVenta()
         {      
                 int fkid = Convert.ToInt32(dgDetalles.SelectedCells[5].Value);
@@ -293,22 +278,42 @@ namespace Punto_de_venta.Ventas
                 precio_Temporal_Venta = Convert.ToDecimal(txtCantidadProducto.Text) * (Product.Precio_Reflejado.Value);
                 if (Cantidad<=0)
                 {
+                    if (Cantidad <0)
+                    {
+                    MessageBox.Show("¡No se puede retornar más producto del que se vendió!", "Revisa Cantidades", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                else if (Cantidad == 0) 
+                {
                     try
                     {
+                        RegresarProductoUnitario((Convert.ToDecimal(txtCantidadProducto.Text)), dgDetalles.SelectedCells[0].Value.ToString());
                         entity.DetalleVentas.Remove(Product);
                         entity.SaveChanges();
-                        MessageBox.Show("¡Registro eliminado correctamente!");
+                        MessageBox.Show("¡todo el producto retornado correctamente!");
                         Limpiar();
                         Mostrar_datos();
                         Mostrar_detalles();
+
+                        if (dgDetalles.Rows.Count < 1)
+                        {
+                            var tablaP = entity.Venta.FirstOrDefault(x => x.IdVenta == id);
+                                tablaP.Estado = 2;
+                                entity.SaveChanges();
+                                Thread.Sleep(100);
+                                MessageBox.Show("Factura Vacía, ¡Factura inhabilitada!");
+                            
+                        }
                     }
                     catch (Exception)
                     {
-                        MessageBox.Show("¡No puedes eliminar un producto si ya está en facturas!"); return;
+                        MessageBox.Show(""); return;
                     }
+                }
+                    
                 }
                 else
                 {
+                RegresarProductoUnitario(Convert.ToDecimal(txtCantidadProducto.Text), dgDetalles.SelectedCells[0].Value.ToString());
                 Product.Cantidad = Cantidad;
                 entity.SaveChanges();
                 MessageBox.Show("¡Registro modificado correctamente!");
