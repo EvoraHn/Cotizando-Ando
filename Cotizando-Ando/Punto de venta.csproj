@@ -283,6 +283,12 @@
     <Compile Include="Mantenimientos\FormCondicional.Designer.cs">
       <DependentUpon>FormCondicional.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mantenimientos\Ganacias_por_periodo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Ganacias_por_periodo.Designer.cs">
+      <DependentUpon>Ganacias_por_periodo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mantenimientos\Mantenimiento_Categoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -413,6 +419,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\FormCondicional.resx">
       <DependentUpon>FormCondicional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Ganacias_por_periodo.resx">
+      <DependentUpon>Ganacias_por_periodo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\Mantenimiento_Categoria.resx">
       <DependentUpon>Mantenimiento_Categoria.cs</DependentUpon>
