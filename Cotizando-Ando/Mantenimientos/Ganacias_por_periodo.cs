@@ -70,7 +70,7 @@ namespace Punto_de_venta.Mantenimientos
                                on det.Producto equals prod.IdProducto
                                join fact in entity.Venta
                                on det.Venta equals fact.IdVenta
-                               where fact.Fecha_Venta >= dtpInicial.Value && fact.Fecha_Venta <= dtpFinal.Value
+                               where fact.Fecha_Venta >= dtpInicial.Value && fact.Fecha_Venta <= dtpFinal.Value && fact.Estado == 1
 
                                select new
                                {

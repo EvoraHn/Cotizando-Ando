@@ -35,6 +35,7 @@ namespace Punto_de_venta.Ventas
         //inicializar las variables
         string id = "000000";
         int idDetalle = 0;
+        double vuelto = 0;
         bool errorV = false;
         bool cotizacion = false;
         bool imprimir_encabezado = true; 
@@ -479,7 +480,7 @@ namespace Punto_de_venta.Ventas
         private void calcularVuelto()
 
         {
-            double vuelto = 0;
+            
             if (txtBillete.Text == string.Empty)
             {
                 txtBillete.Text = "0";
@@ -765,6 +766,11 @@ namespace Punto_de_venta.Ventas
             total = (Convert.ToDecimal(txtSubtotal.Text) - Convert.ToDecimal(txtDescuentos.Text) - Convert.ToDecimal(txtImporteExonerado.Text)).ToString();
             sw.WriteLine(" ");
             sw.WriteLine("TOTAL: L. " + txtTotal.Text + " ");
+            sw.WriteLine(" ");
+           
+            sw.WriteLine("El billete que dió: L. " + txtBillete.Text + " ");
+            sw.WriteLine(" ");
+            sw.WriteLine("Su vuelto: L. " + vuelto.ToString()  + " ");
             sw.Close();
             string docName = "testPage.txt";
             string docPath = @"C:\";
