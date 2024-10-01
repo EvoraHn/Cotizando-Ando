@@ -113,6 +113,7 @@ namespace Punto_de_venta.Inicio
                             {
                                 MessageBox.Show("Su usuario no tiene permisos para acceder a este módulo ",
                             "Acceso denegado",
+                            
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                             

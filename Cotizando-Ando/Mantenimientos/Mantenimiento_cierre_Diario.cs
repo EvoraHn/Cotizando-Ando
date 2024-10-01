@@ -942,5 +942,11 @@ namespace Punto_de_venta.Mantenimientos
         {
 
         }
+
+        private void btnfrmganancias_Click(object sender, EventArgs e)
+        {
+            Punto_de_venta.Mantenimientos.Ganacias_por_periodo Formulario = new Punto_de_venta.Mantenimientos.Ganacias_por_periodo();
+            Formulario.ShowDialog();
+        }
     }
 }

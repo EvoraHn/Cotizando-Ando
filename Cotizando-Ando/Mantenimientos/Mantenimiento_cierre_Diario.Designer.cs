@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
@@ -73,6 +73,7 @@
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.dgDetalle_Transaccion = new System.Windows.Forms.DataGridView();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.btnfrmganancias = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ctSemana)).BeginInit();
@@ -87,6 +88,7 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel2.Controls.Add(this.btnfrmganancias);
             this.panel2.Controls.Add(this.btnCerrar);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.lblFactura);
@@ -200,18 +202,18 @@
             this.ctSemana.BorderSkin.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.Center;
             this.ctSemana.BorderSkin.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Cross;
             this.ctSemana.BorderSkin.BorderColor = System.Drawing.Color.BlanchedAlmond;
-            chartArea7.Name = "ChartArea1";
-            this.ctSemana.ChartAreas.Add(chartArea7);
-            legend7.Name = "Legend1";
-            this.ctSemana.Legends.Add(legend7);
+            chartArea5.Name = "ChartArea1";
+            this.ctSemana.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.ctSemana.Legends.Add(legend5);
             this.ctSemana.Location = new System.Drawing.Point(693, 528);
             this.ctSemana.Name = "ctSemana";
             this.ctSemana.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series7.ChartArea = "ChartArea1";
-            series7.Legend = "Legend1";
-            series7.Name = "Series1";
-            series7.YValuesPerPoint = 4;
-            this.ctSemana.Series.Add(series7);
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "Series1";
+            series5.YValuesPerPoint = 4;
+            this.ctSemana.Series.Add(series5);
             this.ctSemana.Size = new System.Drawing.Size(472, 291);
             this.ctSemana.TabIndex = 45;
             this.ctSemana.Text = "chart1";
@@ -234,18 +236,18 @@
             // 
             // ctMeses
             // 
-            chartArea8.Name = "ChartArea1";
-            this.ctMeses.ChartAreas.Add(chartArea8);
-            legend8.Name = "Legend1";
-            this.ctMeses.Legends.Add(legend8);
+            chartArea6.Name = "ChartArea1";
+            this.ctMeses.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.ctMeses.Legends.Add(legend6);
             this.ctMeses.Location = new System.Drawing.Point(16, 528);
             this.ctMeses.Name = "ctMeses";
             this.ctMeses.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series8.ChartArea = "ChartArea1";
-            series8.Legend = "Legend1";
-            series8.Name = "Series1";
-            series8.YValuesPerPoint = 6;
-            this.ctMeses.Series.Add(series8);
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            series6.YValuesPerPoint = 6;
+            this.ctMeses.Series.Add(series6);
             this.ctMeses.Size = new System.Drawing.Size(534, 291);
             this.ctMeses.TabIndex = 44;
             this.ctMeses.Text = "chart1";
@@ -663,23 +665,23 @@
             this.dgDetalle_Transaccion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgDetalle_Transaccion.BackgroundColor = System.Drawing.Color.White;
             this.dgDetalle_Transaccion.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgDetalle_Transaccion.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgDetalle_Transaccion.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgDetalle_Transaccion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgDetalle_Transaccion.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgDetalle_Transaccion.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgDetalle_Transaccion.Location = new System.Drawing.Point(6, 42);
             this.dgDetalle_Transaccion.Margin = new System.Windows.Forms.Padding(2);
             this.dgDetalle_Transaccion.Name = "dgDetalle_Transaccion";
@@ -696,6 +698,25 @@
             // printDocument1
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // btnfrmganancias
+            // 
+            this.btnfrmganancias.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnfrmganancias.BackColor = System.Drawing.Color.White;
+            this.btnfrmganancias.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btnfrmganancias.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnfrmganancias.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnfrmganancias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnfrmganancias.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnfrmganancias.ForeColor = System.Drawing.Color.Gray;
+            this.btnfrmganancias.Location = new System.Drawing.Point(1104, 11);
+            this.btnfrmganancias.Margin = new System.Windows.Forms.Padding(2);
+            this.btnfrmganancias.Name = "btnfrmganancias";
+            this.btnfrmganancias.Size = new System.Drawing.Size(105, 28);
+            this.btnfrmganancias.TabIndex = 47;
+            this.btnfrmganancias.Text = "Ganancias";
+            this.btnfrmganancias.UseVisualStyleBackColor = false;
+            this.btnfrmganancias.Click += new System.EventHandler(this.btnfrmganancias_Click);
             // 
             // Mantenimiento_cierre_Diario
             // 
@@ -765,5 +786,6 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart ctSemana;
         private System.Windows.Forms.Label lblver;
         private System.Windows.Forms.ComboBox cmbNombresUsuarios;
+        private System.Windows.Forms.Button btnfrmganancias;
     }
 }

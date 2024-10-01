@@ -521,6 +521,8 @@
     <Content Include="Imagenes\casa.png" />
     <Content Include="Resources\LOGONEGRO.png" />
     <Content Include="Resources\PISIS.png" />
+    <Content Include="Resources\yocoha cell logo.png" />
+    <None Include="Resources\yocoha cell logo1.png" />
     <None Include="Resources\puleria isis.png" />
     <None Include="Resources\LOGONEGRO1.png" />
     <Content Include="Resources\Proforma.png" />

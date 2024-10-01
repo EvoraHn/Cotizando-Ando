@@ -138,5 +138,10 @@ namespace Punto_de_venta.Mantenimientos
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
