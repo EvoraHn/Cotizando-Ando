@@ -172,6 +172,7 @@ namespace Punto_de_venta.Menú
             this.btnVentas.Size = new System.Drawing.Size(190, 76);
             this.btnVentas.TabIndex = 4;
             this.btnVentas.UseVisualStyleBackColor = false;
+            this.btnVentas.Visible = false;
             this.btnVentas.Click += new System.EventHandler(this.btnVentas_Click);
             // 
             // btnInventario

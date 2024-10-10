@@ -735,7 +735,8 @@ namespace Punto_de_venta.Ventas
             out charactersOnPage, out linesPerPage);
 
             //----------------------- Logo de la empresa ----------------------------------------------------------
-            Bitmap myPng = Properties.Resources.yocoha_cell_logo;
+            //Bitmap myPng = Properties.Resources.yocoha_cell_logo;
+            Bitmap myPng = Properties.Resources.LOGONEGRO;
             //----------------------------------------- x,y,ancho y alto
             e.Graphics.DrawImage(myPng, new RectangleF(50, y += 10, 100, 100));
 
@@ -873,7 +874,8 @@ namespace Punto_de_venta.Ventas
             //sw.WriteLine("COTIZACIÓN DE PRODUCTOS", ContentAlignment.TopCenter);
             sw.WriteLine(" ");
             sw.WriteLine(" ");
-            sw.WriteLine("Teléfono: 9908-5779 " + "                                                         " + DateTime.Now.ToString());
+            //sw.WriteLine("Teléfono: 9908-5779 " + "                                                         " + DateTime.Now.ToString());
+            sw.WriteLine("Teléfono: 2773-0953 " + "                                                         " + DateTime.Now.ToString());
             sw.WriteLine(" ");
             if (cotizacion)
             {
@@ -887,8 +889,8 @@ namespace Punto_de_venta.Ventas
             //sw.WriteLine(DateTime.Now.ToString(),ContentAlignment.TopRight);
             sw.WriteLine("" + "Cliente: " + txtCliente.Text.ToUpper() + " ");
             sw.WriteLine("" + "RTN: " + txtRTN.Text + " ");
-            sw.WriteLine("" + "Yoco-ha Cell, Barrio San Juan, Plaza Sandres, primer local, Siguatepeque, Comayagua.");
-            //sw.WriteLine("" + "Bodegón de los Precios Bajos, esquina opuesta al instituto Dr.Genaro Muñoz Hernandez, Siguatepeque, Comayagua.");
+            //sw.WriteLine("" + "Yoco-ha Cell, Barrio San Juan, Plaza Sandres, primer local, Siguatepeque, Comayagua.");
+            sw.WriteLine("" + "Bodegón de los Precios Bajos, esquina opuesta al instituto Dr.Genaro Muñoz Hernandez, Siguatepeque, Comayagua.");
             sw.WriteLine(" ");
             sw.WriteLine("      ← PRODUCTOS →   ");
             sw.WriteLine(" ");

@@ -266,6 +266,7 @@ namespace Punto_de_venta.Mantenimientos
 
                          };
             var tMeses1 = from p in entity.Producto
+
                           select new
                           {
                               p.IdProducto,
@@ -841,14 +842,12 @@ namespace Punto_de_venta.Mantenimientos
 
             }
         }
-
-
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             int charactersOnPage = 0;
             int linesPerPage = 0;
-            Font font = new Font("Arial", 12);
-            int ancho = 278;
+            Font font = new Font("Arial", 10);
+            int ancho = 180;
             int y = 0;
             StringFormat stringFormat = new StringFormat();
             stringFormat.Alignment = StringAlignment.Center;
@@ -871,58 +870,110 @@ namespace Punto_de_venta.Mantenimientos
 
 
             //----------------------- Logo de la empresa ----------------------------------------------------------
-            Bitmap myPng = Properties.Resources.puleria_isis;
+            //Bitmap myPng = Properties.Resources.yocoha_cell_logo;
+            Bitmap myPng = Properties.Resources.LOGONEGRO;
             //----------------------------------------- x,y,ancho y alto
-            e.Graphics.DrawImage(myPng, new RectangleF(100, y += 10, 100, 100));
+            e.Graphics.DrawImage(myPng, new RectangleF(52, y += 10, 100, 100));
 
             ////----------------------------------------- x,y,ancho y alto
             Bitmap myPng2 = Properties.Resources.PROFORMASOLA;
-            e.Graphics.DrawImage(myPng2, new RectangleF(70, y += 120, 150, 17));
+            e.Graphics.DrawImage(myPng2, new RectangleF(25, y += 120, 150, 17));
 
 
-            e.Graphics.DrawString(stringToPrint, font, Brushes.Black, new RectangleF(5, y += 30, ancho, e.MarginBounds.Height), StringFormat.GenericTypographic);
+            e.Graphics.DrawString(stringToPrint, font, Brushes.Black, new RectangleF(10, y += 20, ancho, e.MarginBounds.Height), StringFormat.GenericTypographic);
             //-------------------------- Pie de cotización --------------------------------------------------------
             stringToPrint = stringToPrint.Substring(charactersOnPage);
 
             // Check to see if more pages are to be printed.
             e.HasMorePages = (stringToPrint.Length > 0);
-            
+
         }
+
+        // factura ancha
+
+        //private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        //{
+        //    int charactersOnPage = 0;
+        //    int linesPerPage = 0;
+        //    Font font = new Font("Arial", 12);
+        //    int ancho = 278;
+        //    int y = 0;
+        //    StringFormat stringFormat = new StringFormat();
+        //    stringFormat.Alignment = StringAlignment.Center;
+        //    stringFormat.LineAlignment = StringAlignment.Center;
+
+        //    StringFormat stringFormatrigth = new StringFormat();
+        //    stringFormatrigth.Alignment = StringAlignment.Far;
+        //    stringFormatrigth.LineAlignment = StringAlignment.Far;
+
+        //    StringFormat stringFormatLeft = new StringFormat();
+        //    stringFormatLeft.Alignment = StringAlignment.Near;
+        //    stringFormatLeft.LineAlignment = StringAlignment.Near;
+        //    //selector de ancho y alto manual de la pagina a imprimir
+        //    SizeF sizeF = new SizeF();
+        //    sizeF.Width = e.MarginBounds.Width; //ancho de la pagina (automatico)
+        //    sizeF.Height = e.MarginBounds.Height - 269; // Largo de la pagina (automatico) ; tambien se pueden colocar manualmente
+        //    e.Graphics.MeasureString(stringToPrint, this.Font,
+        //    sizeF, StringFormat.GenericTypographic,
+        //    out charactersOnPage, out linesPerPage);
+
+
+        //    //----------------------- Logo de la empresa ----------------------------------------------------------
+        //    Bitmap myPng = Properties.Resources.puleria_isis;
+        //    //----------------------------------------- x,y,ancho y alto
+        //    e.Graphics.DrawImage(myPng, new RectangleF(100, y += 10, 100, 100));
+
+        //    ////----------------------------------------- x,y,ancho y alto
+        //    Bitmap myPng2 = Properties.Resources.PROFORMASOLA;
+        //    e.Graphics.DrawImage(myPng2, new RectangleF(70, y += 120, 150, 17));
+
+
+        //    e.Graphics.DrawString(stringToPrint, font, Brushes.Black, new RectangleF(5, y += 30, ancho, e.MarginBounds.Height), StringFormat.GenericTypographic);
+        //    //-------------------------- Pie de cotización --------------------------------------------------------
+        //    stringToPrint = stringToPrint.Substring(charactersOnPage);
+
+        //    // Check to see if more pages are to be printed.
+        //    e.HasMorePages = (stringToPrint.Length > 0);
+
+        //}
+
+
+        //factura corta
         private void imprimirFactura()
         {
             string total = "";
-            
+
             StreamWriter sw = new StreamWriter("C:\\testPage.txt");
             //----Encabezado----
             sw.WriteLine(" ");
-            sw.WriteLine("                 CIERRE DIARIO");
+            sw.WriteLine("      CIERRE DIARIO");
             sw.WriteLine(" ");
             sw.WriteLine("  FECHA Y HORA DE CIERRE:");
             sw.WriteLine(" ");
-            sw.WriteLine("             " + DateTime.Now.ToString());
-            
+            sw.WriteLine("  " + DateTime.Now.ToString());
+
             sw.WriteLine(" ");
             sw.WriteLine(" SUELTO INICIAL:");
-            sw.WriteLine("L. "+txtMontoInicial.Text);
+            sw.WriteLine("L. " + txtMontoInicial.Text);
             sw.WriteLine(" ");
             sw.WriteLine(" ");
             sw.WriteLine(" SUS VENTAS EL DÍA DE HOY:");
-            sw.WriteLine("L. "+txtVentasEnSistema.Text );
+            sw.WriteLine("L. " + txtVentasEnSistema.Text);
             sw.WriteLine(" ");
             sw.WriteLine(" ");
             sw.WriteLine(" SU CONTEO DE CAJA:");
-            sw.WriteLine("L. "+txtConteodeCaja.Text);
+            sw.WriteLine("L. " + txtConteodeCaja.Text);
             sw.WriteLine(" ");
             sw.WriteLine(" ");
-            if (Convert.ToDouble(txtFaltante.Text) > 0 )
+            if (Convert.ToDouble(txtFaltante.Text) > 0)
             {
                 sw.WriteLine(" FALTANTE:");
-                sw.WriteLine("L. "+txtFaltante.Text);
+                sw.WriteLine("L. " + txtFaltante.Text);
             }
             else
             {
                 sw.WriteLine(" SOBRANTE:");
-                sw.WriteLine("L. "+txtSobrante.Text);
+                sw.WriteLine("L. " + txtSobrante.Text);
             }
             sw.WriteLine(" ");
             sw.WriteLine("* FINAL DE CIERRE DE CAJA *");
@@ -937,6 +988,57 @@ namespace Punto_de_venta.Mantenimientos
 
 
         }
+
+        //factura ancha
+        //private void imprimirFactura()
+        //{
+        //    string total = "";
+
+        //    StreamWriter sw = new StreamWriter("C:\\testPage.txt");
+        //    //----Encabezado----
+        //    sw.WriteLine(" ");
+        //    sw.WriteLine("                 CIERRE DIARIO");
+        //    sw.WriteLine(" ");
+        //    sw.WriteLine("  FECHA Y HORA DE CIERRE:");
+        //    sw.WriteLine(" ");
+        //    sw.WriteLine("             " + DateTime.Now.ToString());
+
+        //    sw.WriteLine(" ");
+        //    sw.WriteLine(" SUELTO INICIAL:");
+        //    sw.WriteLine("L. "+txtMontoInicial.Text);
+        //    sw.WriteLine(" ");
+        //    sw.WriteLine(" ");
+        //    sw.WriteLine(" SUS VENTAS EL DÍA DE HOY:");
+        //    sw.WriteLine("L. "+txtVentasEnSistema.Text );
+        //    sw.WriteLine(" ");
+        //    sw.WriteLine(" ");
+        //    sw.WriteLine(" SU CONTEO DE CAJA:");
+        //    sw.WriteLine("L. "+txtConteodeCaja.Text);
+        //    sw.WriteLine(" ");
+        //    sw.WriteLine(" ");
+        //    if (Convert.ToDouble(txtFaltante.Text) > 0 )
+        //    {
+        //        sw.WriteLine(" FALTANTE:");
+        //        sw.WriteLine("L. "+txtFaltante.Text);
+        //    }
+        //    else
+        //    {
+        //        sw.WriteLine(" SOBRANTE:");
+        //        sw.WriteLine("L. "+txtSobrante.Text);
+        //    }
+        //    sw.WriteLine(" ");
+        //    sw.WriteLine("* FINAL DE CIERRE DE CAJA *");
+
+        //    sw.Close();
+        //    string docName = "testPage.txt";
+        //    string docPath = @"C:\";
+        //    string fullPath = System.IO.Path.Combine(docPath, docName);
+        //    printDocument1.DocumentName = docName;
+        //    stringToPrint = System.IO.File.ReadAllText(fullPath);
+        //    printDocument1.Print();
+
+
+        //}
 
         private void txtVentasEnSistema_TextChanged(object sender, EventArgs e)
         {

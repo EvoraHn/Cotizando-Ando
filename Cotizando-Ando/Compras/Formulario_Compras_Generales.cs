@@ -516,6 +516,7 @@ namespace Punto_de_venta.Compras
 
 
             //----------------------- Logo de la empresa ----------------------------------------------------------
+            //Bitmap myPng = Properties.Resources.yocoha_cell_logo;
             Bitmap myPng = Properties.Resources.LOGONEGRO;
             //----------------------------------------- x,y,ancho y alto
             //Encabezado (proforma,Venta,Compra)
@@ -560,10 +561,12 @@ namespace Punto_de_venta.Compras
             //sw.WriteLine("      ← COMPRAS →   ");
             sw.WriteLine(" ");
             sw.WriteLine(" ");
+            //sw.WriteLine("Teléfono: 9908-5779" + "                                                         " + DateTime.Now.ToString());
             sw.WriteLine("Teléfono: 2773 - 0953" + "                                                         " + DateTime.Now.ToString());
             //sw.WriteLine(DateTime.Now.ToString(),ContentAlignment.TopRight);
             sw.WriteLine("" + "Cliente: " + txtCliente.Text.ToUpper() + " ");
             sw.WriteLine("" + "RTN: " + txtRTN.Text + " ");
+            //sw.WriteLine("" + "Yoco-ha Cell, Barrio San Juan, Plaza Sandres, primer local, Siguatepeque, Comayagua.");
             sw.WriteLine("" + "Bodegón de los Precios Bajos, esquina opuesta al instituto Dr.Genaro Muñoz Hernandez, Siguatepeque, Comayagua.");
             sw.WriteLine(" ");
             sw.WriteLine("      ← PRODUCTOS →   ");

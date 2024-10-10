@@ -23,7 +23,7 @@ namespace Punto_de_venta.Menú
             if (idUsuario == 1 )
             {
                 modulo = "Administración";
-                
+                btnUsuarios.Visible = false;
                 btnInventario.Visible = true;
             }
             
