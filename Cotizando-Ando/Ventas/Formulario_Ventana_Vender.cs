@@ -590,125 +590,32 @@ namespace Punto_de_venta.Ventas
             }
         }
 
-        //private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
-        //{
-        //    int charactersOnPage = 0;
-        //    int linesPerPage = 0;
-
-        //    // Sets the value of charactersOnPage to the number of characters
-        //    // of stringToPrint that will fit within the bounds of the page.
 
 
+        //Factura Grande
 
-
-        //    //Pass the filepath and filename to the StreamWriter Constructor
-        //    //StreamWriter sw = new StreamWriter("C:\\testPage.txt");
-        //    //Write a line of text
-
-
-        //    //Configuración para la cotización tamaño Carta ( tipo de letra,
-        //    //ancho total de la factura, separación entre textos
-        //    //tipos de alineado
-        //    Font font = new Font("Arial", 10);
-        //    //int ancho = 278;
-        //    int ancho = 278;
-        //    int y = 0;
-
-
-
-        //    StringFormat stringFormat = new StringFormat();
-        //    stringFormat.Alignment = StringAlignment.Center;
-        //    stringFormat.LineAlignment = StringAlignment.Center;
-
-        //    StringFormat stringFormatrigth = new StringFormat();
-        //    stringFormatrigth.Alignment = StringAlignment.Far;
-        //    stringFormatrigth.LineAlignment = StringAlignment.Far;
-
-        //    StringFormat stringFormatLeft = new StringFormat();
-        //    stringFormatLeft.Alignment = StringAlignment.Near;
-        //    stringFormatLeft.LineAlignment = StringAlignment.Near;
-
-        //    //selector de ancho y alto manual de la pagina a imprimir
-        //    SizeF sizeF = new SizeF();
-        //    sizeF.Width = e.MarginBounds.Width; //ancho de la pagina (automatico)
-        //    sizeF.Height = e.MarginBounds.Height - 269; // Largo de la pagina (automatico) ; tambien se pueden colocar manualmente
-
-        //    e.Graphics.MeasureString(stringToPrint, this.Font,
-        //    sizeF, StringFormat.GenericTypographic,
-        //    out charactersOnPage, out linesPerPage);
-
-
-        //    //----------------------- Logo de la empresa ----------------------------------------------------------
-        //    Bitmap myPng = Properties.Resources.puleria_isis;
-        //    //----------------------------------------- x,y,ancho y alto
-        //    e.Graphics.DrawImage(myPng, new RectangleF(100, y += 10, 100, 100));
-
-        //    ////----------------------------------------- x,y,ancho y alto
-        //    Bitmap myPng2 = Properties.Resources.PROFORMASOLA;
-        //    e.Graphics.DrawImage(myPng2, new RectangleF(70, y += 120, 150, 17));
-
-
-
-        //    // //-----------------------Encabezado de cotización ----------------------------------------------------
-
-        //    //---------------------------- Productos --------------------------------------------------------------
-        //    //e.Graphics.DrawString("------ ------ ------ ------ ------ ------ ------ ------ ------ ------ Productos ------ ------ ------ ------ ------ ------ ------ ------ ------ ------", font, Brushes.Black, new RectangleF(0, y += 40, ancho, 20), stringFormat);
-
-        //    // Draws the string within the bounds of the page        font, Brushes.Black, new RectangleF(0, y += 40, ancho, 20), stringFormat);
-        //    //MessageBox.Show(stringToPrint.Length.ToString());
-        //    //MessageBox.Show(e.MarginBounds.Size.ToString());
-        //    //MessageBox.Show(e.MarginBounds.Height.ToString());
-
-        //    //var calculoDePaginasAImprimir = ((e.MarginBounds.Height / 950));
-
-        //    //MessageBox.Show(calculoDePaginasAImprimir.ToString());
-        //    //if(e.MarginBounds.Height > 950)
-        //    //{
-        //    //    MessageBox.Show("Se exedío del limite");
-
-        //    //}    
-        //    //else
-        //    //{
-        //    //    MessageBox.Show("está dentrooooooooooo del limite");
-        //    //}
-        //    //for ( int i = 0; i < calculoDePaginasAImprimir; i++ )
-        //    //{
-        //    //    calculoDePaginasAImprimir = calculoDePaginasAImprimir - 1;
-        //    //    if (calculoDePaginasAImprimir > 0)
-        //    //    {
-        //    //        e.HasMorePages = (calculoDePaginasAImprimir > 0);
-
-        //    //    }
-
-        //    //}
-        //    //e.HasMorePages = stringToPrint.;
-
-        //    //stringToPrint = stringToPrint.Substring(charactersOnPage);
-        //    ////e.HasMorePages = Convert.ToDouble(stringToPrint) > 0;
-        //    //MessageBox.Show(stringToPrint.ToString());
-
-        //    e.Graphics.DrawString(stringToPrint, font, Brushes.Black, new RectangleF(5, y += 30, ancho, e.MarginBounds.Height), StringFormat.GenericTypographic);
-        //    //-------------------------- Pie de cotización --------------------------------------------------------
-        //    stringToPrint = stringToPrint.Substring(charactersOnPage);
-
-        //    // Check to see if more pages are to be printed.
-        //    e.HasMorePages = (stringToPrint.Length > 0);
-        //    imprimir_encabezado = false;
-
-        //    // Remove the portion of the string that has been printed.
-
-        //    //Check to see if more pages are to be printed.
-        //    //e.HasMorePages = (e.MarginBounds.Height > 950);
-        //    //e.Graphics.DrawString(stringToPrint, font, Brushes.Black, new RectangleF(10, y += 20, ancho, e.MarginBounds.Height), StringFormat.GenericTypographic);
-        //}
-
-        //factura delgada 180
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             int charactersOnPage = 0;
             int linesPerPage = 0;
+
+            // Sets the value of charactersOnPage to the number of characters
+            // of stringToPrint that will fit within the bounds of the page.
+
+
+
+
+            //Pass the filepath and filename to the StreamWriter Constructor
+            //StreamWriter sw = new StreamWriter("C:\\testPage.txt");
+            //Write a line of text
+
+
+            //Configuración para la cotización tamaño Carta ( tipo de letra,
+            //ancho total de la factura, separación entre textos
+            //tipos de alineado
             Font font = new Font("Arial", 10);
-            int ancho = 180;
+            //int ancho = 278;
+            int ancho = 278;
             int y = 0;
 
 
@@ -734,17 +641,57 @@ namespace Punto_de_venta.Ventas
             sizeF, StringFormat.GenericTypographic,
             out charactersOnPage, out linesPerPage);
 
+
             //----------------------- Logo de la empresa ----------------------------------------------------------
-            //Bitmap myPng = Properties.Resources.yocoha_cell_logo;
-            Bitmap myPng = Properties.Resources.LOGONEGRO;
+            Bitmap myPng = Properties.Resources.puleria_isis;
             //----------------------------------------- x,y,ancho y alto
-            e.Graphics.DrawImage(myPng, new RectangleF(50, y += 10, 100, 100));
+            e.Graphics.DrawImage(myPng, new RectangleF(100, y += 10, 100, 100));
 
             ////----------------------------------------- x,y,ancho y alto
             Bitmap myPng2 = Properties.Resources.PROFORMASOLA;
-            e.Graphics.DrawImage(myPng2, new RectangleF(25, y += 120, 150, 17));
+            e.Graphics.DrawImage(myPng2, new RectangleF(70, y += 120, 150, 17));
 
-            e.Graphics.DrawString(stringToPrint, font, Brushes.Black, new RectangleF(10, y += 20, ancho, e.MarginBounds.Height), StringFormat.GenericTypographic);
+
+
+            // //-----------------------Encabezado de cotización ----------------------------------------------------
+
+            //---------------------------- Productos --------------------------------------------------------------
+            //e.Graphics.DrawString("------ ------ ------ ------ ------ ------ ------ ------ ------ ------ Productos ------ ------ ------ ------ ------ ------ ------ ------ ------ ------", font, Brushes.Black, new RectangleF(0, y += 40, ancho, 20), stringFormat);
+
+            // Draws the string within the bounds of the page        font, Brushes.Black, new RectangleF(0, y += 40, ancho, 20), stringFormat);
+            //MessageBox.Show(stringToPrint.Length.ToString());
+            //MessageBox.Show(e.MarginBounds.Size.ToString());
+            //MessageBox.Show(e.MarginBounds.Height.ToString());
+
+            //var calculoDePaginasAImprimir = ((e.MarginBounds.Height / 950));
+
+            //MessageBox.Show(calculoDePaginasAImprimir.ToString());
+            //if(e.MarginBounds.Height > 950)
+            //{
+            //    MessageBox.Show("Se exedío del limite");
+
+            //}    
+            //else
+            //{
+            //    MessageBox.Show("está dentrooooooooooo del limite");
+            //}
+            //for ( int i = 0; i < calculoDePaginasAImprimir; i++ )
+            //{
+            //    calculoDePaginasAImprimir = calculoDePaginasAImprimir - 1;
+            //    if (calculoDePaginasAImprimir > 0)
+            //    {
+            //        e.HasMorePages = (calculoDePaginasAImprimir > 0);
+
+            //    }
+
+            //}
+            //e.HasMorePages = stringToPrint.;
+
+            //stringToPrint = stringToPrint.Substring(charactersOnPage);
+            ////e.HasMorePages = Convert.ToDouble(stringToPrint) > 0;
+            //MessageBox.Show(stringToPrint.ToString());
+
+            e.Graphics.DrawString(stringToPrint, font, Brushes.Black, new RectangleF(5, y += 30, ancho, e.MarginBounds.Height), StringFormat.GenericTypographic);
             //-------------------------- Pie de cotización --------------------------------------------------------
             stringToPrint = stringToPrint.Substring(charactersOnPage);
 
@@ -752,110 +699,68 @@ namespace Punto_de_venta.Ventas
             e.HasMorePages = (stringToPrint.Length > 0);
             imprimir_encabezado = false;
 
+            // Remove the portion of the string that has been printed.
 
+            //Check to see if more pages are to be printed.
+            //e.HasMorePages = (e.MarginBounds.Height > 950);
+            //e.Graphics.DrawString(stringToPrint, font, Brushes.Black, new RectangleF(10, y += 20, ancho, e.MarginBounds.Height), StringFormat.GenericTypographic);
         }
 
-        //private void imprimirFactura()
+        //factura delgada 180
+        //private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         //{
-        //    string total = "";
-        //    //string filePath = @"C:\testPage.txt";
-        //    //if (!File.Exists(filePath))
-        //    //{
-        //    //    File.SetAttributes(filePath,
-        //    //            (new FileInfo(filePath)).Attributes | FileAttributes.ReadOnly);
-
-        //    //    // Crear .txt si no existe
-        //    //    using (StreamWriter swp = File.CreateText(filePath))
-        //    //    { }
-        //    //}
-        //    StreamWriter sw = new StreamWriter("C:\\testPage.txt");
-        //    //----Encabezado----
-        //    //sw.WriteLine("COTIZACIÓN DE PRODUCTOS", ContentAlignment.TopCenter);
-        //    sw.WriteLine(" ");
-        //    sw.WriteLine(" ");
-        //    sw.WriteLine("Teléfono: 9694-5585" + "                                                         " + DateTime.Now.ToString());
-        //    sw.WriteLine(" ");
-        //    if (cotizacion)
-        //    {
-        //        sw.WriteLine("                         COTIZACIÓN");
-        //    }
-        //    else
-        //    {
-        //        sw.WriteLine("                          FACTURA");
-        //    }
-        //    sw.WriteLine(" ");
-        //    //sw.WriteLine(DateTime.Now.ToString(),ContentAlignment.TopRight);
-        //    sw.WriteLine("" + "Cliente: " + txtCliente.Text.ToUpper() + " ");
-        //    sw.WriteLine("" + "RTN: " + txtRTN.Text + " ");
-        //    sw.WriteLine("" + "Pulpería Isis, Barrio el Parnazo una cuadra a la izquierda de CEB Renacimiento.");
-        //    //sw.WriteLine("" + "Bodegón de los Precios Bajos, esquina opuesta al instituto Dr.Genaro Muñoz Hernandez, Siguatepeque, Comayagua.");
-        //    sw.WriteLine(" ");
-        //    sw.WriteLine("                  ← PRODUCTOS →   ");
-        //    sw.WriteLine(" ");
-        //    //----productos----
-        //    foreach (DataGridViewRow row in dgFactura.Rows)
-        //    {
-        //        //for (int i = 0; i < 85; i++)
-        //        //{
-        //        //    sw.WriteLine("      ← PRODUCTOS →   ");
-        //        //}
-        //        // Producto
-        //        sw.WriteLine("◢ " + row.Cells[1].Value.ToString() + " ");
-        //        sw.WriteLine("  L. " + row.Cells[2].Value.ToString() + " X " + row.Cells[3].Value.ToString() + " = L. " + row.Cells[4].Value.ToString());
-        //        sw.WriteLine(" ");
-        //    }
-        //    sw.WriteLine(" ");
-        //    //----final de impresión 
-        //    sw.WriteLine("Subtotal: L. " + txtSubtotal.Text + " ");
-        //    sw.WriteLine("Importe exonerado: L." + txtImporteExonerado.Text + " ");
-        //    sw.WriteLine("Descuento: L. " + Convert.ToDecimal(txtDescuentos.Text) + " ");
-        //    sw.WriteLine("Importe exento: L. " + txtImporteExento.Text + " ");
-        //    //sw.WriteLine("Importe grabado 18%: L. " + txtIG18.Text + " ");
-        //    //sw.WriteLine("I.S.V 18%: L. " + txtISV18.Text + " ");
-        //    sw.WriteLine("Importe grabado 15%: ");
-        //    sw.WriteLine("L. " + txtIG15.Text + " ");
-        //    sw.WriteLine("I.S.V 15%: L. " + txtISV15.Text + " ");
-        //    sw.WriteLine("Importe grabado 18%: ");
-        //    sw.WriteLine("L. " + txtIG18.Text + " ");
-        //    sw.WriteLine("I.S.V 18%: L. " + txtISV18.Text + " ");
-        //    total = (Convert.ToDecimal(txtSubtotal.Text) - Convert.ToDecimal(txtDescuentos.Text) - Convert.ToDecimal(txtImporteExonerado.Text)).ToString();
-        //    sw.WriteLine(" ");
-        //    sw.WriteLine("TOTAL: L. " + txtTotal.Text + " ");
-        //    sw.WriteLine(" ");
-
-        //    sw.WriteLine("El billete que dió: L. " + txtBillete.Text + " ");
-        //    sw.WriteLine(" ");
-        //    sw.WriteLine("Su vuelto: L. " + vuelto.ToString() + " ");
-        //    sw.Close();
-        //    string docName = "testPage.txt";
-        //    string docPath = @"C:\";
-        //    string fullPath = System.IO.Path.Combine(docPath, docName);
-
-        //    printDocument1.DocumentName = docName;
-
-        //    stringToPrint = System.IO.File.ReadAllText(fullPath);
-        //    //PrintDocument.PrinterSettings.PrinterName = "Microsoft Print To PDF";
-
-
-        //    //PrinterSettings settings = new PrinterSettings();
-        //    //foreach (string printer in PrinterSettings.InstalledPrinters)
-        //    //{
-        //    //    settings.PrinterName = "Microsoft Print To PDF";
-
-        //    //}
+        //    int charactersOnPage = 0;
+        //    int linesPerPage = 0;
+        //    Font font = new Font("Arial", 10);
+        //    int ancho = 180;
+        //    int y = 0;
 
 
 
-        //    printDocument1.Print();
+        //    StringFormat stringFormat = new StringFormat();
+        //    stringFormat.Alignment = StringAlignment.Center;
+        //    stringFormat.LineAlignment = StringAlignment.Center;
+
+        //    StringFormat stringFormatrigth = new StringFormat();
+        //    stringFormatrigth.Alignment = StringAlignment.Far;
+        //    stringFormatrigth.LineAlignment = StringAlignment.Far;
+
+        //    StringFormat stringFormatLeft = new StringFormat();
+        //    stringFormatLeft.Alignment = StringAlignment.Near;
+        //    stringFormatLeft.LineAlignment = StringAlignment.Near;
+
+        //    //selector de ancho y alto manual de la pagina a imprimir
+        //    SizeF sizeF = new SizeF();
+        //    sizeF.Width = e.MarginBounds.Width; //ancho de la pagina (automatico)
+        //    sizeF.Height = e.MarginBounds.Height - 269; // Largo de la pagina (automatico) ; tambien se pueden colocar manualmente
+
+        //    e.Graphics.MeasureString(stringToPrint, this.Font,
+        //    sizeF, StringFormat.GenericTypographic,
+        //    out charactersOnPage, out linesPerPage);
+
+        //    //----------------------- Logo de la empresa ----------------------------------------------------------
+        //    //Bitmap myPng = Properties.Resources.yocoha_cell_logo;
+        //    Bitmap myPng = Properties.Resources.LOGONEGRO;
+        //    //----------------------------------------- x,y,ancho y alto
+        //    e.Graphics.DrawImage(myPng, new RectangleF(50, y += 10, 100, 100));
+
+        //    ////----------------------------------------- x,y,ancho y alto
+        //    Bitmap myPng2 = Properties.Resources.PROFORMASOLA;
+        //    e.Graphics.DrawImage(myPng2, new RectangleF(25, y += 120, 150, 17));
+
+        //    e.Graphics.DrawString(stringToPrint, font, Brushes.Black, new RectangleF(10, y += 20, ancho, e.MarginBounds.Height), StringFormat.GenericTypographic);
+        //    //-------------------------- Pie de cotización --------------------------------------------------------
+        //    stringToPrint = stringToPrint.Substring(charactersOnPage);
+
+        //    // Check to see if more pages are to be printed.
+        //    e.HasMorePages = (stringToPrint.Length > 0);
+        //    imprimir_encabezado = false;
 
 
         //}
 
+        //factura grande
 
-
-
-
-        //Factura pequena 180
         private void imprimirFactura()
         {
             string total = "";
@@ -874,25 +779,24 @@ namespace Punto_de_venta.Ventas
             //sw.WriteLine("COTIZACIÓN DE PRODUCTOS", ContentAlignment.TopCenter);
             sw.WriteLine(" ");
             sw.WriteLine(" ");
-            //sw.WriteLine("Teléfono: 9908-5779 " + "                                                         " + DateTime.Now.ToString());
-            sw.WriteLine("Teléfono: 2773-0953 " + "                                                         " + DateTime.Now.ToString());
+            sw.WriteLine("Teléfono: 9694-5585" + "                                                         " + DateTime.Now.ToString());
             sw.WriteLine(" ");
             if (cotizacion)
             {
-                sw.WriteLine("       COTIZACIÓN");
+                sw.WriteLine("                         COTIZACIÓN");
             }
             else
             {
-                sw.WriteLine("        FACTURA");
+                sw.WriteLine("                          FACTURA");
             }
             sw.WriteLine(" ");
             //sw.WriteLine(DateTime.Now.ToString(),ContentAlignment.TopRight);
             sw.WriteLine("" + "Cliente: " + txtCliente.Text.ToUpper() + " ");
             sw.WriteLine("" + "RTN: " + txtRTN.Text + " ");
-            //sw.WriteLine("" + "Yoco-ha Cell, Barrio San Juan, Plaza Sandres, primer local, Siguatepeque, Comayagua.");
-            sw.WriteLine("" + "Bodegón de los Precios Bajos, esquina opuesta al instituto Dr.Genaro Muñoz Hernandez, Siguatepeque, Comayagua.");
+            sw.WriteLine("" + "Pulpería Isis, Barrio el Parnazo una cuadra a la izquierda de CEB Renacimiento.");
+            //sw.WriteLine("" + "Bodegón de los Precios Bajos, esquina opuesta al instituto Dr.Genaro Muñoz Hernandez, Siguatepeque, Comayagua.");
             sw.WriteLine(" ");
-            sw.WriteLine("      ← PRODUCTOS →   ");
+            sw.WriteLine("                  ← PRODUCTOS →   ");
             sw.WriteLine(" ");
             //----productos----
             foreach (DataGridViewRow row in dgFactura.Rows)
@@ -903,7 +807,7 @@ namespace Punto_de_venta.Ventas
                 //}
                 // Producto
                 sw.WriteLine("◢ " + row.Cells[1].Value.ToString() + " ");
-                sw.WriteLine("  L. " + row.Cells[2].Value.ToString() + " X " + row.Cells[3].Value.ToString() + " = L. "+ row.Cells[4].Value.ToString());
+                sw.WriteLine("  L. " + row.Cells[2].Value.ToString() + " X " + row.Cells[3].Value.ToString() + " = L. " + row.Cells[4].Value.ToString());
                 sw.WriteLine(" ");
             }
             sw.WriteLine(" ");
@@ -924,7 +828,7 @@ namespace Punto_de_venta.Ventas
             sw.WriteLine(" ");
             sw.WriteLine("TOTAL: L. " + txtTotal.Text + " ");
             sw.WriteLine(" ");
-           
+
             sw.WriteLine("El billete que dió: L. " + txtBillete.Text + " ");
             sw.WriteLine(" ");
             if (vuelto >= 0)
@@ -935,8 +839,6 @@ namespace Punto_de_venta.Ventas
             {
                 sw.WriteLine("Se le cobró: L. " + (vuelto * -1).ToString() + " ");
             }
-
-            
             sw.Close();
             string docName = "testPage.txt";
             string docPath = @"C:\";
@@ -961,6 +863,117 @@ namespace Punto_de_venta.Ventas
 
 
         }
+
+
+
+
+
+        //Factura pequena 180
+        //private void imprimirFactura()
+        //{
+        //    string total = "";
+        //    //string filePath = @"C:\testPage.txt";
+        //    //if (!File.Exists(filePath))
+        //    //{
+        //    //    File.SetAttributes(filePath,
+        //    //            (new FileInfo(filePath)).Attributes | FileAttributes.ReadOnly);
+
+        //    //    // Crear .txt si no existe
+        //    //    using (StreamWriter swp = File.CreateText(filePath))
+        //    //    { }
+        //    //}
+        //    StreamWriter sw = new StreamWriter("C:\\testPage.txt");
+        //    //----Encabezado----
+        //    //sw.WriteLine("COTIZACIÓN DE PRODUCTOS", ContentAlignment.TopCenter);
+        //    sw.WriteLine(" ");
+        //    sw.WriteLine(" ");
+        //    //sw.WriteLine("Teléfono: 9908-5779 " + "                                                         " + DateTime.Now.ToString());
+        //    sw.WriteLine("Teléfono: 2773-0953 " + "                                                         " + DateTime.Now.ToString());
+        //    sw.WriteLine(" ");
+        //    if (cotizacion)
+        //    {
+        //        sw.WriteLine("       COTIZACIÓN");
+        //    }
+        //    else
+        //    {
+        //        sw.WriteLine("        FACTURA");
+        //    }
+        //    sw.WriteLine(" ");
+        //    //sw.WriteLine(DateTime.Now.ToString(),ContentAlignment.TopRight);
+        //    sw.WriteLine("" + "Cliente: " + txtCliente.Text.ToUpper() + " ");
+        //    sw.WriteLine("" + "RTN: " + txtRTN.Text + " ");
+        //    //sw.WriteLine("" + "Yoco-ha Cell, Barrio San Juan, Plaza Sandres, primer local, Siguatepeque, Comayagua.");
+        //    sw.WriteLine("" + "Bodegón de los Precios Bajos, esquina opuesta al instituto Dr.Genaro Muñoz Hernandez, Siguatepeque, Comayagua.");
+        //    sw.WriteLine(" ");
+        //    sw.WriteLine("      ← PRODUCTOS →   ");
+        //    sw.WriteLine(" ");
+        //    //----productos----
+        //    foreach (DataGridViewRow row in dgFactura.Rows)
+        //    {
+        //        //for (int i = 0; i < 85; i++)
+        //        //{
+        //        //    sw.WriteLine("      ← PRODUCTOS →   ");
+        //        //}
+        //        // Producto
+        //        sw.WriteLine("◢ " + row.Cells[1].Value.ToString() + " ");
+        //        sw.WriteLine("  L. " + row.Cells[2].Value.ToString() + " X " + row.Cells[3].Value.ToString() + " = L. "+ row.Cells[4].Value.ToString());
+        //        sw.WriteLine(" ");
+        //    }
+        //    sw.WriteLine(" ");
+        //    //----final de impresión 
+        //    sw.WriteLine("Subtotal: L. " + txtSubtotal.Text + " ");
+        //    sw.WriteLine("Importe exonerado: L." + txtImporteExonerado.Text + " ");
+        //    sw.WriteLine("Descuento: L. " + Convert.ToDecimal(txtDescuentos.Text) + " ");
+        //    sw.WriteLine("Importe exento: L. " + txtImporteExento.Text + " ");
+        //    //sw.WriteLine("Importe grabado 18%: L. " + txtIG18.Text + " ");
+        //    //sw.WriteLine("I.S.V 18%: L. " + txtISV18.Text + " ");
+        //    sw.WriteLine("Importe grabado 15%: ");
+        //    sw.WriteLine("L. " + txtIG15.Text + " ");
+        //    sw.WriteLine("I.S.V 15%: L. " + txtISV15.Text + " ");
+        //    sw.WriteLine("Importe grabado 18%: ");
+        //    sw.WriteLine("L. " + txtIG18.Text + " ");
+        //    sw.WriteLine("I.S.V 18%: L. " + txtISV18.Text + " ");
+        //    total = (Convert.ToDecimal(txtSubtotal.Text) - Convert.ToDecimal(txtDescuentos.Text) - Convert.ToDecimal(txtImporteExonerado.Text)).ToString();
+        //    sw.WriteLine(" ");
+        //    sw.WriteLine("TOTAL: L. " + txtTotal.Text + " ");
+        //    sw.WriteLine(" ");
+
+        //    sw.WriteLine("El billete que dió: L. " + txtBillete.Text + " ");
+        //    sw.WriteLine(" ");
+        //    if (vuelto >= 0)
+        //    {
+        //        sw.WriteLine("Su vuelto: L. " + vuelto.ToString() + " ");
+        //    }
+        //    else
+        //    {
+        //        sw.WriteLine("Se le cobró: L. " + (vuelto * -1).ToString() + " ");
+        //    }
+
+
+        //    sw.Close();
+        //    string docName = "testPage.txt";
+        //    string docPath = @"C:\";
+        //    string fullPath = System.IO.Path.Combine(docPath, docName);
+
+        //    printDocument1.DocumentName = docName;
+
+        //    stringToPrint = System.IO.File.ReadAllText(fullPath);
+        //    //PrintDocument.PrinterSettings.PrinterName = "Microsoft Print To PDF";
+
+
+        //    //PrinterSettings settings = new PrinterSettings();
+        //    //foreach (string printer in PrinterSettings.InstalledPrinters)
+        //    //{
+        //    //    settings.PrinterName = "Microsoft Print To PDF";
+
+        //    //}
+
+
+
+        //    printDocument1.Print();
+
+
+        //}
         /* private void getImpresoraPorDefecto()
          {
              PrinterSettings settings = new PrinterSettings();

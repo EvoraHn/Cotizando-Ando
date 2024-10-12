@@ -26,7 +26,7 @@ namespace Punto_de_venta
             //sApplication.Run(new Punto_de_venta.Mantenimientos.Ganacias_por_periodo());
             //Application.Run(new Punto_de_venta.Mantenimientos.Mantenimiento_cierre_Diario());
             //Application.Run(new Punto_de_venta.Compras.Formulario_Compras_Generales());
-            //Application.Run(new Punto_de_venta.Mantenimientos.Mantenimiento_Usuarios_2_0());
+            //Application.Run(new Punto_de_venta.Mantenimientos.Mantenimiento_Productos("Administracion"));
             Application.Exit();
             
         }
