@@ -871,7 +871,7 @@ namespace Punto_de_venta.Mantenimientos
 
             //----------------------- Logo de la empresa ----------------------------------------------------------
             //Bitmap myPng = Properties.Resources.yocoha_cell_logo;
-            Bitmap myPng = Properties.Resources.LOGONEGRO;
+            Bitmap myPng = Properties.Resources.puleria_isis;
             //----------------------------------------- x,y,ancho y alto
             e.Graphics.DrawImage(myPng, new RectangleF(52, y += 10, 100, 100));
 
@@ -939,6 +939,57 @@ namespace Punto_de_venta.Mantenimientos
 
 
         //factura corta
+        //private void imprimirFactura()
+        //{
+        //    string total = "";
+
+        //    StreamWriter sw = new StreamWriter("C:\\testPage.txt");
+        //    //----Encabezado----
+        //    sw.WriteLine(" ");
+        //    sw.WriteLine("      CIERRE DIARIO");
+        //    sw.WriteLine(" ");
+        //    sw.WriteLine("  FECHA Y HORA DE CIERRE:");
+        //    sw.WriteLine(" ");
+        //    sw.WriteLine("  " + DateTime.Now.ToString());
+
+        //    sw.WriteLine(" ");
+        //    sw.WriteLine(" SUELTO INICIAL:");
+        //    sw.WriteLine("L. " + txtMontoInicial.Text);
+        //    sw.WriteLine(" ");
+        //    sw.WriteLine(" ");
+        //    sw.WriteLine(" SUS VENTAS EL DÍA DE HOY:");
+        //    sw.WriteLine("L. " + txtVentasEnSistema.Text);
+        //    sw.WriteLine(" ");
+        //    sw.WriteLine(" ");
+        //    sw.WriteLine(" SU CONTEO DE CAJA:");
+        //    sw.WriteLine("L. " + txtConteodeCaja.Text);
+        //    sw.WriteLine(" ");
+        //    sw.WriteLine(" ");
+        //    if (Convert.ToDouble(txtFaltante.Text) > 0)
+        //    {
+        //        sw.WriteLine(" FALTANTE:");
+        //        sw.WriteLine("L. " + txtFaltante.Text);
+        //    }
+        //    else
+        //    {
+        //        sw.WriteLine(" SOBRANTE:");
+        //        sw.WriteLine("L. " + txtSobrante.Text);
+        //    }
+        //    sw.WriteLine(" ");
+        //    sw.WriteLine("* FINAL DE CIERRE DE CAJA *");
+
+        //    sw.Close();
+        //    string docName = "testPage.txt";
+        //    string docPath = @"C:\";
+        //    string fullPath = System.IO.Path.Combine(docPath, docName);
+        //    printDocument1.DocumentName = docName;
+        //    stringToPrint = System.IO.File.ReadAllText(fullPath);
+        //    printDocument1.Print();
+
+
+        //}
+
+        //factura ancha
         private void imprimirFactura()
         {
             string total = "";
@@ -946,11 +997,11 @@ namespace Punto_de_venta.Mantenimientos
             StreamWriter sw = new StreamWriter("C:\\testPage.txt");
             //----Encabezado----
             sw.WriteLine(" ");
-            sw.WriteLine("      CIERRE DIARIO");
+            sw.WriteLine("                 CIERRE DIARIO");
             sw.WriteLine(" ");
             sw.WriteLine("  FECHA Y HORA DE CIERRE:");
             sw.WriteLine(" ");
-            sw.WriteLine("  " + DateTime.Now.ToString());
+            sw.WriteLine("             " + DateTime.Now.ToString());
 
             sw.WriteLine(" ");
             sw.WriteLine(" SUELTO INICIAL:");
@@ -988,57 +1039,6 @@ namespace Punto_de_venta.Mantenimientos
 
 
         }
-
-        //factura ancha
-        //private void imprimirFactura()
-        //{
-        //    string total = "";
-
-        //    StreamWriter sw = new StreamWriter("C:\\testPage.txt");
-        //    //----Encabezado----
-        //    sw.WriteLine(" ");
-        //    sw.WriteLine("                 CIERRE DIARIO");
-        //    sw.WriteLine(" ");
-        //    sw.WriteLine("  FECHA Y HORA DE CIERRE:");
-        //    sw.WriteLine(" ");
-        //    sw.WriteLine("             " + DateTime.Now.ToString());
-
-        //    sw.WriteLine(" ");
-        //    sw.WriteLine(" SUELTO INICIAL:");
-        //    sw.WriteLine("L. "+txtMontoInicial.Text);
-        //    sw.WriteLine(" ");
-        //    sw.WriteLine(" ");
-        //    sw.WriteLine(" SUS VENTAS EL DÍA DE HOY:");
-        //    sw.WriteLine("L. "+txtVentasEnSistema.Text );
-        //    sw.WriteLine(" ");
-        //    sw.WriteLine(" ");
-        //    sw.WriteLine(" SU CONTEO DE CAJA:");
-        //    sw.WriteLine("L. "+txtConteodeCaja.Text);
-        //    sw.WriteLine(" ");
-        //    sw.WriteLine(" ");
-        //    if (Convert.ToDouble(txtFaltante.Text) > 0 )
-        //    {
-        //        sw.WriteLine(" FALTANTE:");
-        //        sw.WriteLine("L. "+txtFaltante.Text);
-        //    }
-        //    else
-        //    {
-        //        sw.WriteLine(" SOBRANTE:");
-        //        sw.WriteLine("L. "+txtSobrante.Text);
-        //    }
-        //    sw.WriteLine(" ");
-        //    sw.WriteLine("* FINAL DE CIERRE DE CAJA *");
-
-        //    sw.Close();
-        //    string docName = "testPage.txt";
-        //    string docPath = @"C:\";
-        //    string fullPath = System.IO.Path.Combine(docPath, docName);
-        //    printDocument1.DocumentName = docName;
-        //    stringToPrint = System.IO.File.ReadAllText(fullPath);
-        //    printDocument1.Print();
-
-
-        //}
 
         private void txtVentasEnSistema_TextChanged(object sender, EventArgs e)
         {
